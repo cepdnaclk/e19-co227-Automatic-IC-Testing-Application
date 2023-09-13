@@ -1,0 +1,315 @@
+module four_input_checker (
+  A1, A2,
+  B1, B2,
+  C1, C2,
+  D1, D2,
+  op1, op2,
+  pass1, pass2,
+  fail1, fail2,
+  pass, fail,
+  clk,
+  enable
+);
+	
+  // Store 0000, 0001, 0010, 0011, 0100, 0101, 0110, 0111, 1000, 1001, 1010, 1011, 1100, 1101, 1110, 1111
+  reg [3:0] input_pattern;
+  
+  // Store the desired output pattern
+  reg [15:0] output_ori;
+  
+  // Store the output patterns from the gates
+  reg [15:0] output_got1;
+  reg [15:0] output_got2;
+  
+  // Initiate the other input & outputs
+  input op1, op2;
+  input clk;
+  input enable;
+  
+  output reg A1, A2;
+  output reg B1, B2;
+  output reg C1, C2;
+  output reg D1, D2;
+  output reg pass1, pass2, fail1, fail2;
+  output reg pass, fail;
+  wire W_AND, W_NAND;
+  wire W_SELECT;  
+  
+  // States to genarate input patterns
+  reg [3:0] state;
+  parameter S0000 = 4'b0000;
+  parameter S0001 = 4'b0001;
+  parameter S0010 = 4'b0010;
+  parameter S0011 = 4'b0011;
+  parameter S0100 = 4'b0100;
+  parameter S0101 = 4'b0101;
+  parameter S0110 = 4'b0110;
+  parameter S0111 = 4'b0111;
+  parameter S1000 = 4'b1000;
+  parameter S1001 = 4'b1001;
+  parameter S1010 = 4'b1010;
+  parameter S1011 = 4'b1011;
+  parameter S1100 = 4'b1100;
+  parameter S1101 = 4'b1101;
+  parameter S1110 = 4'b1110;
+  parameter S1111 = 4'b1111;
+  
+  reg [31:0] counter;
+  parameter ONE_SECOND_DELAY = 50000000;
+
+  four_input_and and3 (.A(input_pattern[0]), .B(input_pattern[1]), .C(input_pattern[2]), .D(input_pattern[3]), .Y(W_AND));
+  four_input_nand nand3 (.A(input_pattern[0]), .B(input_pattern[1]), .C(input_pattern[2]), .D(input_pattern[3]), .Y(W_NAND));
+
+  mux_gate m_gate3(.select(3'b001), .W_AND(W_AND), .W_OR(W_AND), .W_NAND(W_NAND), .W_NOR(W_AND), .W_XOR(W_AND), .W_XNOR(W_AND), .Y(W_SELECT));
+
+  
+  always @(posedge clk) begin
+    
+    counter <= counter + 1;
+	 
+    A1 <= input_pattern[0];
+    B1 <= input_pattern[1];
+	 C1 <= input_pattern[2];
+	 D1 <= input_pattern[3];
+	 
+    A2 <= input_pattern[0];
+    B2 <= input_pattern[1];
+	 C2 <= input_pattern[2];
+	 D2 <= input_pattern[3];
+
+	 if (enable) begin
+		 if (counter == ONE_SECOND_DELAY) begin
+			case (state)
+			  S0000: begin
+			  
+				 output_got1[0] <= op1;
+				 output_got2[0] <= op2;
+				 
+				 output_ori[0] <= W_AND;
+				 
+				 
+				 input_pattern <= 4'b0001;
+				 state <= S0001;
+			  end
+			  S0001: begin
+			  
+				 output_got1[1] <= op1;
+				 output_got2[1] <= op2;
+				 
+				 output_ori[1] <= W_AND;
+				 
+
+				 
+				 input_pattern <= 4'b0010;
+				 state <= S0010;
+			  end
+			  
+			  S0010: begin
+			  
+				 output_got1[2] <= op1;
+				 output_got2[2] <= op2;
+				 
+				 output_ori[2] <= W_AND;
+				 
+				 
+				 input_pattern <= 4'b0011;
+				 state <= S0011;
+			  end
+					  
+			  S0011: begin
+			  
+				 output_got1[3] <= op1;
+				 output_got2[3] <= op2;
+				 
+				 output_ori[3] <= W_AND;
+				 
+				 
+				 input_pattern <= 4'b0100;
+				 state <= S0100;
+			  end
+					  
+			  S0100: begin
+			  
+				 output_got1[4] <= op1;
+				 output_got2[4] <= op2;
+				 
+				 output_ori[4] <= W_AND;
+				 
+				 
+				 input_pattern <= 4'b0101;
+				 state <= S0101;
+			  end
+					  
+			  S0101: begin
+			  
+				 output_got1[5] <= op1;
+				 output_got2[5] <= op2;
+				 
+				 output_ori[5] <= W_AND;
+				 
+				 
+				 input_pattern <= 4'b0110;
+				 state <= S0110;
+			  end
+							  
+			  S0110: begin
+			  
+				 output_got1[6] <= op1;
+				 output_got2[6] <= op2;
+				 
+				 output_ori[6] <= W_AND;
+				 
+				 
+				 input_pattern <= 4'b0111;
+				 state <= S0111;
+			  end
+									  
+			  S0111: begin
+			  
+				 output_got1[7] <= op1;
+				 output_got2[7] <= op2;
+				 
+				 output_ori[7] <= W_AND;
+				 
+				 
+				 input_pattern <= 4'b1000;
+				 state <= S1000;
+			  end
+									  
+			  S1000: begin
+			  
+				 output_got1[8] <= op1;
+				 output_got2[8] <= op2;
+				 
+				 output_ori[8] <= W_AND;
+				 
+				 
+				 input_pattern <= 4'b1001;
+				 state <= S1001;
+			  end
+									  
+			  S1001: begin
+			  
+				 output_got1[9] <= op1;
+				 output_got2[9] <= op2;
+				 
+				 output_ori[9] <= W_AND;
+				 
+				 
+				 input_pattern <= 4'b1010;
+				 state <= S1010;
+			  end
+									  
+			  S1010: begin
+			  
+				 output_got1[10] <= op1;
+				 output_got2[10] <= op2;
+				 
+				 output_ori[10] <= W_AND;
+				 
+				 
+				 input_pattern <= 4'b1011;
+				 state <= S1011;
+			  end
+											  
+			  S1011: begin
+			  
+				 output_got1[11] <= op1;
+				 output_got2[11] <= op2;
+				 
+				 output_ori[11] <= W_AND;
+				 
+				 
+				 input_pattern <= 4'b1100;
+				 state <= S1100;
+			  end
+											  
+			  S1100: begin
+			  
+				 output_got1[12] <= op1;
+				 output_got2[12] <= op2;
+				 
+				 output_ori[12] <= W_AND;
+				 
+				 
+				 input_pattern <= 4'b1101;
+				 state <= S1101;
+			  end
+											  
+			  S1101: begin
+			  
+				 output_got1[13] <= op1;
+				 output_got2[13] <= op2;
+				 
+				 output_ori[13] <= W_AND;
+				 
+				 
+				 input_pattern <= 4'b1110;
+				 state <= S1110;
+			  end
+													  
+			  S1110: begin
+			  
+				 output_got1[14] <= op1;
+				 output_got2[14] <= op2;
+				 
+				 output_ori[14] <= W_AND;
+				 
+				 
+				 input_pattern <= 4'b1111;
+				 state <= S1111;
+			  end
+			  S1111: begin
+			  
+				 output_got1[15] <= op1;
+				 output_got2[15] <= op2;
+				 
+				 output_ori[15] <= W_AND;
+				 
+				 
+				 if (output_got1 !== output_ori) begin
+					fail1 <= 1'b1;
+					pass1 <= 1'b0;
+				 end
+				 else if (output_got1 == output_ori) begin
+					fail1 <= 1'b0;
+					pass1 <= 1'b1;
+				 end
+							 
+				 if (output_got2 !== output_ori) begin
+					fail2 <= 1'b1;
+					pass2 <= 1'b0;
+				 end
+				 else if (output_got2 == output_ori) begin
+					fail2 <= 1'b0;
+					pass2 <= 1'b1;
+				 end
+							
+
+				 
+				 if (pass1 == 1'b1 & pass2 == 1'b1) begin
+					pass <= 1'b1;
+					fail <= 1'b0;
+				 end
+				 else if (fail1 == 1'b1 & fail2 == 1'b1) begin
+					fail <= 1'b1;
+					pass <= 1'b0;
+				 end
+				
+				 input_pattern <= 4'b0000;
+				 state <= S0000;
+			  
+			  end
+			  default: begin
+				 input_pattern <= 4'b0000;
+				 state <= S0000;
+			  end
+			endcase
+
+			counter <= 0;
+		 end
+	 end
+    
+  end
+
+endmodule

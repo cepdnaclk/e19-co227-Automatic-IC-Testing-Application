@@ -1,0 +1,160 @@
+module logical_function_check (
+  IN1, IN2, IN3, IN4, IN5, IN6, 
+  IN8, IN9, IN10, IN11, IN12, IN13,
+  OP1, OP2, OP3, OP4, OP5, OP6,
+  OP8, OP9, OP10, OP11, OP12, OP13,
+  pass1, pass2, pass3, pass4,
+  fail1, fail2, fail3, fail4,
+  pass, fail,
+  clk
+);
+  
+  // Initiate the other input & outputs
+  input OP1, OP2, OP3, OP4, OP5, OP6, OP8, OP9, OP10, OP11, OP12, OP13;
+  output IN1, IN2, IN3, IN4, IN5, IN6, IN8, IN9, IN10, IN11, IN12, IN13;
+  output pass1, pass2, pass3, pass4, fail1, fail2, fail3, fail4;
+  output pass, fail;
+  input clk;
+  
+  wire INPUT1, INPUT2, INPUT3, INPUT4, INPUT5, INPUT6, INPUT8, INPUT9, INPUT10, INPUT11, INPUT12, INPUT13;
+  wire OUTPUT1, OUTPUT2, OUTPUT3, OUTPUT4, OUTPUT5, OUTPUT6, OUTPUT8, OUTPUT9, OUTPUT10, OUTPUT11, OUTPUT12, OUTPUT13;
+  wire PASS1, PASS2, PASS3, PASS4, FAIL1, FAIL2, FAIL3, FAIL4;
+  wire PASS, FAIL;
+  wire CLK;
+
+  
+  assign INPUT1 = IN1;
+  assign INPUT2 = IN2;
+  assign INPUT3 = IN3;
+  assign INPUT4 = IN4;
+  assign INPUT5 = IN5;
+  assign INPUT6 = IN6;
+  assign INPUT8 = IN8;
+  assign INPUT9 = IN9;
+  assign INPUT10 = IN10;
+  assign INPUT11 = IN11;
+  assign INPUT12 = IN12;
+  assign INPUT13 = IN13;
+  
+  assign OUTPUT1 = OP1;
+  assign OUTPUT2 = OP2;
+  assign OUTPUT3 = OP3;
+  assign OUTPUT4 = OP4;
+  assign OUTPUT5 = OP5;
+  assign OUTPUT6 = OP6;
+  assign OUTPUT8 = OP8;
+  assign OUTPUT9 = OP9;
+  assign OUTPUT10 = OP10;
+  assign OUTPUT11 = OP11;
+  assign OUTPUT12 = OP12;
+  assign OUTPUT13 = OP13;
+  
+  assign PASS1 = pass1;
+  assign PASS2 = pass2;
+  assign PASS3 = pass3;
+  assign PASS4 = pass4;
+  
+  assign FAIL1 = fail1;
+  assign FAIL2 = fail2;
+  assign FAIL3 = fail3;
+  assign FAIL4 = fail4;
+  
+  assign PASS = pass;
+  assign FAIL = fail;
+  
+  assign CLK = clk;
+  
+
+  two_input_checker two_input_checker_inst(
+    .A1(INPUT1),
+    .A2(INPUT4),
+	 .A3(INPUT10),
+	 .A4(INPUT13),
+	 .B1(INPUT2),
+	 .B2(INPUT5),
+	 .B3(INPUT9),
+	 .B4(INPUT12),
+    .op1(OUTPUT3),
+    .op2(OUTPUT6),
+    .op3(OUTPUT8),
+    .op4(OUTPUT11),
+    .pass1(PASS1),
+    .pass2(PASS2),
+    .pass3(PASS3),
+    .pass4(PASS4),
+    .fail1(FAIL1),
+    .fail2(FAIL2),
+    .fail3(FAIL3),
+    .fail4(FAIL4),
+    .pass(PASS),
+    .fail(FAIL),
+	 .clk(CLK),
+	 .enable(1'b1)
+  );
+  
+  three_input_checker three_input_checker_inst (
+    .A1(INPUT1), 
+    .A2(INPUT3), 
+    .A3(INPUT11), 
+    .B1(INPUT2), 
+    .B2(INPUT4), 
+    .B3(INPUT10),
+    .C1(INPUT13), 
+    .C2(INPUT5), 
+    .C3(INPUT9),
+    .op1(OUTPUT12), 
+    .op2(OUTPUT6), 
+    .op3(OUTPUT8),
+    .pass1(PASS1), 
+    .pass2(PASS2), 
+	 .pass3(PASS3),
+    .fail1(FAIL1), 
+	 .fail2(FAIL2), 
+	 .fail3(FAIL3),
+    .pass(PASS), 
+	 .fail(FAIL),
+    .clk(CLK),
+	 .enable(1'b0)
+  );
+
+  four_input_checker four_input_checker_inst (
+    .A1(INPUT1), 
+    .A2(INPUT13),
+    .B1(INPUT2), 
+    .B2(INPUT12),
+    .C1(INPUT4), 
+	 .C2(INPUT10),
+    .D1(INPUT5), 
+	 .D2(INPUT9),
+    .op1(OUTPUT6), 
+	 .op2(OUTPUT8),
+    .pass1(PASS1), 
+	 .pass2(PASS2),
+    .fail1(FAIL1), 
+	 .fail2(FAIL2),
+    .pass(PASS), 
+	 .fail(FAIL),
+    .clk(CLK),
+	 .enable(1'b0)
+  );
+  
+  eight_input_checker eight_input_checker_inst (
+    .A1(INPUT1),
+    .B1(INPUT2),
+    .C1(INPUT3),
+    .D1(INPUT4),
+    .E1(INPUT5),
+    .F1(INPUT6),
+    .G1(INPUT12),
+    .H1(INPUT11),
+    .op1(OUTPUT8),
+    .pass1(PASS1),
+    .fail1(FAIL1),
+    .pass(PASS), 
+	 .fail(FAIL),
+    .clk(CLK),
+	 .enable(1'b0)
+  );
+	
+
+endmodule

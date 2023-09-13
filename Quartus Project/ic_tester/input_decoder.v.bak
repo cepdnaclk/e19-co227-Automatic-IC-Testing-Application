@@ -1,0 +1,26 @@
+module input_decoder (
+  input input_bit,
+  output reg output_1,
+  output reg output_2,
+  output reg output_3,
+  output reg output_4,
+  output reg output_5
+);
+
+always @(input_bit) begin
+    if (input_bit) begin
+        output_1 = 1'b1;
+        output_2 = 1'b1;
+        output_3 = 1'b1;
+        output_4 = 1'b1;
+        output_5 = 1'b1;
+    end else begin
+        output_1 = 1'b0;
+        output_2 = 1'b0;
+        output_3 = 1'b0;
+        output_4 = 1'b0;
+        output_5 = 1'b0;
+    end
+end
+
+endmodule

@@ -1,0 +1,980 @@
+Analysis & Synthesis report for ic_tester
+Tue Sep 12 20:52:47 2023
+Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |ic_tester|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state
+  9. State Machine - |ic_tester|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state
+ 10. State Machine - |ic_tester|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state
+ 11. State Machine - |ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state
+ 12. Registers Removed During Synthesis
+ 13. Removed Registers Triggering Further Register Optimizations
+ 14. General Register Statistics
+ 15. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 16. Parameter Settings for User Entity Instance: logical_function_check:lfc1
+ 17. Parameter Settings for User Entity Instance: logical_function_check:lfc1|two_input_checker:two_input_checker_inst
+ 18. Parameter Settings for User Entity Instance: logical_function_check:lfc1|three_input_checker:three_input_checker_inst
+ 19. Parameter Settings for User Entity Instance: logical_function_check:lfc1|four_input_checker:four_input_checker_inst
+ 20. Parameter Settings for User Entity Instance: logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst
+ 21. Parameter Settings for User Entity Instance: logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst
+ 22. Port Connectivity Checks: "logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst"
+ 23. Port Connectivity Checks: "logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|mux_gate:m_gate2"
+ 24. Port Connectivity Checks: "logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst"
+ 25. Port Connectivity Checks: "logical_function_check:lfc1|four_input_checker:four_input_checker_inst|mux_gate:m_gate3"
+ 26. Port Connectivity Checks: "logical_function_check:lfc1|four_input_checker:four_input_checker_inst"
+ 27. Port Connectivity Checks: "logical_function_check:lfc1|three_input_checker:three_input_checker_inst|mux_gate:m_gate2"
+ 28. Port Connectivity Checks: "logical_function_check:lfc1|three_input_checker:three_input_checker_inst"
+ 29. Port Connectivity Checks: "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|mux_gate:m_gate1"
+ 30. Port Connectivity Checks: "logical_function_check:lfc1|two_input_checker:two_input_checker_inst"
+ 31. Elapsed Time Per Partition
+ 32. Analysis & Synthesis Messages
+ 33. Analysis & Synthesis Suppressed Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                    ;
++------------------------------------+--------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Tue Sep 12 20:52:47 2023      ;
+; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
+; Revision Name                      ; ic_tester                                  ;
+; Top-level Entity Name              ; ic_tester                                  ;
+; Family                             ; Cyclone IV E                               ;
+; Total logic elements               ; 183                                        ;
+;     Total combinational functions  ; 142                                        ;
+;     Dedicated logic registers      ; 120                                        ;
+; Total registers                    ; 120                                        ;
+; Total pins                         ; 39                                         ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0                                          ;
+; Embedded Multiplier 9-bit elements ; 0                                          ;
+; Total PLLs                         ; 0                                          ;
++------------------------------------+--------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; EP4CE115F29C7      ;                    ;
+; Top-level entity name                                                      ; ic_tester          ; ic_tester          ;
+; Family name                                                                ; Cyclone IV E       ; Cyclone IV GX      ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; DSP Block Balancing                                                        ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto ROM Replacement                                                       ; On                 ; On                 ;
+; Auto RAM Replacement                                                       ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Strict RAM Replacement                                                     ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
+; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                         ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                ; Off                ; Off                ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; SDC constraint protection                                                  ; Off                ; Off                ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                       ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 12          ;
+; Maximum allowed            ; 6           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
+;     Processors 2-12        ;   0.0%      ;
++----------------------------+-------------+
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                           ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                             ; Library ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------+---------+
+; two_input_and.v                  ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/two_input_and.v          ;         ;
+; two_input_or.v                   ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/two_input_or.v           ;         ;
+; two_input_checker.v              ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/two_input_checker.v      ;         ;
+; ic_tester.v                      ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/ic_tester.v              ;         ;
+; not_gate.v                       ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/not_gate.v               ;         ;
+; three_input_and.v                ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/three_input_and.v        ;         ;
+; three_input_or.v                 ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/three_input_or.v         ;         ;
+; two_input_nand.v                 ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/two_input_nand.v         ;         ;
+; two_input_nor.v                  ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/two_input_nor.v          ;         ;
+; three_input_nor.v                ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/three_input_nor.v        ;         ;
+; three_input_nand.v               ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/three_input_nand.v       ;         ;
+; three_input_checker.v            ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/three_input_checker.v    ;         ;
+; not_gate_checker.v               ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/not_gate_checker.v       ;         ;
+; two_input_xor.v                  ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/two_input_xor.v          ;         ;
+; four_input_nand.v                ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/four_input_nand.v        ;         ;
+; four_input_and.v                 ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/four_input_and.v         ;         ;
+; eight_input_nand.v               ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/eight_input_nand.v       ;         ;
+; four_input_checker.v             ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/four_input_checker.v     ;         ;
+; eight_input_checker.v            ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/eight_input_checker.v    ;         ;
+; mux_gate.v                       ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/mux_gate.v               ;         ;
+; logical_function_check.v         ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/logical_function_check.v ;         ;
+; two_input_xnor.v                 ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/two_input_xnor.v         ;         ;
+; three_input_xor.v                ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/three_input_xor.v        ;         ;
++----------------------------------+-----------------+------------------------+----------------------------------------------------------+---------+
+
+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 183       ;
+;                                             ;           ;
+; Total combinational functions               ; 142       ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 31        ;
+;     -- 3 input functions                    ; 0         ;
+;     -- <=2 input functions                  ; 111       ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 80        ;
+;     -- arithmetic mode                      ; 62        ;
+;                                             ;           ;
+; Total registers                             ; 120       ;
+;     -- Dedicated logic registers            ; 120       ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 39        ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 120       ;
+; Total fan-out                               ; 688       ;
+; Average fan-out                             ; 2.02      ;
++---------------------------------------------+-----------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                              ;
++--------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                ; Library Name ;
++--------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+--------------+
+; |ic_tester                                       ; 142 (0)           ; 120 (0)      ; 0           ; 0            ; 0       ; 0         ; 39   ; 0            ; |ic_tester                                                                                         ; work         ;
+;    |logical_function_check:lfc1|                 ; 142 (57)          ; 120 (50)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|logical_function_check:lfc1                                                             ; work         ;
+;       |two_input_checker:two_input_checker_inst| ; 85 (84)           ; 70 (70)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst                    ; work         ;
+;          |two_input_and:and2|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_and:and2 ; work         ;
++--------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |ic_tester|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state                                                                                                                                                                                                                                                                                                                                                                                                    ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; Name         ; state.S11111 ; state.S11110 ; state.S11101 ; state.S11100 ; state.S11011 ; state.S11010 ; state.S11001 ; state.S11000 ; state.S10111 ; state.S10110 ; state.S10101 ; state.S10100 ; state.S10011 ; state.S10010 ; state.S10001 ; state.S10000 ; state.S01111 ; state.S01110 ; state.S01101 ; state.S01100 ; state.S01011 ; state.S01010 ; state.S01001 ; state.S01000 ; state.S00111 ; state.S00110 ; state.S00101 ; state.S00100 ; state.S00011 ; state.S00010 ; state.S00001 ; state.S00000 ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+; state.S00000 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ;
+; state.S00001 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 1            ;
+; state.S00010 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 1            ;
+; state.S00011 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 1            ;
+; state.S00100 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 1            ;
+; state.S00101 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S00110 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S00111 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S01000 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S01001 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S01010 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S01011 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S01100 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S01101 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S01110 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S01111 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S10000 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S10001 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S10010 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S10011 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S10100 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S10101 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S10110 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S10111 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S11000 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S11001 ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S11010 ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S11011 ; 0            ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S11100 ; 0            ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S11101 ; 0            ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S11110 ; 0            ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
+; state.S11111 ; 1            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 0            ; 1            ;
++--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
+
+
+Encoding Type:  One-Hot
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |ic_tester|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state                                                                                                                                     ;
++-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+; Name        ; state.S1111 ; state.S1110 ; state.S1101 ; state.S1100 ; state.S1011 ; state.S1010 ; state.S1001 ; state.S1000 ; state.S0111 ; state.S0110 ; state.S0101 ; state.S0100 ; state.S0011 ; state.S0010 ; state.S0001 ; state.S0000 ;
++-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+; state.S0000 ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ;
+; state.S0001 ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ; 1           ;
+; state.S0010 ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ; 0           ; 1           ;
+; state.S0011 ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ; 0           ; 0           ; 1           ;
+; state.S0100 ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ; 0           ; 0           ; 0           ; 1           ;
+; state.S0101 ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ; 0           ; 0           ; 0           ; 0           ; 1           ;
+; state.S0110 ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ;
+; state.S0111 ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ;
+; state.S1000 ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ;
+; state.S1001 ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ;
+; state.S1010 ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ;
+; state.S1011 ; 0           ; 0           ; 0           ; 0           ; 1           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ;
+; state.S1100 ; 0           ; 0           ; 0           ; 1           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ;
+; state.S1101 ; 0           ; 0           ; 1           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ;
+; state.S1110 ; 0           ; 1           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ;
+; state.S1111 ; 1           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 0           ; 1           ;
++-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
+
+
+Encoding Type:  One-Hot
++--------------------------------------------------------------------------------------------------------------------+
+; State Machine - |ic_tester|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state          ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+
+; Name       ; state.S111 ; state.S110 ; state.S101 ; state.S100 ; state.S011 ; state.S010 ; state.S001 ; state.S000 ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+
+; state.S000 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ;
+; state.S001 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 1          ;
+; state.S010 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 1          ;
+; state.S011 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 1          ;
+; state.S100 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 1          ;
+; state.S101 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 1          ;
+; state.S110 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
+; state.S111 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
++------------+------------+------------+------------+------------+------------+------------+------------+------------+
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------+
+; State Machine - |ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state ;
++-----------+-----------+-----------+-----------+-------------------------------------------------------+
+; Name      ; state.S11 ; state.S10 ; state.S01 ; state.S00                                             ;
++-----------+-----------+-----------+-----------+-------------------------------------------------------+
+; state.S00 ; 0         ; 0         ; 0         ; 0                                                     ;
+; state.S01 ; 0         ; 0         ; 1         ; 1                                                     ;
+; state.S10 ; 0         ; 1         ; 0         ; 1                                                     ;
+; state.S11 ; 1         ; 0         ; 0         ; 1                                                     ;
++-----------+-----------+-----------+-----------+-------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                            ;
++-----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+; Register name                                                                           ; Reason for Removal                                                                  ;
++-----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+; logical_function_check:lfc1|fail6                                                       ; Stuck at GND due to stuck port data_in                                              ;
+; logical_function_check:lfc1|fail5                                                       ; Stuck at GND due to stuck port data_in                                              ;
+; logical_function_check:lfc1|pass6                                                       ; Stuck at GND due to stuck port data_in                                              ;
+; logical_function_check:lfc1|pass5                                                       ; Stuck at GND due to stuck port data_in                                              ;
+; logical_function_check:lfc1|IN11                                                        ; Stuck at GND due to stuck port data_in                                              ;
+; logical_function_check:lfc1|IN8                                                         ; Stuck at GND due to stuck port data_in                                              ;
+; logical_function_check:lfc1|IN6                                                         ; Stuck at GND due to stuck port data_in                                              ;
+; logical_function_check:lfc1|IN3                                                         ; Stuck at GND due to stuck port data_in                                              ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|counter[0..31] ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|counter[0..31]   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|counter[0..31] ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B3                 ; Merged with logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B4 ;
+; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B2                 ; Merged with logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B4 ;
+; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B1                 ; Merged with logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B4 ;
+; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A3                 ; Merged with logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A4 ;
+; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A2                 ; Merged with logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A4 ;
+; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A1                 ; Merged with logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A4 ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~2        ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~3        ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~4        ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~5        ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~6        ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~2          ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~3          ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~4          ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~5          ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~2        ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~3        ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~4        ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state~2            ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state~3            ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00000   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00001   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00010   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00011   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00100   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00101   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00110   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00111   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01000   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01001   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01010   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01011   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01100   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01101   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01110   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01111   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10000   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10001   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10010   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10011   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10100   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10101   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10110   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10111   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11000   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11001   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11010   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11011   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11100   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11101   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11110   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11111   ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0000      ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0001      ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0010      ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0011      ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0100      ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0101      ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0110      ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0111      ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1000      ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1001      ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1010      ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1011      ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1100      ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1101      ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1110      ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1111      ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S000     ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S001     ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S010     ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S011     ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S100     ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S101     ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S110     ; Lost fanout                                                                         ;
+; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S111     ; Lost fanout                                                                         ;
+; Total Number of Removed Registers = 180                                                 ;                                                                                     ;
++-----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                                    ;
++----------------------------------------------------------------------------------+--------------------+----------------------------------------------------------------------------------------+
+; Register name                                                                    ; Reason for Removal ; Registers Removed due to This Register                                                 ;
++----------------------------------------------------------------------------------+--------------------+----------------------------------------------------------------------------------------+
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~2 ; Lost Fanouts       ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10101, ;
+;                                                                                  ;                    ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10111, ;
+;                                                                                  ;                    ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11001, ;
+;                                                                                  ;                    ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11011, ;
+;                                                                                  ;                    ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11101, ;
+;                                                                                  ;                    ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11111  ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~2   ; Lost Fanouts       ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0101,    ;
+;                                                                                  ;                    ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0111,    ;
+;                                                                                  ;                    ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1001,    ;
+;                                                                                  ;                    ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1011,    ;
+;                                                                                  ;                    ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1101,    ;
+;                                                                                  ;                    ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1111     ;
+; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~2 ; Lost Fanouts       ; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S001,   ;
+;                                                                                  ;                    ; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S011,   ;
+;                                                                                  ;                    ; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S101,   ;
+;                                                                                  ;                    ; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S111    ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~3 ; Lost Fanouts       ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10110, ;
+;                                                                                  ;                    ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11010, ;
+;                                                                                  ;                    ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11110  ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~3   ; Lost Fanouts       ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0110,    ;
+;                                                                                  ;                    ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1010,    ;
+;                                                                                  ;                    ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1110     ;
+; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~3 ; Lost Fanouts       ; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S010,   ;
+;                                                                                  ;                    ; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S110    ;
+; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~4 ; Lost Fanouts       ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11100  ;
+; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~4   ; Lost Fanouts       ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1100     ;
+; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~4 ; Lost Fanouts       ; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S100    ;
++----------------------------------------------------------------------------------+--------------------+----------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 120   ;
+; Number of registers using Synchronous Clear  ; 0     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 0     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 54    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                     ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: logical_function_check:lfc1 ;
++------------------+----------+--------------------------------------------+
+; Parameter Name   ; Value    ; Type                                       ;
++------------------+----------+--------------------------------------------+
+; ONE_SECOND_DELAY ; 50000005 ; Signed Integer                             ;
++------------------+----------+--------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: logical_function_check:lfc1|two_input_checker:two_input_checker_inst ;
++------------------+----------+-------------------------------------------------------------------------------------+
+; Parameter Name   ; Value    ; Type                                                                                ;
++------------------+----------+-------------------------------------------------------------------------------------+
+; S00              ; 00       ; Unsigned Binary                                                                     ;
+; S01              ; 01       ; Unsigned Binary                                                                     ;
+; S10              ; 10       ; Unsigned Binary                                                                     ;
+; S11              ; 11       ; Unsigned Binary                                                                     ;
+; ONE_SECOND_DELAY ; 50000000 ; Signed Integer                                                                      ;
++------------------+----------+-------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: logical_function_check:lfc1|three_input_checker:three_input_checker_inst ;
++------------------+----------+-----------------------------------------------------------------------------------------+
+; Parameter Name   ; Value    ; Type                                                                                    ;
++------------------+----------+-----------------------------------------------------------------------------------------+
+; S000             ; 000      ; Unsigned Binary                                                                         ;
+; S001             ; 001      ; Unsigned Binary                                                                         ;
+; S010             ; 010      ; Unsigned Binary                                                                         ;
+; S011             ; 011      ; Unsigned Binary                                                                         ;
+; S100             ; 100      ; Unsigned Binary                                                                         ;
+; S101             ; 101      ; Unsigned Binary                                                                         ;
+; S110             ; 110      ; Unsigned Binary                                                                         ;
+; S111             ; 111      ; Unsigned Binary                                                                         ;
+; ONE_SECOND_DELAY ; 50000000 ; Signed Integer                                                                          ;
++------------------+----------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: logical_function_check:lfc1|four_input_checker:four_input_checker_inst ;
++------------------+----------+---------------------------------------------------------------------------------------+
+; Parameter Name   ; Value    ; Type                                                                                  ;
++------------------+----------+---------------------------------------------------------------------------------------+
+; S0000            ; 0000     ; Unsigned Binary                                                                       ;
+; S0001            ; 0001     ; Unsigned Binary                                                                       ;
+; S0010            ; 0010     ; Unsigned Binary                                                                       ;
+; S0011            ; 0011     ; Unsigned Binary                                                                       ;
+; S0100            ; 0100     ; Unsigned Binary                                                                       ;
+; S0101            ; 0101     ; Unsigned Binary                                                                       ;
+; S0110            ; 0110     ; Unsigned Binary                                                                       ;
+; S0111            ; 0111     ; Unsigned Binary                                                                       ;
+; S1000            ; 1000     ; Unsigned Binary                                                                       ;
+; S1001            ; 1001     ; Unsigned Binary                                                                       ;
+; S1010            ; 1010     ; Unsigned Binary                                                                       ;
+; S1011            ; 1011     ; Unsigned Binary                                                                       ;
+; S1100            ; 1100     ; Unsigned Binary                                                                       ;
+; S1101            ; 1101     ; Unsigned Binary                                                                       ;
+; S1110            ; 1110     ; Unsigned Binary                                                                       ;
+; S1111            ; 1111     ; Unsigned Binary                                                                       ;
+; ONE_SECOND_DELAY ; 50000000 ; Signed Integer                                                                        ;
++------------------+----------+---------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst ;
++------------------+----------+-----------------------------------------------------------------------------------------+
+; Parameter Name   ; Value    ; Type                                                                                    ;
++------------------+----------+-----------------------------------------------------------------------------------------+
+; S00000           ; 00000    ; Unsigned Binary                                                                         ;
+; S00001           ; 00001    ; Unsigned Binary                                                                         ;
+; S00010           ; 00010    ; Unsigned Binary                                                                         ;
+; S00011           ; 00011    ; Unsigned Binary                                                                         ;
+; S00100           ; 00100    ; Unsigned Binary                                                                         ;
+; S00101           ; 00101    ; Unsigned Binary                                                                         ;
+; S00110           ; 00110    ; Unsigned Binary                                                                         ;
+; S00111           ; 00111    ; Unsigned Binary                                                                         ;
+; S01000           ; 01000    ; Unsigned Binary                                                                         ;
+; S01001           ; 01001    ; Unsigned Binary                                                                         ;
+; S01010           ; 01010    ; Unsigned Binary                                                                         ;
+; S01011           ; 01011    ; Unsigned Binary                                                                         ;
+; S01100           ; 01100    ; Unsigned Binary                                                                         ;
+; S01101           ; 01101    ; Unsigned Binary                                                                         ;
+; S01110           ; 01110    ; Unsigned Binary                                                                         ;
+; S01111           ; 01111    ; Unsigned Binary                                                                         ;
+; S10000           ; 10000    ; Unsigned Binary                                                                         ;
+; S10001           ; 10001    ; Unsigned Binary                                                                         ;
+; S10010           ; 10010    ; Unsigned Binary                                                                         ;
+; S10011           ; 10011    ; Unsigned Binary                                                                         ;
+; S10100           ; 10100    ; Unsigned Binary                                                                         ;
+; S10101           ; 10101    ; Unsigned Binary                                                                         ;
+; S10110           ; 10110    ; Unsigned Binary                                                                         ;
+; S10111           ; 10111    ; Unsigned Binary                                                                         ;
+; S11000           ; 11000    ; Unsigned Binary                                                                         ;
+; S11001           ; 11001    ; Unsigned Binary                                                                         ;
+; S11010           ; 11010    ; Unsigned Binary                                                                         ;
+; S11011           ; 11011    ; Unsigned Binary                                                                         ;
+; S11100           ; 11100    ; Unsigned Binary                                                                         ;
+; S11101           ; 11101    ; Unsigned Binary                                                                         ;
+; S11110           ; 11110    ; Unsigned Binary                                                                         ;
+; S11111           ; 11111    ; Unsigned Binary                                                                         ;
+; ONE_SECOND_DELAY ; 50000000 ; Signed Integer                                                                          ;
++------------------+----------+-----------------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst ;
++------------------+----------+-----------------------------------------------------------------------------------+
+; Parameter Name   ; Value    ; Type                                                                              ;
++------------------+----------+-----------------------------------------------------------------------------------+
+; S0               ; 0        ; Unsigned Binary                                                                   ;
+; S1               ; 1        ; Unsigned Binary                                                                   ;
+; ONE_SECOND_DELAY ; 50000000 ; Signed Integer                                                                    ;
++------------------+----------+-----------------------------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst"                   ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; A1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; A2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; A3     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; A4     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; A5     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; A6     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pass1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pass2  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pass3  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pass4  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pass5  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pass6  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fail1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fail2  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fail3  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fail4  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fail5  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fail6  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pass   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fail   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; enable ; Input  ; Info     ; Stuck at GND                                                                        ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|mux_gate:m_gate2"  ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; select[2..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; select[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; Y            ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst"             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; A1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; B1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; C1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; D1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; E1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; F1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; G1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; H1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pass1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fail1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pass   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fail   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; enable ; Input  ; Info     ; Stuck at GND                                                                        ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "logical_function_check:lfc1|four_input_checker:four_input_checker_inst|mux_gate:m_gate3"    ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type   ; Severity ; Details                                                                             ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+; select[2..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
+; select[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
+; Y            ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++--------------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "logical_function_check:lfc1|four_input_checker:four_input_checker_inst"               ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; A1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; A2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; B1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; B2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; C1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; C2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; D1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; D2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pass1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pass2  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fail1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fail2  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pass   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fail   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; enable ; Input  ; Info     ; Stuck at GND                                                                        ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "logical_function_check:lfc1|three_input_checker:three_input_checker_inst|mux_gate:m_gate2" ;
++--------------+-------+----------+-------------------------------------------------------------------------------------+
+; Port         ; Type  ; Severity ; Details                                                                             ;
++--------------+-------+----------+-------------------------------------------------------------------------------------+
+; select[2..1] ; Input ; Info     ; Stuck at GND                                                                        ;
+; select[0]    ; Input ; Info     ; Stuck at VCC                                                                        ;
++--------------+-------+----------+-------------------------------------------------------------------------------------+
+
+
++------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "logical_function_check:lfc1|three_input_checker:three_input_checker_inst"             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; Port   ; Type   ; Severity ; Details                                                                             ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+; A1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; A2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; A3     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; B1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; B2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; B3     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; C1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; C2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; C3     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pass1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pass2  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pass3  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fail1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fail2  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fail3  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pass   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; fail   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; enable ; Input  ; Info     ; Stuck at GND                                                                        ;
++--------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|mux_gate:m_gate1" ;
++--------+-------+----------+---------------------------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                                               ;
++--------+-------+----------+---------------------------------------------------------------------------------------+
+; select ; Input ; Info     ; Stuck at GND                                                                          ;
++--------+-------+----------+---------------------------------------------------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "logical_function_check:lfc1|two_input_checker:two_input_checker_inst" ;
++--------+-------+----------+----------------------------------------------------------------------+
+; Port   ; Type  ; Severity ; Details                                                              ;
++--------+-------+----------+----------------------------------------------------------------------+
+; enable ; Input ; Info     ; Stuck at VCC                                                         ;
++--------+-------+----------+----------------------------------------------------------------------+
+
+
++-------------------------------+
+; Elapsed Time Per Partition    ;
++----------------+--------------+
+; Partition Name ; Elapsed Time ;
++----------------+--------------+
+; Top            ; 00:00:00     ;
++----------------+--------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+    Info: Processing started: Tue Sep 12 20:52:46 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ic_tester -c ic_tester
+Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
+Info (12021): Found 1 design units, including 1 entities, in source file two_input_and.v
+    Info (12023): Found entity 1: two_input_and
+Info (12021): Found 1 design units, including 1 entities, in source file two_input_or.v
+    Info (12023): Found entity 1: two_input_or
+Info (12021): Found 1 design units, including 1 entities, in source file two_input_checker.v
+    Info (12023): Found entity 1: two_input_checker
+Info (12021): Found 1 design units, including 1 entities, in source file ic_tester.v
+    Info (12023): Found entity 1: ic_tester
+Info (12021): Found 1 design units, including 1 entities, in source file not_gate.v
+    Info (12023): Found entity 1: not_gate
+Info (12021): Found 1 design units, including 1 entities, in source file three_input_and.v
+    Info (12023): Found entity 1: three_input_and
+Info (12021): Found 1 design units, including 1 entities, in source file three_input_or.v
+    Info (12023): Found entity 1: three_input_or
+Info (12021): Found 1 design units, including 1 entities, in source file two_input_nand.v
+    Info (12023): Found entity 1: two_input_nand
+Info (12021): Found 1 design units, including 1 entities, in source file two_input_nor.v
+    Info (12023): Found entity 1: two_input_nor
+Info (12021): Found 1 design units, including 1 entities, in source file three_input_nor.v
+    Info (12023): Found entity 1: three_input_nor
+Info (12021): Found 1 design units, including 1 entities, in source file three_input_nand.v
+    Info (12023): Found entity 1: three_input_nand
+Info (12021): Found 1 design units, including 1 entities, in source file three_input_checker.v
+    Info (12023): Found entity 1: three_input_checker
+Info (12021): Found 1 design units, including 1 entities, in source file not_gate_checker.v
+    Info (12023): Found entity 1: not_gate_checker
+Info (12021): Found 1 design units, including 1 entities, in source file two_input_xor.v
+    Info (12023): Found entity 1: two_input_xor
+Info (12021): Found 1 design units, including 1 entities, in source file four_input_nand.v
+    Info (12023): Found entity 1: four_input_nand
+Info (12021): Found 1 design units, including 1 entities, in source file four_input_and.v
+    Info (12023): Found entity 1: four_input_and
+Info (12021): Found 1 design units, including 1 entities, in source file eight_input_nand.v
+    Info (12023): Found entity 1: eight_input_nand
+Info (12021): Found 1 design units, including 1 entities, in source file four_input_checker.v
+    Info (12023): Found entity 1: four_input_checker
+Info (12021): Found 1 design units, including 1 entities, in source file eight_input_checker.v
+    Info (12023): Found entity 1: eight_input_checker
+Info (12021): Found 1 design units, including 1 entities, in source file mux_gate.v
+    Info (12023): Found entity 1: mux_gate
+Info (12021): Found 1 design units, including 1 entities, in source file mux_test.v
+    Info (12023): Found entity 1: mux_test
+Info (12021): Found 1 design units, including 1 entities, in source file logical_function_check.v
+    Info (12023): Found entity 1: logical_function_check
+Info (12021): Found 1 design units, including 1 entities, in source file two_input_xnor.v
+    Info (12023): Found entity 1: two_input_xnor
+Info (12021): Found 1 design units, including 1 entities, in source file three_input_xor.v
+    Info (12023): Found entity 1: three_input_xor
+Info (12021): Found 1 design units, including 1 entities, in source file input_decoder.v
+    Info (12023): Found entity 1: input_decoder
+Info (12127): Elaborating entity "ic_tester" for the top level hierarchy
+Info (12128): Elaborating entity "logical_function_check" for hierarchy "logical_function_check:lfc1"
+Warning (10858): Verilog HDL warning at logical_function_check.v(21): object IN3_WIRE2 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(21): object IN6_WIRE2 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(21): object IN8_WIRE2 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(21): object IN11_WIRE2 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(22): object PASS5_WIRE2 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(22): object PASS6_WIRE2 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(22): object FAIL5_WIRE2 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(22): object FAIL6_WIRE2 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(24): object IN6_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(24): object IN8_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(24): object IN12_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(25): object PASS4_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(25): object PASS5_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(25): object PASS6_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(25): object FAIL4_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(25): object FAIL5_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(25): object FAIL6_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(27): object IN3_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(27): object IN6_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(27): object IN8_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(27): object IN11_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(28): object PASS3_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(28): object PASS4_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(28): object PASS5_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(28): object PASS6_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(28): object FAIL3_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(28): object FAIL4_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(28): object FAIL5_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(28): object FAIL6_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(30): object IN8_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(30): object IN9_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(30): object IN10_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(30): object IN13_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(31): object PASS2_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(31): object PASS3_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(31): object PASS4_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(31): object PASS5_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(31): object PASS6_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(31): object FAIL2_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(31): object FAIL3_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(31): object FAIL4_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(31): object FAIL5_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(31): object FAIL6_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(33): object IN2_WIRE_NOT used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(33): object IN4_WIRE_NOT used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(33): object IN6_WIRE_NOT used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(33): object IN8_WIRE_NOT used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(33): object IN10_WIRE_NOT used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(33): object IN12_WIRE_NOT used but never assigned
+Warning (10230): Verilog HDL assignment warning at logical_function_check.v(18): truncated value with size 3 to match size of target (1)
+Warning (10030): Net "IN3_WIRE2" at logical_function_check.v(21) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN6_WIRE2" at logical_function_check.v(21) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN8_WIRE2" at logical_function_check.v(21) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN11_WIRE2" at logical_function_check.v(21) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PASS5_WIRE2" at logical_function_check.v(22) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PASS6_WIRE2" at logical_function_check.v(22) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "FAIL5_WIRE2" at logical_function_check.v(22) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "FAIL6_WIRE2" at logical_function_check.v(22) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN2_WIRE_NOT" at logical_function_check.v(33) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN4_WIRE_NOT" at logical_function_check.v(33) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN6_WIRE_NOT" at logical_function_check.v(33) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN8_WIRE_NOT" at logical_function_check.v(33) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN10_WIRE_NOT" at logical_function_check.v(33) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN12_WIRE_NOT" at logical_function_check.v(33) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "two_input_checker" for hierarchy "logical_function_check:lfc1|two_input_checker:two_input_checker_inst"
+Info (12128): Elaborating entity "two_input_and" for hierarchy "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_and:and2"
+Info (12128): Elaborating entity "two_input_or" for hierarchy "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_or:or2"
+Info (12128): Elaborating entity "two_input_nand" for hierarchy "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_nand:nand2"
+Info (12128): Elaborating entity "two_input_nor" for hierarchy "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_nor:nor2"
+Info (12128): Elaborating entity "two_input_xor" for hierarchy "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_xor:xor2"
+Info (12128): Elaborating entity "two_input_xnor" for hierarchy "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_xnor:xnor2"
+Info (12128): Elaborating entity "mux_gate" for hierarchy "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|mux_gate:m_gate1"
+Info (12128): Elaborating entity "three_input_checker" for hierarchy "logical_function_check:lfc1|three_input_checker:three_input_checker_inst"
+Info (12128): Elaborating entity "three_input_and" for hierarchy "logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_and:and3"
+Info (12128): Elaborating entity "three_input_or" for hierarchy "logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_or:or3"
+Info (12128): Elaborating entity "three_input_nand" for hierarchy "logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_nand:nand3"
+Info (12128): Elaborating entity "three_input_nor" for hierarchy "logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_nor:nor3"
+Info (12128): Elaborating entity "three_input_xor" for hierarchy "logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_xor:xor3"
+Info (12128): Elaborating entity "four_input_checker" for hierarchy "logical_function_check:lfc1|four_input_checker:four_input_checker_inst"
+Info (12128): Elaborating entity "four_input_and" for hierarchy "logical_function_check:lfc1|four_input_checker:four_input_checker_inst|four_input_and:and3"
+Info (12128): Elaborating entity "four_input_nand" for hierarchy "logical_function_check:lfc1|four_input_checker:four_input_checker_inst|four_input_nand:nand3"
+Info (12128): Elaborating entity "eight_input_checker" for hierarchy "logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst"
+Info (12128): Elaborating entity "eight_input_nand" for hierarchy "logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|eight_input_nand:nand3"
+Info (12128): Elaborating entity "not_gate_checker" for hierarchy "logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst"
+Info (12128): Elaborating entity "not_gate" for hierarchy "logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|not_gate:not_gate"
+Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
+    Warning (13049): Converted tri-state buffer "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|mux_gate:m_gate1|Y" feeding internal logic into a wire
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "IN3" is stuck at GND
+    Warning (13410): Pin "IN6" is stuck at GND
+    Warning (13410): Pin "IN8" is stuck at GND
+    Warning (13410): Pin "IN11" is stuck at GND
+    Warning (13410): Pin "pass5" is stuck at GND
+    Warning (13410): Pin "pass6" is stuck at GND
+    Warning (13410): Pin "fail5" is stuck at GND
+    Warning (13410): Pin "fail6" is stuck at GND
+Info (286030): Timing-Driven Synthesis is running
+Info (17049): 166 registers lost all their fanouts during netlist optimizations.
+Info (144001): Generated suppressed messages file D:/Projects/FPGA Test/ic_tester/output_files/ic_tester.map.smsg
+Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
+    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
+Warning (21074): Design contains 8 input pin(s) that do not drive logic
+    Warning (15610): No output dependent on input pin "OP1"
+    Warning (15610): No output dependent on input pin "OP2"
+    Warning (15610): No output dependent on input pin "OP4"
+    Warning (15610): No output dependent on input pin "OP5"
+    Warning (15610): No output dependent on input pin "OP9"
+    Warning (15610): No output dependent on input pin "OP10"
+    Warning (15610): No output dependent on input pin "OP12"
+    Warning (15610): No output dependent on input pin "OP13"
+Info (21057): Implemented 246 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 13 input pins
+    Info (21059): Implemented 26 output pins
+    Info (21061): Implemented 207 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 84 warnings
+    Info: Peak virtual memory: 4662 megabytes
+    Info: Processing ended: Tue Sep 12 20:52:47 2023
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++------------------------------------------+
+; Analysis & Synthesis Suppressed Messages ;
++------------------------------------------+
+The suppressed messages can be found in D:/Projects/FPGA Test/ic_tester/output_files/ic_tester.map.smsg.
+
+

@@ -1,0 +1,72 @@
+
+State Machine - |ic_tester|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state
+Name state.S11111 state.S11110 state.S11101 state.S11100 state.S11011 state.S11010 state.S11001 state.S11000 state.S10111 state.S10110 state.S10101 state.S10100 state.S10011 state.S10010 state.S10001 state.S10000 state.S01111 state.S01110 state.S01101 state.S01100 state.S01011 state.S01010 state.S01001 state.S01000 state.S00111 state.S00110 state.S00101 state.S00100 state.S00011 state.S00010 state.S00001 state.S00000 
+state.S00000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.S00001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.S00010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.S00011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.S00100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.S00101 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.S00110 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.S00111 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.S01000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.S01001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.S01010 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.S01011 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.S01100 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S01101 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S01110 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S01111 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S10000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S10001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S10010 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S10011 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S10100 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S10101 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S10110 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S10111 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S11000 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S11001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S11010 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S11011 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S11100 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S11101 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S11110 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S11111 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |ic_tester|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state
+Name state.S1111 state.S1110 state.S1101 state.S1100 state.S1011 state.S1010 state.S1001 state.S1000 state.S0111 state.S0110 state.S0101 state.S0100 state.S0011 state.S0010 state.S0001 state.S0000 
+state.S0000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.S0001 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.S0010 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.S0011 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.S0100 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.S0101 0 0 0 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.S0110 0 0 0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.S0111 0 0 0 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.S1000 0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.S1001 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.S1010 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.S1011 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.S1100 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S1101 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S1110 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+state.S1111 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |ic_tester|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state
+Name state.S111 state.S110 state.S101 state.S100 state.S011 state.S010 state.S001 state.S000 
+state.S000 0 0 0 0 0 0 0 0 
+state.S001 0 0 0 0 0 0 1 1 
+state.S010 0 0 0 0 0 1 0 1 
+state.S011 0 0 0 0 1 0 0 1 
+state.S100 0 0 0 1 0 0 0 1 
+state.S101 0 0 1 0 0 0 0 1 
+state.S110 0 1 0 0 0 0 0 1 
+state.S111 1 0 0 0 0 0 0 1 
+
+State Machine - |ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state
+Name state.S11 state.S10 state.S01 state.S00 
+state.S00 0 0 0 0 
+state.S01 0 0 1 1 
+state.S10 0 1 0 1 
+state.S11 1 0 0 1 

@@ -1,0 +1,60 @@
+# Copyright (C) 1991-2013 Altera Corporation
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, Altera MegaCore Function License 
+# Agreement, or other applicable license agreement, including, 
+# without limitation, that your use is for the sole purpose of 
+# programming logic devices manufactured by Altera and sold by 
+# Altera or its authorized distributors.  Please refer to the 
+# applicable agreement for further details.
+
+# Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
+# File: D:\Projects\FPGA Test\ic_tester\ic_tester.csv
+# Generated on: Mon Sep 11 20:17:29 2023
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
+
+To,Direction,Location,I/O Bank,VREF Group,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair
+IN1,Output,PIN_AB22,4,B4_N0,,,,,
+IN2,Output,PIN_AC15,4,B4_N2,,,,,
+IN3,Output,PIN_AB21,4,B4_N0,,,,,
+IN4,Output,PIN_Y17,4,B4_N0,,,,,
+IN5,Output,PIN_AC21,4,B4_N0,,,,,
+IN6,Output,PIN_Y16,4,B4_N0,,,,,
+IN8,Output,PIN_AD21,4,B4_N0,,,,,
+IN9,Output,PIN_AE16,4,B4_N2,,,,,
+IN10,Output,PIN_AD15,4,B4_N2,,,,,
+IN11,Output,PIN_AE15,4,B4_N2,,,,,
+IN12,Output,PIN_AC19,4,B4_N0,,,,,
+IN13,Output,PIN_AF16,4,B4_N2,,,,,
+OP1,Input,PIN_AG26,4,B4_N0,,,,,
+OP2,Input,PIN_AH23,4,B4_N1,,,,,
+OP3,Input,PIN_AH26,4,B4_N0,,,,,
+OP4,Input,PIN_AF20,4,B4_N1,,,,,
+OP5,Input,PIN_AG23,4,B4_N1,,,,,
+OP6,Input,PIN_AE20,4,B4_N1,,,,,
+OP8,Input,PIN_AF26,4,B4_N1,,,,,
+OP9,Input,PIN_AH22,4,B4_N1,,,,,
+OP10,Input,PIN_AE24,4,B4_N0,,,,,
+OP11,Input,PIN_AG22,4,B4_N1,,,,,
+OP12,Input,PIN_AE25,4,B4_N1,,,,,
+OP13,Input,PIN_AH25,4,B4_N1,,,,,
+clk,Input,PIN_Y2,2,B2_N0,,,,,
+fail,Output,PIN_H16,7,B7_N2,,,,,
+fail1,Output,PIN_G19,7,B7_N2,,,,,
+fail2,Output,PIN_F19,7,B7_N0,,,,,
+fail3,Output,PIN_E19,7,B7_N0,,,,,
+fail4,Output,PIN_F21,7,B7_N0,,,,,
+fail5,Output,PIN_F18,7,B7_N1,,,,,
+fail6,Output,PIN_E18,7,B7_N1,,,,,
+pass,Output,PIN_F17,7,B7_N2,,,,,
+pass1,Output,PIN_E21,7,B7_N0,,,,,
+pass2,Output,PIN_E22,7,B7_N0,,,,,
+pass3,Output,PIN_E25,7,B7_N1,,,,,
+pass4,Output,PIN_E24,7,B7_N1,,,,,
+pass5,Output,PIN_H21,7,B7_N2,,,,,
+pass6,Output,PIN_G20,7,B7_N1,,,,,

@@ -1,0 +1,482 @@
+module eight_input_checker (
+  A1,
+  B1,
+  C1,
+  D1,
+  E1,
+  F1,
+  G1,
+  H1,
+  op1,
+  pass1,
+  fail1,
+  pass, fail,
+  clk
+);
+	
+  // Store 00000, 00001, 00010, 00011, 00100, 00101, 00110, 00111, 01000, 01001, 01010, 01011, 01100, 01101, 01110, 01111
+  // 10000, 10001, 10010, 10011, 10100, 10101, 10110, 10111, 11000, 11001, 11010, 11011, 11100, 11101, 11110, 11111
+  reg [4:0] input_pattern;
+  
+  // Store the desired output pattern
+  reg [31:0] output_ori;
+  
+  // Store the output patterns from the gates
+  reg [31:0] output_got1;
+  reg [31:0] output_got2;
+  
+  // Initiate the other input & outputs
+  input op1, op2;
+  input clk;
+  output reg A1;
+  output reg B1;
+  output reg C1;
+  output reg D1;
+  output reg E1;
+  output reg F1;
+  output reg G1;
+  output reg H1;
+  output reg pass1, fail1;
+  output reg pass, fail;
+  wire W_NAND;  
+  
+  // States to genarate input patterns
+  reg [4:0] state;
+  parameter S00000 = 5'b00000;
+  parameter S00001 = 5'b00001;
+  parameter S00010 = 5'b00010;
+  parameter S00011 = 5'b00011;
+  parameter S00100 = 5'b00100;
+  parameter S00101 = 5'b00101;
+  parameter S00110 = 5'b00110;
+  parameter S00111 = 5'b00111;
+  parameter S01000 = 5'b01000;
+  parameter S01001 = 5'b01001;
+  parameter S01010 = 5'b01010;
+  parameter S01011 = 5'b01011;
+  parameter S01100 = 5'b01100;
+  parameter S01101 = 5'b01101;
+  parameter S01110 = 5'b01110;
+  parameter S01111 = 5'b01111;
+  parameter S10000 = 5'b10000;
+  parameter S10001 = 5'b10001;
+  parameter S10010 = 5'b10010;
+  parameter S10011 = 5'b10011;
+  parameter S10100 = 5'b10100;
+  parameter S10101 = 5'b10101;
+  parameter S10110 = 5'b10110;
+  parameter S10111 = 5'b10111;
+  parameter S11000 = 5'b11000;
+  parameter S11001 = 5'b11001;
+  parameter S11010 = 5'b11010;
+  parameter S11011 = 5'b11011;
+  parameter S11100 = 5'b11100;
+  parameter S11101 = 5'b11101;
+  parameter S11110 = 5'b11110;
+  parameter S11111 = 5'b11111;
+  
+  reg [31:0] counter;
+  parameter ONE_SECOND_DELAY = 50000000;
+
+  eight_input_nand nand3 (.A(input_pattern[0]), .B(input_pattern[1]), .C(input_pattern[2]), .D(input_pattern[3]),.E(input_pattern[4]), .F(input_pattern[5]), .G(input_pattern[6]), .H(input_pattern[7]), .Y(W_NAND));
+
+  
+  always @(posedge clk) begin
+    
+    counter <= counter + 1;
+	 
+    A1 <= input_pattern[0];
+    B1 <= input_pattern[1];
+	 C1 <= input_pattern[2];
+	 D1 <= input_pattern[3];
+    E1 <= input_pattern[4];
+    F1 <= input_pattern[5];
+	 G1 <= input_pattern[6];
+	 H1 <= input_pattern[7];
+
+    if (counter == ONE_SECOND_DELAY) begin
+      case (state)
+        S00000: begin
+		  
+          output_got1[0] <= op1;
+			 
+          output_ori[0] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b00001;
+          state <= S00001;
+        end
+        S00001: begin
+		  
+          output_got1[1] <= op1;
+			 
+          output_ori[1] <= W_AND;
+			 
+
+			 
+          input_pattern <= 5'b00010;
+          state <= S00010;
+        end
+		  
+        S00010: begin
+		  
+          output_got1[2] <= op1;
+			 
+          output_ori[2] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b00011;
+          state <= S00011;
+        end
+		  		  
+        S00011: begin
+		  
+          output_got1[3] <= op1;
+			 
+          output_ori[3] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b00100;
+          state <= S00100;
+        end
+		  		  
+        S00100: begin
+		  
+          output_got1[4] <= op1;
+			 
+          output_ori[4] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b00101;
+          state <= S00101;
+        end
+		  		  
+        S00101: begin
+		  
+          output_got1[5] <= op1;
+			 
+          output_ori[5] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b00110;
+          state <= S00110;
+        end
+		  		  		  
+        S00110: begin
+		  
+          output_got1[6] <= op1;
+			 
+          output_ori[6] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b00111;
+          state <= S00111;
+        end
+		  		  		  		  
+        S00111: begin
+		  
+          output_got1[7] <= op1;
+			 
+          output_ori[7] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b01000;
+          state <= S01000;
+        end
+		  		  		  		  
+        S01000: begin
+		  
+          output_got1[8] <= op1;
+			 
+          output_ori[8] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b01001;
+          state <= S01001;
+        end
+		  		  		  		  
+        S01001: begin
+		  
+          output_got1[9] <= op1;
+			 
+          output_ori[9] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b01010;
+          state <= S01010;
+        end
+		  		  		  		  
+        S01010: begin
+		  
+          output_got1[10] <= op1;
+			 
+          output_ori[10] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b01011;
+          state <= S01011;
+        end
+		  		  		  		  		  
+        S01011: begin
+		  
+          output_got1[11] <= op1;
+			 
+          output_ori[11] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b01100;
+          state <= S01100;
+        end
+		  		  		  		  		  
+        S01100: begin
+		  
+          output_got1[12] <= op1;
+			 
+          output_ori[12] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b01101;
+          state <= S01101;
+        end
+		  		  		  		  		  
+        S01101: begin
+		  
+          output_got1[13] <= op1;
+			 
+          output_ori[13] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b01110;
+          state <= S01110;
+        end
+		  		  		  		  		  		  
+        S01110: begin
+		  
+          output_got1[14] <= op1;
+			 
+          output_ori[14] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b01111;
+          state <= S01111;
+        end
+        S01111: begin
+		  
+          output_got1[15] <= op1;
+			 
+          output_ori[15] <= W_AND;
+			
+          input_pattern <= 5'b10000;
+          state <= S10000;
+        
+		  end
+		  
+		  S10000: begin
+		  
+          output_got1[16] <= op1;
+			 output_got2[16] <= op2;
+			 
+          output_ori[16] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b10001;
+          state <= S10001;
+        end
+        S10001: begin
+		  
+          output_got1[17] <= op1;
+			 
+          output_ori[17] <= W_AND;
+			 
+
+			 
+          input_pattern <= 5'b10010;
+          state <= S10010;
+        end
+		  
+        S10010: begin
+		  
+          output_got1[18] <= op1;
+			 
+          output_ori[18] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b10011;
+          state <= S10011;
+        end
+		  		  
+        S0011: begin
+		  
+          output_got1[19] <= op1;
+			 
+          output_ori[19] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b10100;
+          state <= S10100;
+        end
+		  		  
+        S10100: begin
+		  
+          output_got1[20] <= op1;
+			 
+          output_ori[20] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b10101;
+          state <= S10101;
+        end
+		  		  
+        S10101: begin
+		  
+          output_got1[21] <= op1;
+			 
+          output_ori[21] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b10110;
+          state <= S10110;
+        end
+		  		  		  
+        S10110: begin
+		  
+          output_got1[22] <= op1;
+			 
+          output_ori[22] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b10111;
+          state <= S10111;
+        end
+		  		  		  		  
+        S10111: begin
+		  
+          output_got1[23] <= op1;
+			 
+          output_ori[23] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b11000;
+          state <= S11000;
+        end
+		  		  		  		  
+        S11000: begin
+		  
+          output_got1[24] <= op1;
+			 
+          output_ori[24] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b11001;
+          state <= S11001;
+        end
+		  		  		  		  
+        S11001: begin
+		  
+          output_got1[25] <= op1;
+			 
+          output_ori[25] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b11010;
+          state <= S11010;
+        end
+		  		  		  		  
+        S11010: begin
+		  
+          output_got1[26] <= op1;
+			 
+          output_ori[26] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b11011;
+          state <= S11011;
+        end
+		  		  		  		  		  
+        S11011: begin
+		  
+          output_got1[27] <= op1;
+			 
+          output_ori[27] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b11100;
+          state <= S11100;
+        end
+		  		  		  		  		  
+        S11100: begin
+		  
+          output_got1[28] <= op1;
+			 
+          output_ori[28] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b11101;
+          state <= S11101;
+        end
+		  		  		  		  		  
+        S11101: begin
+		  
+          output_got1[29] <= op1;
+			 
+          output_ori[29] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b11110;
+          state <= S11110;
+        end
+		  		  		  		  		  		  
+        S11110: begin
+		  
+          output_got1[30] <= op1;
+			 
+          output_ori[30] <= W_AND;
+			 
+			 
+          input_pattern <= 5'b11111;
+          state <= S11111;
+        end
+        S11111: begin
+		  
+          output_got1[31] <= op1;
+			 
+          output_ori[31] <= W_AND;
+			 
+			 
+			 if (output_got1 !== output_ori) begin
+				fail1 <= 1'b1;
+				pass1 <= 1'b0;
+			 end
+			 else if (output_got1 == output_ori) begin
+				fail1 <= 1'b0;
+				pass1 <= 1'b1;
+			 end		
+
+			 
+			 if (pass1 == 1'b1) begin
+				pass <= 1'b1;
+				fail <= 1'b0;
+			 end
+			 else if (fail1 == 1'b1) begin
+				fail <= 1'b1;
+				pass <= 1'b0;
+			 end
+			
+          input_pattern <= 5'b00000;
+          state <= S00000;
+        
+		  end
+		  
+        default: begin
+          input_pattern <= 5'b00000;
+          state <= S00000;
+        end
+      endcase
+
+      counter <= 0;
+    end
+
+    
+  end
+
+endmodule

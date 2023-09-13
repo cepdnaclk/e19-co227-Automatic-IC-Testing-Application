@@ -1,0 +1,19 @@
+module ic_tester (
+  A, B,
+  op1,op2,op3,op4
+  pass1, pass2, pass3, pass4,
+  fail1, fail2, fail3, fail4,
+  pass, fail
+  clk
+);
+	
+  // Initiate the other input & outputs
+  input op1, op2, op3, op4;
+  input clk;
+  output reg A, B;
+  output reg pass1, pass2, pass3, pass4, fail1, fail2, fail3, fail4;
+  output reg pass, fail;
+
+  two_input_checker two_input_checker(A, B, op1, op2, op3, op4, pass1, pass2, pass3, pass4, fail1, fail2, fail3, fail4, pass, fail, clk);
+
+endmodule
