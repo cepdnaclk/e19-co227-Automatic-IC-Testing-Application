@@ -22,10 +22,8 @@ The design of this tester supports 14-pin DIP basic digital logic ICs from the 7
 
 ## Technology Stack
 
-- FPGA Development Board: [Board Model]
+- FPGA Development Board: ALtera DE2-115
 - HDL: VHDL (Hardware Description Language)
-- Firmware Development: [Firmware Development Tool]
-- USB Communication: [USB Communication Library]
-- GUI Framework: [GUI Framework]
-- Simulation Tool: [Simulation Tool]
+- FPGA Synthesis Tool: Quartus II
+- Simulation Tool: MultiSim
 - Version Control: Git
