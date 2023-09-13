@@ -2,9 +2,37 @@
 
 Welcome to the Automated IC Testing Application Repository! 
 
-The main challenge addressed by this project is efficiently identifying faulty digital chips, especially for users in research and education with a limited range of digital ICs. Existing digital IC testers are costly and not customizable, leading to the need for multiple testers, which is expensive and impractical
+The key challenge is to distinguish faulty chips from good ones efficiently, especially for users in research and educational institutions who work with a limited range of digital ICs. Current digital IC testers on the market are often prohibitively expensive and support a wide array of ICs, making them impractical for this user base. These testers are typically not reprogrammable or customizable, forcing users to own multiple testers for different devices, which is costly and wasteful.
 
-To tackle these issues, the project's objective is to create an affordable, user-friendly, and reconfigurable digital IC tester using FPGA technology. The focus is on cost-effectiveness and the ability to adapt input/output settings for various digital chips. The project aims to offer a versatile and budget-friendly testing solution for basic logic digital ICs, benefiting users in research laboratories.
+To address these issues, the project aims to develop a cost-effective, user-friendly, and reconfigurable digital IC tester based on FPGA technology. The primary focus is on cost-effectiveness and the ability to reconfigure input/output settings to accommodate various digital chips. This project aims to provide an affordable solution that caters specifically to the needs of users in research and education who work with a limited range of digital ICs.
+
+This project aims to design a cost-effective, reconfigurable test instrument based on FPGA to test basic logic digital ICs. Adopting a software-defined approach, this project aims to develop a versatile and user-friendly tester for basic digital chips, providing a cost-effective test instrument for users to perform digital chip testing in research laboratories.
+
+## Hardwear Components
+
+- FPGA Board - Altera DE2-115
+- IR Remote
+- Jumper Wires
+- ZIF Socket
+- DUT (Some ICs)
+
+## Technology Stack
+
+- FPGA Development Board: ALtera DE2-115
+- HDL: Verilog (Hardware Description Language)
+- FPGA Synthesis Tool: Quartus II
+- Simulation Tool: MultiSim
+- Version Control: Git
+
+## Bill of Materials (BOM)
+
+| Component Name  | Quantity | Unit Cost(LKR) | Cost(LKR) |
+| ------------- | ------------- | ------------- | ------------- |
+| FPGA Board EP1C3T144 | 1  | 16000  | 16000  |
+| Jumper Wires | 30  | 8  | 240  |
+| ZIF Socket | 1  | 120  | 120  |
+| Testing ICs | 5  | 100  | 500  |
+| Total Cost |     |      | 16860  |
 
 ## Solution Architecture
 
@@ -14,16 +42,22 @@ To tackle these issues, the project's objective is to create an affordable, user
 5. Then the FPGA tests the IC with the testing pattern and compares the expected output.
 6. Finally, display the result and if there is an error indicate the gate that has an error in the LCD board and the Seven Segment display of the FPGA.
 
+## Schematics and Diagrams
+
+The main model consists of a KEYPAD, TESTING modules, LCD, SEVEN SEGMENT, and a DUT. Those modules are connected with each other in the following format. The DELAY TESTING module is a extra module and it will be implemented in a later step.
+
 ![IC Tester Design Structure](https://github.com/cepdnaclk/e19-co227-Automatic-IC-Testing-Application-Using-FPGA/assets/78247019/5419e397-d831-40bb-a5a2-6d574031d537)
 
 The design of this tester supports 14-pin DIP basic digital logic ICs from the 74 series TTL and CMOS family. The devices tested in this project are 74LS32, 74LS00, 74LS02, 74LS08, 74LS86 and 74LS386. The testing model used will be based on the functional fault.
 
 ![IC Tester Logical Testing Unit](https://github.com/cepdnaclk/e19-co227-Automatic-IC-Testing-Application-Using-FPGA/assets/78247019/31a4bdf2-bf59-4227-a770-b6412a20dc13)
 
-## Technology Stack
-
-- FPGA Development Board: ALtera DE2-115
-- HDL: Verilog (Hardware Description Language)
-- FPGA Synthesis Tool: Quartus II
-- Simulation Tool: MultiSim
-- Version Control: Git
+## Assembly Instructions
+## Setup and Configuration 
+## Usage
+## Testing and Troubleshooting
+## Power Requirements 
+## Safety Considerations
+## Contact Information
+## Acknowledgments
+## References
