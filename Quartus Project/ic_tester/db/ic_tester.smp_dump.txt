@@ -70,3 +70,9 @@ state.S00 0 0 0 0
 state.S01 0 0 1 1 
 state.S10 0 1 0 1 
 state.S11 1 0 0 1 
+
+State Machine - |ic_tester|Input_Reciver:comb_3|IR_RECEIVE:u1|state
+Name state.IDLE state.DATAREAD state.GUIDANCE 
+state.IDLE 0 0 0 
+state.GUIDANCE 1 0 1 
+state.DATAREAD 1 1 0 

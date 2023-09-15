@@ -6,7 +6,8 @@ module testing_logic (
   pass1, pass2, pass3, pass4, pass5, pass6,
   fail1, fail2, fail3, fail4, fail5, fail6,
   pass, fail,
-  clk
+  clk,
+  ICNumber
 );
   
   // Initiate the other input & outputs
@@ -19,10 +20,10 @@ module testing_logic (
   wire [2:0] gate;
   wire [2:0] tester;
   
-  reg [31:0] icNum;
+  input [31:0] ICNumber;
   
   icNumber_decoder icd1(
-    .icNumber(7408),
+    .icNumber(ICNumber),
     .gate(gate), 
     .tester(tester)
 );

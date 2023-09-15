@@ -6,7 +6,12 @@ module ic_tester (
   pass1, pass2, pass3, pass4, pass5, pass6,
   fail1, fail2, fail3, fail4, fail5, fail6,
   pass, fail,
-  clk
+  clk,
+  Rkey,
+  HEX0, HEX1, HEX2, HEX3,
+  LEDR,
+  IRDA_RXD,
+  testLED
 );
   
   // Initiate the other input & outputs
@@ -15,6 +20,32 @@ module ic_tester (
   output pass1, pass2, pass3, pass4, pass5, pass6, fail1, fail2, fail3, fail4, fail5, fail6;
   output pass, fail;
   input clk;
+  output reg testLED;
+  
+  input Rkey;
+
+  output [6:0] HEX0;
+  output [6:0] HEX1;
+  output [6:0] HEX2;
+  output [6:0] HEX3;
+  input IRDA_RXD;
+  output [4:0] LEDR;
+  
+  wire [31:0] ICNumber;
+  wire ICRead;
+  
+  Input_Reciver(		
+    .CLOCK_50(clk),
+	 .KEY(Rkey),
+	 .HEX0(HEX0),
+	 .HEX1(HEX1),
+	 .HEX2(HEX2),
+	 .HEX3(HEX3),
+	 .LEDR(LEDR),
+	 .IRDA_RXD(IRDA_RXD),
+	 .number(ICNumber),
+	 .icg(ICRead)
+);
   
   testing_logic tl1(
 	  .IN1(IN1), 
@@ -55,7 +86,18 @@ module ic_tester (
 	  .fail6(fail6),
 	  .pass(pass), 
 	  .fail(fail),
-	  .clk(clk)
+	  .clk(clk),
+	  .ICNumber(ICNumber)
 );
+
+	always@(ICNumber) begin
+		if (ICNumber == 7408) begin
+			testLED = 1;
+		end
+		else begin
+			testLED = 0;
+		end
+	end
+
 
 endmodule
