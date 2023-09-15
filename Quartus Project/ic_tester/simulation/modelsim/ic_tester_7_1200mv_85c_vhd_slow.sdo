@@ -29,7 +29,7 @@
 (DELAYFILE
   (SDFVERSION "2.1")
   (DESIGN "ic_tester")
-  (DATE "09/12/2023 20:53:13")
+  (DATE "09/15/2023 16:32:01")
   (VENDOR "Altera")
   (PROGRAM "Quartus II 64-Bit")
   (VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition")
@@ -236,7 +236,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|state\.S11\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|state\.S11\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (289:289:289) (368:368:368))
@@ -246,7 +246,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (729:729:729) (760:760:760))
@@ -258,7 +258,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (953:953:953) (932:932:932))
@@ -270,7 +270,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[0\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[0\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2129:2129:2129))
@@ -284,7 +284,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~2\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~2\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (306:306:306) (388:388:388))
@@ -298,7 +298,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[1\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[1\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2111:2111:2111) (2122:2122:2122))
@@ -312,7 +312,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~4\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~4\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (306:306:306) (389:389:389))
@@ -326,7 +326,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[2\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[2\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2111:2111:2111) (2122:2122:2122))
@@ -340,7 +340,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~6\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~6\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (308:308:308) (398:398:398))
@@ -354,7 +354,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[3\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[3\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2111:2111:2111) (2122:2122:2122))
@@ -368,7 +368,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~8\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~8\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (307:307:307) (390:390:390))
@@ -382,7 +382,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[4\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[4\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2111:2111:2111) (2122:2122:2122))
@@ -396,7 +396,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~10\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~10\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (309:309:309) (398:398:398))
@@ -410,7 +410,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[5\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[5\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2111:2111:2111) (2122:2122:2122))
@@ -424,7 +424,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~12\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~12\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (309:309:309) (398:398:398))
@@ -438,7 +438,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[6\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[6\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2111:2111:2111) (2122:2122:2122))
@@ -452,7 +452,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~14\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~14\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (524:524:524) (574:574:574))
@@ -466,7 +466,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\~1\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\~1\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (787:787:787) (814:814:814))
@@ -478,7 +478,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[7\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[7\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2113:2113:2113) (2124:2124:2124))
@@ -492,7 +492,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~16\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~16\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (307:307:307) (391:391:391))
@@ -506,7 +506,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[8\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[8\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2111:2111:2111) (2122:2122:2122))
@@ -520,7 +520,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~18\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~18\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (307:307:307) (391:391:391))
@@ -534,7 +534,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[9\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[9\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2111:2111:2111) (2122:2122:2122))
@@ -548,7 +548,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~20\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~20\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (307:307:307) (391:391:391))
@@ -562,7 +562,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[10\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[10\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2111:2111:2111) (2122:2122:2122))
@@ -576,7 +576,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~22\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~22\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (309:309:309) (398:398:398))
@@ -590,7 +590,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[11\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[11\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2111:2111:2111) (2122:2122:2122))
@@ -604,7 +604,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~24\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~24\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (536:536:536) (585:585:585))
@@ -618,7 +618,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\~2\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\~2\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (785:785:785) (811:811:811))
@@ -630,7 +630,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[12\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[12\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2113:2113:2113) (2124:2124:2124))
@@ -644,7 +644,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~26\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~26\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (482:482:482) (542:542:542))
@@ -658,7 +658,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\~3\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\~3\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (823:823:823) (849:849:849))
@@ -670,7 +670,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[13\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[13\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2113:2113:2113) (2124:2124:2124))
@@ -684,7 +684,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~28\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~28\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (524:524:524) (571:571:571))
@@ -698,7 +698,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\~4\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\~4\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (786:786:786) (812:812:812))
@@ -710,7 +710,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[14\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[14\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2113:2113:2113) (2124:2124:2124))
@@ -724,7 +724,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~30\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~30\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (521:521:521) (568:568:568))
@@ -738,7 +738,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\~5\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\~5\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (788:788:788) (814:814:814))
@@ -750,7 +750,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[15\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[15\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2113:2113:2113) (2124:2124:2124))
@@ -764,7 +764,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~32\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~32\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (306:306:306) (389:389:389))
@@ -778,7 +778,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[16\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[16\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2127:2127:2127))
@@ -792,7 +792,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~34\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~34\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (482:482:482) (548:548:548))
@@ -806,7 +806,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\~6\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\~6\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (443:443:443) (442:442:442))
@@ -818,7 +818,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[17\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[17\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2129:2129:2129))
@@ -832,7 +832,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~36\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~36\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (307:307:307) (390:390:390))
@@ -846,7 +846,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[18\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[18\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2127:2127:2127))
@@ -860,7 +860,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~38\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~38\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (523:523:523) (569:569:569))
@@ -874,7 +874,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\~7\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\~7\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (370:370:370) (370:370:370))
@@ -886,7 +886,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[19\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[19\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2129:2129:2129))
@@ -900,7 +900,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~40\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~40\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (523:523:523) (569:569:569))
@@ -914,7 +914,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\~8\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\~8\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (316:316:316) (389:389:389))
@@ -926,7 +926,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[20\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[20\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2129:2129:2129))
@@ -940,7 +940,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~42\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~42\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (522:522:522) (568:568:568))
@@ -954,7 +954,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\~9\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\~9\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (316:316:316) (390:390:390))
@@ -966,7 +966,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[21\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[21\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2129:2129:2129))
@@ -980,7 +980,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~44\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~44\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (523:523:523) (571:571:571))
@@ -994,7 +994,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\~10\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\~10\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (318:318:318) (392:392:392))
@@ -1006,7 +1006,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[22\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[22\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2129:2129:2129))
@@ -1020,7 +1020,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~46\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~46\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (523:523:523) (571:571:571))
@@ -1034,7 +1034,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\~11\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\~11\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (318:318:318) (392:392:392))
@@ -1046,7 +1046,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[23\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[23\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2129:2129:2129))
@@ -1060,7 +1060,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~48\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~48\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (308:308:308) (392:392:392))
@@ -1074,7 +1074,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[24\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[24\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2127:2127:2127))
@@ -1088,7 +1088,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~50\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~50\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (464:464:464) (532:532:532))
@@ -1102,7 +1102,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\~12\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\~12\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (319:319:319) (393:393:393))
@@ -1114,7 +1114,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[25\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[25\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2129:2129:2129))
@@ -1128,7 +1128,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~52\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~52\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (309:309:309) (392:392:392))
@@ -1142,7 +1142,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[26\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[26\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2127:2127:2127))
@@ -1156,7 +1156,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~54\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~54\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (310:310:310) (400:400:400))
@@ -1170,7 +1170,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[27\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[27\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2127:2127:2127))
@@ -1184,7 +1184,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal0\~8\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal0\~8\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (466:466:466) (529:529:529))
@@ -1200,7 +1200,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal0\~5\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal0\~5\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (311:311:311) (401:401:401))
@@ -1216,7 +1216,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal0\~6\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal0\~6\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (275:275:275) (355:355:355))
@@ -1228,7 +1228,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal0\~7\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal0\~7\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (237:237:237) (278:278:278))
@@ -1244,7 +1244,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~56\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~56\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (308:308:308) (392:392:392))
@@ -1258,7 +1258,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[28\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[28\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2127:2127:2127))
@@ -1272,7 +1272,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~58\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~58\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (310:310:310) (400:400:400))
@@ -1286,7 +1286,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[29\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[29\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2127:2127:2127))
@@ -1300,7 +1300,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~60\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~60\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (308:308:308) (391:391:391))
@@ -1314,7 +1314,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[30\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[30\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2127:2127:2127))
@@ -1328,7 +1328,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Add0\~62\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Add0\~62\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (311:311:311) (401:401:401))
@@ -1339,7 +1339,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|counter\[31\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|counter\[31\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2127:2127:2127))
@@ -1353,7 +1353,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal0\~9\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal0\~9\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (711:711:711) (744:744:744))
@@ -1369,7 +1369,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal0\~3\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal0\~3\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (309:309:309) (399:399:399))
@@ -1385,7 +1385,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal0\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal0\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (778:778:778) (828:828:828))
@@ -1401,7 +1401,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal0\~2\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal0\~2\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (484:484:484) (540:540:540))
@@ -1417,7 +1417,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal0\~1\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal0\~1\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (518:518:518) (565:565:565))
@@ -1433,7 +1433,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal0\~4\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal0\~4\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (700:700:700) (715:715:715))
@@ -1449,7 +1449,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal0\~10\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal0\~10\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (238:238:238) (280:280:280))
@@ -1465,7 +1465,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|state\.S11\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|state\.S11\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2113:2113:2113) (2124:2124:2124))
@@ -1481,7 +1481,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|state\.S00\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|state\.S00\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (285:285:285) (360:360:360))
@@ -1491,7 +1491,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|state\.S00\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|state\.S00\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2113:2113:2113) (2124:2124:2124))
@@ -1507,7 +1507,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|state\.S01\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|state\.S01\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (294:294:294) (375:375:375))
@@ -1517,7 +1517,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|state\.S01\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|state\.S01\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2113:2113:2113) (2124:2124:2124))
@@ -1533,7 +1533,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|state\.S10\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|state\.S10\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (280:280:280) (353:353:353))
@@ -1543,7 +1543,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|state\.S10\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|state\.S10\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2113:2113:2113) (2124:2124:2124))
@@ -1559,7 +1559,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|input_pattern\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|input_pattern\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (321:321:321) (409:409:409))
@@ -1571,7 +1571,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|input_pattern\[0\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|input_pattern\[0\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2113:2113:2113) (2124:2124:2124))
@@ -1587,7 +1587,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|A4\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|A4\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (453:453:453) (501:501:501))
@@ -1597,7 +1597,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|A4\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|A4\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2115:2115:2115) (2126:2126:2126))
@@ -1611,7 +1611,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|IN1\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|IN1\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (989:989:989) (997:997:997))
@@ -1621,7 +1621,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[30\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[30\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2125:2125:2125) (2137:2137:2137))
@@ -1635,7 +1635,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~0\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (461:461:461) (533:533:533))
@@ -1647,7 +1647,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|counter\~13\\)
+    (INSTANCE \\tl1\|lfc1\|counter\~13\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (456:456:456) (460:460:460))
@@ -1659,7 +1659,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[0\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[0\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2120:2120:2120) (2132:2132:2132))
@@ -1673,7 +1673,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~2\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~2\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (282:282:282) (364:364:364))
@@ -1687,7 +1687,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[1\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[1\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2131:2131:2131))
@@ -1701,7 +1701,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~4\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~4\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (457:457:457) (527:527:527))
@@ -1715,7 +1715,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|counter\~12\\)
+    (INSTANCE \\tl1\|lfc1\|counter\~12\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (404:404:404) (418:418:418))
@@ -1727,7 +1727,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[2\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[2\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2120:2120:2120) (2132:2132:2132))
@@ -1741,7 +1741,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~6\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~6\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (285:285:285) (373:373:373))
@@ -1755,7 +1755,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[3\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[3\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2131:2131:2131))
@@ -1769,7 +1769,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~8\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~8\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (283:283:283) (365:365:365))
@@ -1783,7 +1783,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[4\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[4\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2131:2131:2131))
@@ -1797,7 +1797,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~10\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~10\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (285:285:285) (373:373:373))
@@ -1811,7 +1811,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[5\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[5\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2131:2131:2131))
@@ -1825,7 +1825,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~12\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~12\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (285:285:285) (374:374:374))
@@ -1839,7 +1839,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[6\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[6\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2131:2131:2131))
@@ -1853,7 +1853,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~14\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~14\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (498:498:498) (547:547:547))
@@ -1867,7 +1867,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|counter\~11\\)
+    (INSTANCE \\tl1\|lfc1\|counter\~11\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (781:781:781) (798:798:798))
@@ -1879,7 +1879,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[7\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[7\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2550:2550:2550) (2561:2561:2561))
@@ -1893,7 +1893,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~16\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~16\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (284:284:284) (366:366:366))
@@ -1907,7 +1907,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[8\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[8\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2131:2131:2131))
@@ -1921,7 +1921,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~18\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~18\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (283:283:283) (366:366:366))
@@ -1935,7 +1935,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[9\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[9\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2131:2131:2131))
@@ -1949,7 +1949,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~20\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~20\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (283:283:283) (366:366:366))
@@ -1963,7 +1963,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[10\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[10\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2131:2131:2131))
@@ -1977,7 +1977,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~22\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~22\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (285:285:285) (374:374:374))
@@ -1991,7 +1991,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[11\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[11\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2119:2119:2119) (2131:2131:2131))
@@ -2005,7 +2005,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~24\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~24\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (457:457:457) (520:520:520))
@@ -2019,7 +2019,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|counter\~10\\)
+    (INSTANCE \\tl1\|lfc1\|counter\~10\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (781:781:781) (798:798:798))
@@ -2031,7 +2031,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[12\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[12\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2550:2550:2550) (2561:2561:2561))
@@ -2045,7 +2045,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~26\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~26\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (495:495:495) (546:546:546))
@@ -2059,7 +2059,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|counter\~9\\)
+    (INSTANCE \\tl1\|lfc1\|counter\~9\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (782:782:782) (799:799:799))
@@ -2071,7 +2071,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[13\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[13\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2550:2550:2550) (2561:2561:2561))
@@ -2085,7 +2085,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~28\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~28\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (460:460:460) (529:529:529))
@@ -2099,7 +2099,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|counter\~8\\)
+    (INSTANCE \\tl1\|lfc1\|counter\~8\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (780:780:780) (797:797:797))
@@ -2111,7 +2111,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[14\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[14\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2550:2550:2550) (2561:2561:2561))
@@ -2125,7 +2125,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~30\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~30\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (500:500:500) (549:549:549))
@@ -2139,7 +2139,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|counter\~7\\)
+    (INSTANCE \\tl1\|lfc1\|counter\~7\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (781:781:781) (797:797:797))
@@ -2151,7 +2151,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[15\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[15\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2550:2550:2550) (2561:2561:2561))
@@ -2165,7 +2165,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~32\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~32\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (282:282:282) (364:364:364))
@@ -2179,7 +2179,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[16\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[16\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2125:2125:2125) (2137:2137:2137))
@@ -2193,7 +2193,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~34\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~34\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (452:452:452) (503:503:503))
@@ -2207,7 +2207,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|counter\~6\\)
+    (INSTANCE \\tl1\|lfc1\|counter\~6\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (415:415:415) (442:442:442))
@@ -2219,7 +2219,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[17\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[17\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2563:2563:2563) (2574:2574:2574))
@@ -2233,7 +2233,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~36\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~36\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (283:283:283) (365:365:365))
@@ -2247,7 +2247,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[18\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[18\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2125:2125:2125) (2137:2137:2137))
@@ -2261,7 +2261,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~38\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~38\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (490:490:490) (534:534:534))
@@ -2275,7 +2275,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|counter\~5\\)
+    (INSTANCE \\tl1\|lfc1\|counter\~5\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (666:666:666) (667:667:667))
@@ -2287,7 +2287,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[19\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[19\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2563:2563:2563) (2574:2574:2574))
@@ -2301,7 +2301,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~40\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~40\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (447:447:447) (504:504:504))
@@ -2315,7 +2315,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|counter\~4\\)
+    (INSTANCE \\tl1\|lfc1\|counter\~4\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (690:690:690) (683:683:683))
@@ -2327,7 +2327,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[20\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[20\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2563:2563:2563) (2574:2574:2574))
@@ -2341,7 +2341,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~42\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~42\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (458:458:458) (514:514:514))
@@ -2355,7 +2355,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|counter\~3\\)
+    (INSTANCE \\tl1\|lfc1\|counter\~3\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (679:679:679) (665:665:665))
@@ -2367,7 +2367,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[21\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[21\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2563:2563:2563) (2574:2574:2574))
@@ -2381,7 +2381,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~44\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~44\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (447:447:447) (504:504:504))
@@ -2395,7 +2395,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|counter\~2\\)
+    (INSTANCE \\tl1\|lfc1\|counter\~2\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (672:672:672) (658:658:658))
@@ -2407,7 +2407,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[22\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[22\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2563:2563:2563) (2574:2574:2574))
@@ -2421,7 +2421,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~46\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~46\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (495:495:495) (543:543:543))
@@ -2435,7 +2435,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|counter\~1\\)
+    (INSTANCE \\tl1\|lfc1\|counter\~1\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (685:685:685) (674:674:674))
@@ -2447,7 +2447,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[23\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[23\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2563:2563:2563) (2574:2574:2574))
@@ -2461,7 +2461,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~48\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~48\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (284:284:284) (367:367:367))
@@ -2475,7 +2475,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[24\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[24\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2125:2125:2125) (2137:2137:2137))
@@ -2489,7 +2489,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~50\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~50\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (495:495:495) (543:543:543))
@@ -2503,7 +2503,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|counter\~0\\)
+    (INSTANCE \\tl1\|lfc1\|counter\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (617:617:617) (606:606:606))
@@ -2515,7 +2515,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[25\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[25\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2563:2563:2563) (2574:2574:2574))
@@ -2529,7 +2529,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~52\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~52\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (285:285:285) (368:368:368))
@@ -2543,7 +2543,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[26\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[26\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2125:2125:2125) (2137:2137:2137))
@@ -2557,7 +2557,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~54\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~54\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (286:286:286) (375:375:375))
@@ -2571,7 +2571,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[27\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[27\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2125:2125:2125) (2137:2137:2137))
@@ -2585,7 +2585,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~56\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~56\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (488:488:488) (531:531:531))
@@ -2599,7 +2599,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|counter\[28\]\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[28\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (632:632:632) (624:624:624))
@@ -2609,7 +2609,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[28\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[28\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2563:2563:2563) (2574:2574:2574))
@@ -2623,7 +2623,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~58\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~58\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (285:285:285) (374:374:374))
@@ -2637,7 +2637,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[29\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[29\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2125:2125:2125) (2137:2137:2137))
@@ -2651,7 +2651,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~60\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~60\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (283:283:283) (365:365:365))
@@ -2665,7 +2665,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|counter\[31\]\\)
+    (INSTANCE \\tl1\|lfc1\|counter\[31\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2125:2125:2125) (2137:2137:2137))
@@ -2679,7 +2679,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Add0\~62\\)
+    (INSTANCE \\tl1\|lfc1\|Add0\~62\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (285:285:285) (374:374:374))
@@ -2690,7 +2690,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Equal0\~0\\)
+    (INSTANCE \\tl1\|lfc1\|Equal0\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (452:452:452) (454:454:454))
@@ -2706,7 +2706,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Equal0\~6\\)
+    (INSTANCE \\tl1\|lfc1\|Equal0\~6\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (671:671:671) (660:660:660))
@@ -2722,7 +2722,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Equal0\~2\\)
+    (INSTANCE \\tl1\|lfc1\|Equal0\~2\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (444:444:444) (444:444:444))
@@ -2738,7 +2738,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Equal0\~1\\)
+    (INSTANCE \\tl1\|lfc1\|Equal0\~1\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (456:456:456) (461:461:461))
@@ -2754,7 +2754,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Equal0\~3\\)
+    (INSTANCE \\tl1\|lfc1\|Equal0\~3\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (743:743:743) (741:741:741))
@@ -2770,7 +2770,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Equal0\~4\\)
+    (INSTANCE \\tl1\|lfc1\|Equal0\~4\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (782:782:782) (781:781:781))
@@ -2786,7 +2786,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Equal0\~5\\)
+    (INSTANCE \\tl1\|lfc1\|Equal0\~5\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (736:736:736) (733:733:733))
@@ -2802,7 +2802,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Equal0\~7\\)
+    (INSTANCE \\tl1\|lfc1\|Equal0\~7\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (449:449:449) (452:452:452))
@@ -2818,7 +2818,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Equal0\~8\\)
+    (INSTANCE \\tl1\|lfc1\|Equal0\~8\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (633:633:633) (625:625:625))
@@ -2834,7 +2834,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Equal0\~9\\)
+    (INSTANCE \\tl1\|lfc1\|Equal0\~9\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (448:448:448) (452:452:452))
@@ -2846,7 +2846,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|Equal0\~10\\)
+    (INSTANCE \\tl1\|lfc1\|Equal0\~10\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (625:625:625) (617:617:617))
@@ -2862,7 +2862,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|IN1\\)
+    (INSTANCE \\tl1\|lfc1\|IN1\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2556:2556:2556) (2566:2566:2566))
@@ -2878,7 +2878,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|input_pattern\~1\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|input_pattern\~1\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (329:329:329) (419:419:419))
@@ -2890,7 +2890,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|input_pattern\[1\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|input_pattern\[1\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2113:2113:2113) (2124:2124:2124))
@@ -2906,7 +2906,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|B4\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|B4\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2115:2115:2115) (2126:2126:2126))
@@ -2920,7 +2920,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|IN2\\)
+    (INSTANCE \\tl1\|lfc1\|IN2\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2555:2555:2555) (2566:2566:2566))
@@ -2936,7 +2936,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|IN4\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|IN4\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (987:987:987) (994:994:994))
@@ -2946,7 +2946,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|IN4\\)
+    (INSTANCE \\tl1\|lfc1\|IN4\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2556:2556:2556) (2566:2566:2566))
@@ -2962,7 +2962,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|IN5\\)
+    (INSTANCE \\tl1\|lfc1\|IN5\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2555:2555:2555) (2566:2566:2566))
@@ -2978,7 +2978,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|IN9\\)
+    (INSTANCE \\tl1\|lfc1\|IN9\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2555:2555:2555) (2566:2566:2566))
@@ -2994,7 +2994,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|IN10\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|IN10\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (991:991:991) (998:998:998))
@@ -3004,7 +3004,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|IN10\\)
+    (INSTANCE \\tl1\|lfc1\|IN10\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2556:2556:2556) (2566:2566:2566))
@@ -3020,7 +3020,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|IN12\\)
+    (INSTANCE \\tl1\|lfc1\|IN12\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2555:2555:2555) (2566:2566:2566))
@@ -3036,7 +3036,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|IN13\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|IN13\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (990:990:990) (998:998:998))
@@ -3046,7 +3046,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|IN13\\)
+    (INSTANCE \\tl1\|lfc1\|IN13\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2556:2556:2556) (2566:2566:2566))
@@ -3062,7 +3062,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|and2\|Y\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|and2\|Y\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (434:434:434) (488:488:488))
@@ -3074,7 +3074,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_ori\[3\]\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_ori\[3\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (382:382:382) (388:388:388))
@@ -3084,7 +3084,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|pass1\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|pass1\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (789:789:789) (813:813:813))
@@ -3096,7 +3096,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_ori\[3\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_ori\[3\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2128:2128:2128))
@@ -3121,7 +3121,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got1\[3\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got1\[3\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2128:2128:2128))
@@ -3137,7 +3137,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_ori\[2\]\~2\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_ori\[2\]\~2\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (751:751:751) (778:778:778))
@@ -3149,7 +3149,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got1\[2\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got1\[2\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2128:2128:2128))
@@ -3165,7 +3165,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_ori\[2\]\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_ori\[2\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (381:381:381) (387:387:387))
@@ -3175,7 +3175,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_ori\[2\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_ori\[2\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2128:2128:2128))
@@ -3191,7 +3191,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal1\~1\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal1\~1\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (312:312:312) (414:414:414))
@@ -3206,7 +3206,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_ori\[1\]\~1\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_ori\[1\]\~1\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (783:783:783) (824:824:824))
@@ -3218,7 +3218,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_ori\[1\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_ori\[1\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2121:2121:2121) (2131:2131:2131))
@@ -3234,7 +3234,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_ori\[0\]\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_ori\[0\]\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (800:800:800) (849:849:849))
@@ -3246,7 +3246,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_ori\[0\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_ori\[0\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2121:2121:2121) (2131:2131:2131))
@@ -3262,7 +3262,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got1\[0\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got1\[0\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2121:2121:2121) (2131:2131:2131))
@@ -3278,7 +3278,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got1\[1\]\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got1\[1\]\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (3747:3747:3747) (4082:4082:4082))
@@ -3288,7 +3288,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got1\[1\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got1\[1\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2121:2121:2121) (2131:2131:2131))
@@ -3304,7 +3304,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal1\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal1\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (311:311:311) (416:416:416))
@@ -3319,7 +3319,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal1\~2\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal1\~2\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (235:235:235) (269:269:269))
@@ -3331,7 +3331,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|pass1\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|pass1\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (426:426:426) (433:433:433))
@@ -3341,7 +3341,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|pass1\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|pass1\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2128:2128:2128))
@@ -3357,7 +3357,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|pass1\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|pass1\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (955:955:955) (945:945:945))
@@ -3367,7 +3367,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|pass1\\)
+    (INSTANCE \\tl1\|lfc1\|pass1\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2556:2556:2556) (2566:2566:2566))
@@ -3392,7 +3392,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got2\[0\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got2\[0\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2121:2121:2121) (2131:2131:2131))
@@ -3408,7 +3408,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got2\[1\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got2\[1\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2121:2121:2121) (2131:2131:2131))
@@ -3424,7 +3424,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal2\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal2\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (313:313:313) (418:418:418))
@@ -3439,7 +3439,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got2\[3\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got2\[3\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2128:2128:2128))
@@ -3455,7 +3455,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got2\[2\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got2\[2\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2128:2128:2128))
@@ -3471,7 +3471,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal2\~1\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal2\~1\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (312:312:312) (415:415:415))
@@ -3486,7 +3486,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal2\~2\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal2\~2\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (704:704:704) (701:701:701))
@@ -3498,7 +3498,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|pass2\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|pass2\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2128:2128:2128))
@@ -3514,7 +3514,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|pass2\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|pass2\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (718:718:718) (749:749:749))
@@ -3524,7 +3524,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|pass2\\)
+    (INSTANCE \\tl1\|lfc1\|pass2\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2126:2126:2126) (2138:2138:2138))
@@ -3549,7 +3549,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got3\[3\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got3\[3\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2128:2128:2128))
@@ -3565,7 +3565,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got3\[2\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got3\[2\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2128:2128:2128))
@@ -3581,7 +3581,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal3\~1\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal3\~1\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (312:312:312) (414:414:414))
@@ -3596,7 +3596,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got3\[0\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got3\[0\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2121:2121:2121) (2131:2131:2131))
@@ -3612,7 +3612,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got3\[1\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got3\[1\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2121:2121:2121) (2131:2131:2131))
@@ -3628,7 +3628,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal3\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal3\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (314:314:314) (419:419:419))
@@ -3643,7 +3643,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal3\~2\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal3\~2\\)
     (DELAY
       (ABSOLUTE
         (PORT datab (238:238:238) (273:273:273))
@@ -3655,7 +3655,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|pass3\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|pass3\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (610:610:610) (593:593:593))
@@ -3665,7 +3665,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|pass3\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|pass3\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2128:2128:2128))
@@ -3681,7 +3681,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|pass3\\)
+    (INSTANCE \\tl1\|lfc1\|pass3\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2556:2556:2556) (2566:2566:2566))
@@ -3706,7 +3706,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got4\[0\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got4\[0\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2121:2121:2121) (2131:2131:2131))
@@ -3722,7 +3722,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got4\[1\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got4\[1\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2121:2121:2121) (2131:2131:2131))
@@ -3738,7 +3738,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal4\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal4\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (310:310:310) (414:414:414))
@@ -3753,7 +3753,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got4\[3\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got4\[3\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2128:2128:2128))
@@ -3769,7 +3769,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|output_got4\[2\]\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|output_got4\[2\]\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2128:2128:2128))
@@ -3785,7 +3785,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal4\~1\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal4\~1\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (313:313:313) (411:411:411))
@@ -3800,7 +3800,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|Equal4\~2\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|Equal4\~2\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (741:741:741) (742:742:742))
@@ -3812,7 +3812,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|pass4\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|pass4\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2128:2128:2128))
@@ -3828,7 +3828,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|pass4\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|pass4\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (695:695:695) (727:727:727))
@@ -3838,7 +3838,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|pass4\\)
+    (INSTANCE \\tl1\|lfc1\|pass4\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2126:2126:2126) (2138:2138:2138))
@@ -3854,7 +3854,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|fail1\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|fail1\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (649:649:649) (631:631:631))
@@ -3864,7 +3864,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|fail1\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|fail1\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2529:2529:2529) (2528:2528:2528))
@@ -3880,7 +3880,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|fail1\\)
+    (INSTANCE \\tl1\|lfc1\|fail1\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2555:2555:2555) (2566:2566:2566))
@@ -3896,7 +3896,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|fail2\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|fail2\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (622:622:622) (604:604:604))
@@ -3906,7 +3906,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|fail2\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|fail2\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2529:2529:2529) (2528:2528:2528))
@@ -3922,7 +3922,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|fail2\\)
+    (INSTANCE \\tl1\|lfc1\|fail2\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2555:2555:2555) (2566:2566:2566))
@@ -3938,7 +3938,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|fail3\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|fail3\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (615:615:615) (603:603:603))
@@ -3948,7 +3948,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|fail3\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|fail3\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2529:2529:2529) (2528:2528:2528))
@@ -3964,7 +3964,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|fail3\\)
+    (INSTANCE \\tl1\|lfc1\|fail3\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2555:2555:2555) (2566:2566:2566))
@@ -3980,7 +3980,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|fail4\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|fail4\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (377:377:377) (391:391:391))
@@ -3990,7 +3990,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|fail4\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|fail4\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2117:2117:2117) (2128:2128:2128))
@@ -4006,7 +4006,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|fail4\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|fail4\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (746:746:746) (775:775:775))
@@ -4016,7 +4016,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|fail4\\)
+    (INSTANCE \\tl1\|lfc1\|fail4\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2558:2558:2558) (2577:2577:2577))
@@ -4032,7 +4032,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|always0\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|always0\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (484:484:484) (540:540:540))
@@ -4048,7 +4048,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|pass\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|pass\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (714:714:714) (752:752:752))
@@ -4064,7 +4064,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|pass\~1\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|pass\~1\\)
     (DELAY
       (ABSOLUTE
         (PORT dataa (716:716:716) (755:755:755))
@@ -4080,7 +4080,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|pass\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|pass\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2115:2115:2115) (2126:2126:2126))
@@ -4096,7 +4096,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|pass\~feeder\\)
+    (INSTANCE \\tl1\|lfc1\|pass\~feeder\\)
     (DELAY
       (ABSOLUTE
         (PORT datad (885:885:885) (889:889:889))
@@ -4106,7 +4106,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|pass\\)
+    (INSTANCE \\tl1\|lfc1\|pass\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2556:2556:2556) (2566:2566:2566))
@@ -4122,7 +4122,7 @@
   )
   (CELL
     (CELLTYPE "cycloneive_lcell_comb")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|fail\~0\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|fail\~0\\)
     (DELAY
       (ABSOLUTE
         (PORT datac (388:388:388) (408:408:408))
@@ -4132,7 +4132,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|two_input_checker_inst\|fail\\)
+    (INSTANCE \\tl1\|lfc1\|two_input_checker_inst\|fail\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2115:2115:2115) (2126:2126:2126))
@@ -4148,7 +4148,7 @@
   )
   (CELL
     (CELLTYPE "dffeas")
-    (INSTANCE \\lfc1\|fail\\)
+    (INSTANCE \\tl1\|lfc1\|fail\\)
     (DELAY
       (ABSOLUTE
         (PORT clk (2555:2555:2555) (2566:2566:2566))

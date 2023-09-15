@@ -41,11 +41,28 @@ module not_gate_checker (
   parameter ONE_SECOND_DELAY = 50000000;
 
   not_gate not_gate (.A(input_pattern), .Y(W_NOT));
+    
+  initial begin
+    pass1 = 1'b0;
+    pass2 = 1'b0;
+    pass3 = 1'b0;
+	 pass4 = 1'b0;
+	 pass4 = 1'b0;
+	 pass6 = 1'b0;
+    fail1 = 1'b0;
+    fail2 = 1'b0;
+    fail3 = 1'b0;
+	 fail4 = 1'b0;
+	 fail5 = 1'b0;
+	 fail6 = 1'b0;
+	 pass = 1'b0;
+	 fail = 1'b0;
+	 
+	 counter = 0;
+  end
 
   
   always @(posedge clk) begin
-    
-    counter <= counter + 1;
 	 
     A1 <= input_pattern;
     A2 <= input_pattern;
@@ -55,6 +72,9 @@ module not_gate_checker (
     A6 <= input_pattern;
 	 
 	 if (enable) begin
+	    
+		 counter <= counter + 1;
+	    
 		 if (counter == ONE_SECOND_DELAY) begin
 			case (state)
 			  S0: begin

@@ -7,7 +7,8 @@ module three_input_checker (
   fail1, fail2, fail3,
   pass, fail,
   clk,
-  enable
+  enable,
+  gateSelect
 );
 	
   // Store 000, 001, 010, 011, 100, 101, 110, 111
@@ -26,12 +27,14 @@ module three_input_checker (
   input clk;
   input enable;
   
+  input [2:0] gateSelect;
+  
   output reg A1, A2, A3;
   output reg B1, B2, B3;
   output reg C1, C2, C3;
   output reg pass1, pass2, pass3, fail1, fail2, fail3;
   output reg pass, fail;
-  wire W_AND, W_OR, W_NAND, W_NOR, W_XOR;
+  wire W_AND, W_OR, W_NAND, W_NOR, W_XOR, W_XNOR;
   wire W_SELECT;
   
   // States to genarate input patterns
@@ -52,15 +55,26 @@ module three_input_checker (
   three_input_or or3 (.A(input_pattern[0]), .B(input_pattern[1]), .C(input_pattern[2]), .Y(W_OR));
   three_input_nand nand3 (.A(input_pattern[0]), .B(input_pattern[1]), .C(input_pattern[2]), .Y(W_NAND));
   three_input_nor nor3 (.A(input_pattern[0]), .B(input_pattern[1]), .C(input_pattern[2]), .Y(W_NOR));
-  three_input_xor xor3 (.A(input_pattern[0]), .B(input_pattern[1]), .C(input_pattern[2]), .Y(W_NOR));
+  three_input_xor xor3 (.A(input_pattern[0]), .B(input_pattern[1]), .C(input_pattern[2]), .Y(W_XOR));
   
-  mux_gate m_gate2(.select(3'b001), .W_AND(W_AND), .W_OR(W_OR), .W_NAND(W_NAND), .W_NOR(W_NOR), .W_XOR(W_XOR), .W_XNOR(W_AND), .Y(W_SELECT));
+  mux_gate m_gate2(.select(gateSelect), .W_AND(W_AND), .W_OR(W_OR), .W_NAND(W_NAND), .W_NOR(W_NOR), .W_XOR(W_XOR), .W_XNOR(W_XNOR), .Y(W_SELECT));
 
+  
+  initial begin
+    pass1 = 1'b0;
+    pass2 = 1'b0;
+    pass3 = 1'b0;
+    fail1 = 1'b0;
+    fail2 = 1'b0;
+    fail3 = 1'b0;
+	 pass = 1'b0;
+	 fail = 1'b0;
+	 
+	 counter = 0;
+  end
 
   
   always @(posedge clk) begin
-    
-    counter <= counter + 1;
 	 
     A1 <= input_pattern[0];
     B1 <= input_pattern[1];
@@ -76,6 +90,9 @@ module three_input_checker (
 	 
 		
 	 if (enable) begin
+	 
+	    counter <= counter + 1;
+		 
 		 if (counter == ONE_SECOND_DELAY) begin
 			case (state)
 			  S000: begin

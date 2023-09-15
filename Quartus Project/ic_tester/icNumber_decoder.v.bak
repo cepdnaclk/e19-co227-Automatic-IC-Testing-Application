@@ -1,0 +1,18 @@
+module icNumber_decoder (
+  icNumber,
+  gate, 
+  tester
+);
+
+  input integer [31:0] icNumber
+  output [2:0] gate;
+  output [2:0] tester;
+
+  if (icNumber == 7400) begin
+    assign gate = 3'b000;
+	 assign tester = 3'b000;
+  end
+  
+ 
+  
+endmodule

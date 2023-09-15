@@ -4,10 +4,10 @@ JedecChain;
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(EPCS64) Path("D:/Projects/FPGA Test/ic_tester/output_files/") File("ic_tester.pof") MfrSpec(OpMask(1) Child_OpMask(1 1));
+		Device PartName(EP4CE115F29) Path("D:/Projects/FPGA Test/ic_tester/output_files/") File("ic_tester.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 
 AlteraBegin;
-	ChainType(asc);
+	ChainType(JTAG);
 AlteraEnd;

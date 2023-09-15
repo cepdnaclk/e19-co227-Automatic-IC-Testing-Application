@@ -1,16 +1,16 @@
 |ic_tester
-IN1 << logical_function_check:lfc1.IN1
-IN2 << logical_function_check:lfc1.IN2
-IN3 << logical_function_check:lfc1.IN3
-IN4 << logical_function_check:lfc1.IN4
-IN5 << logical_function_check:lfc1.IN5
-IN6 << logical_function_check:lfc1.IN6
-IN8 << logical_function_check:lfc1.IN8
-IN9 << logical_function_check:lfc1.IN9
-IN10 << logical_function_check:lfc1.IN10
-IN11 << logical_function_check:lfc1.IN11
-IN12 << logical_function_check:lfc1.IN12
-IN13 << logical_function_check:lfc1.IN13
+IN1 << testing_logic:tl1.IN1
+IN2 << testing_logic:tl1.IN2
+IN3 << testing_logic:tl1.IN3
+IN4 << testing_logic:tl1.IN4
+IN5 << testing_logic:tl1.IN5
+IN6 << testing_logic:tl1.IN6
+IN8 << testing_logic:tl1.IN8
+IN9 << testing_logic:tl1.IN9
+IN10 << testing_logic:tl1.IN10
+IN11 << testing_logic:tl1.IN11
+IN12 << testing_logic:tl1.IN12
+IN13 << testing_logic:tl1.IN13
 OP1 => OP1.IN1
 OP2 => OP2.IN1
 OP3 => OP3.IN1
@@ -23,24 +23,619 @@ OP10 => OP10.IN1
 OP11 => OP11.IN1
 OP12 => OP12.IN1
 OP13 => OP13.IN1
-pass1 << logical_function_check:lfc1.pass1
-pass2 << logical_function_check:lfc1.pass2
-pass3 << logical_function_check:lfc1.pass3
-pass4 << logical_function_check:lfc1.pass4
-pass5 << logical_function_check:lfc1.pass5
-pass6 << logical_function_check:lfc1.pass6
-fail1 << logical_function_check:lfc1.fail1
-fail2 << logical_function_check:lfc1.fail2
-fail3 << logical_function_check:lfc1.fail3
-fail4 << logical_function_check:lfc1.fail4
-fail5 << logical_function_check:lfc1.fail5
-fail6 << logical_function_check:lfc1.fail6
-pass << logical_function_check:lfc1.pass
-fail << logical_function_check:lfc1.fail
+pass1 << testing_logic:tl1.pass1
+pass2 << testing_logic:tl1.pass2
+pass3 << testing_logic:tl1.pass3
+pass4 << testing_logic:tl1.pass4
+pass5 << testing_logic:tl1.pass5
+pass6 << testing_logic:tl1.pass6
+fail1 << testing_logic:tl1.fail1
+fail2 << testing_logic:tl1.fail2
+fail3 << testing_logic:tl1.fail3
+fail4 << testing_logic:tl1.fail4
+fail5 << testing_logic:tl1.fail5
+fail6 << testing_logic:tl1.fail6
+pass << testing_logic:tl1.pass
+fail << testing_logic:tl1.fail
 clk => clk.IN1
 
 
-|ic_tester|logical_function_check:lfc1
+|ic_tester|testing_logic:tl1
+IN1 <= logical_function_check:lfc1.IN1
+IN2 <= logical_function_check:lfc1.IN2
+IN3 <= logical_function_check:lfc1.IN3
+IN4 <= logical_function_check:lfc1.IN4
+IN5 <= logical_function_check:lfc1.IN5
+IN6 <= logical_function_check:lfc1.IN6
+IN8 <= logical_function_check:lfc1.IN8
+IN9 <= logical_function_check:lfc1.IN9
+IN10 <= logical_function_check:lfc1.IN10
+IN11 <= logical_function_check:lfc1.IN11
+IN12 <= logical_function_check:lfc1.IN12
+IN13 <= logical_function_check:lfc1.IN13
+OP1 => OP1.IN1
+OP2 => OP2.IN1
+OP3 => OP3.IN1
+OP4 => OP4.IN1
+OP5 => OP5.IN1
+OP6 => OP6.IN1
+OP8 => OP8.IN1
+OP9 => OP9.IN1
+OP10 => OP10.IN1
+OP11 => OP11.IN1
+OP12 => OP12.IN1
+OP13 => OP13.IN1
+pass1 <= logical_function_check:lfc1.pass1
+pass2 <= logical_function_check:lfc1.pass2
+pass3 <= logical_function_check:lfc1.pass3
+pass4 <= logical_function_check:lfc1.pass4
+pass5 <= logical_function_check:lfc1.pass5
+pass6 <= logical_function_check:lfc1.pass6
+fail1 <= logical_function_check:lfc1.fail1
+fail2 <= logical_function_check:lfc1.fail2
+fail3 <= logical_function_check:lfc1.fail3
+fail4 <= logical_function_check:lfc1.fail4
+fail5 <= logical_function_check:lfc1.fail5
+fail6 <= logical_function_check:lfc1.fail6
+pass <= logical_function_check:lfc1.pass
+fail <= logical_function_check:lfc1.fail
+clk => clk.IN1
+
+
+|ic_tester|testing_logic:tl1|icNumber_decoder:icd1
+icNumber[0] => Equal0.IN31
+icNumber[0] => Equal1.IN8
+icNumber[0] => Equal2.IN31
+icNumber[0] => Equal3.IN7
+icNumber[0] => Equal4.IN31
+icNumber[0] => Equal5.IN31
+icNumber[0] => Equal6.IN31
+icNumber[0] => Equal7.IN31
+icNumber[0] => Equal8.IN8
+icNumber[0] => Equal9.IN31
+icNumber[0] => Equal10.IN5
+icNumber[0] => Equal11.IN31
+icNumber[0] => Equal12.IN9
+icNumber[0] => Equal13.IN31
+icNumber[0] => Equal14.IN31
+icNumber[0] => Equal15.IN8
+icNumber[0] => Equal16.IN31
+icNumber[1] => Equal0.IN30
+icNumber[1] => Equal1.IN7
+icNumber[1] => Equal2.IN30
+icNumber[1] => Equal3.IN31
+icNumber[1] => Equal4.IN30
+icNumber[1] => Equal5.IN8
+icNumber[1] => Equal6.IN30
+icNumber[1] => Equal7.IN7
+icNumber[1] => Equal8.IN7
+icNumber[1] => Equal9.IN30
+icNumber[1] => Equal10.IN4
+icNumber[1] => Equal11.IN30
+icNumber[1] => Equal12.IN31
+icNumber[1] => Equal13.IN5
+icNumber[1] => Equal14.IN30
+icNumber[1] => Equal15.IN31
+icNumber[1] => Equal16.IN8
+icNumber[2] => Equal0.IN29
+icNumber[2] => Equal1.IN31
+icNumber[2] => Equal2.IN29
+icNumber[2] => Equal3.IN30
+icNumber[2] => Equal4.IN29
+icNumber[2] => Equal5.IN7
+icNumber[2] => Equal6.IN5
+icNumber[2] => Equal7.IN30
+icNumber[2] => Equal8.IN31
+icNumber[2] => Equal9.IN7
+icNumber[2] => Equal10.IN31
+icNumber[2] => Equal11.IN8
+icNumber[2] => Equal12.IN8
+icNumber[2] => Equal13.IN4
+icNumber[2] => Equal14.IN7
+icNumber[2] => Equal15.IN7
+icNumber[2] => Equal16.IN7
+icNumber[3] => Equal0.IN6
+icNumber[3] => Equal1.IN6
+icNumber[3] => Equal2.IN28
+icNumber[3] => Equal3.IN29
+icNumber[3] => Equal4.IN4
+icNumber[3] => Equal5.IN6
+icNumber[3] => Equal6.IN29
+icNumber[3] => Equal7.IN29
+icNumber[3] => Equal8.IN30
+icNumber[3] => Equal9.IN29
+icNumber[3] => Equal10.IN30
+icNumber[3] => Equal11.IN7
+icNumber[3] => Equal12.IN7
+icNumber[3] => Equal13.IN30
+icNumber[3] => Equal14.IN6
+icNumber[3] => Equal15.IN6
+icNumber[3] => Equal16.IN30
+icNumber[4] => Equal0.IN28
+icNumber[4] => Equal1.IN30
+icNumber[4] => Equal2.IN6
+icNumber[4] => Equal3.IN6
+icNumber[4] => Equal4.IN28
+icNumber[4] => Equal5.IN5
+icNumber[4] => Equal6.IN4
+icNumber[4] => Equal7.IN6
+icNumber[4] => Equal8.IN6
+icNumber[4] => Equal9.IN6
+icNumber[4] => Equal10.IN29
+icNumber[4] => Equal11.IN6
+icNumber[4] => Equal12.IN6
+icNumber[4] => Equal13.IN29
+icNumber[4] => Equal14.IN29
+icNumber[4] => Equal15.IN30
+icNumber[4] => Equal16.IN6
+icNumber[5] => Equal0.IN5
+icNumber[5] => Equal1.IN5
+icNumber[5] => Equal2.IN5
+icNumber[5] => Equal3.IN5
+icNumber[5] => Equal4.IN27
+icNumber[5] => Equal5.IN4
+icNumber[5] => Equal6.IN28
+icNumber[5] => Equal7.IN5
+icNumber[5] => Equal8.IN5
+icNumber[5] => Equal9.IN5
+icNumber[5] => Equal10.IN28
+icNumber[5] => Equal11.IN5
+icNumber[5] => Equal12.IN5
+icNumber[5] => Equal13.IN28
+icNumber[5] => Equal14.IN5
+icNumber[5] => Equal15.IN5
+icNumber[5] => Equal16.IN5
+icNumber[6] => Equal0.IN4
+icNumber[6] => Equal1.IN4
+icNumber[6] => Equal2.IN4
+icNumber[6] => Equal3.IN4
+icNumber[6] => Equal4.IN26
+icNumber[6] => Equal5.IN30
+icNumber[6] => Equal6.IN27
+icNumber[6] => Equal7.IN4
+icNumber[6] => Equal8.IN4
+icNumber[6] => Equal9.IN4
+icNumber[6] => Equal10.IN27
+icNumber[6] => Equal11.IN4
+icNumber[6] => Equal12.IN4
+icNumber[6] => Equal13.IN27
+icNumber[6] => Equal14.IN4
+icNumber[6] => Equal15.IN4
+icNumber[6] => Equal16.IN4
+icNumber[7] => Equal0.IN3
+icNumber[7] => Equal1.IN3
+icNumber[7] => Equal2.IN3
+icNumber[7] => Equal3.IN3
+icNumber[7] => Equal4.IN25
+icNumber[7] => Equal5.IN29
+icNumber[7] => Equal6.IN3
+icNumber[7] => Equal7.IN3
+icNumber[7] => Equal8.IN3
+icNumber[7] => Equal9.IN3
+icNumber[7] => Equal10.IN26
+icNumber[7] => Equal11.IN3
+icNumber[7] => Equal12.IN3
+icNumber[7] => Equal13.IN26
+icNumber[7] => Equal14.IN3
+icNumber[7] => Equal15.IN3
+icNumber[7] => Equal16.IN3
+icNumber[8] => Equal0.IN27
+icNumber[8] => Equal1.IN29
+icNumber[8] => Equal2.IN27
+icNumber[8] => Equal3.IN28
+icNumber[8] => Equal4.IN3
+icNumber[8] => Equal5.IN3
+icNumber[8] => Equal6.IN2
+icNumber[8] => Equal7.IN28
+icNumber[8] => Equal8.IN29
+icNumber[8] => Equal9.IN28
+icNumber[8] => Equal10.IN3
+icNumber[8] => Equal11.IN29
+icNumber[8] => Equal12.IN30
+icNumber[8] => Equal13.IN3
+icNumber[8] => Equal14.IN28
+icNumber[8] => Equal15.IN29
+icNumber[8] => Equal16.IN29
+icNumber[9] => Equal0.IN26
+icNumber[9] => Equal1.IN28
+icNumber[9] => Equal2.IN26
+icNumber[9] => Equal3.IN27
+icNumber[9] => Equal4.IN24
+icNumber[9] => Equal5.IN28
+icNumber[9] => Equal6.IN26
+icNumber[9] => Equal7.IN27
+icNumber[9] => Equal8.IN28
+icNumber[9] => Equal9.IN27
+icNumber[9] => Equal10.IN25
+icNumber[9] => Equal11.IN28
+icNumber[9] => Equal12.IN29
+icNumber[9] => Equal13.IN25
+icNumber[9] => Equal14.IN27
+icNumber[9] => Equal15.IN28
+icNumber[9] => Equal16.IN28
+icNumber[10] => Equal0.IN2
+icNumber[10] => Equal1.IN2
+icNumber[10] => Equal2.IN2
+icNumber[10] => Equal3.IN2
+icNumber[10] => Equal4.IN2
+icNumber[10] => Equal5.IN2
+icNumber[10] => Equal6.IN25
+icNumber[10] => Equal7.IN2
+icNumber[10] => Equal8.IN2
+icNumber[10] => Equal9.IN2
+icNumber[10] => Equal10.IN2
+icNumber[10] => Equal11.IN2
+icNumber[10] => Equal12.IN2
+icNumber[10] => Equal13.IN2
+icNumber[10] => Equal14.IN2
+icNumber[10] => Equal15.IN2
+icNumber[10] => Equal16.IN2
+icNumber[11] => Equal0.IN1
+icNumber[11] => Equal1.IN1
+icNumber[11] => Equal2.IN1
+icNumber[11] => Equal3.IN1
+icNumber[11] => Equal4.IN1
+icNumber[11] => Equal5.IN1
+icNumber[11] => Equal6.IN24
+icNumber[11] => Equal7.IN1
+icNumber[11] => Equal8.IN1
+icNumber[11] => Equal9.IN1
+icNumber[11] => Equal10.IN1
+icNumber[11] => Equal11.IN1
+icNumber[11] => Equal12.IN1
+icNumber[11] => Equal13.IN1
+icNumber[11] => Equal14.IN1
+icNumber[11] => Equal15.IN1
+icNumber[11] => Equal16.IN1
+icNumber[12] => Equal0.IN0
+icNumber[12] => Equal1.IN0
+icNumber[12] => Equal2.IN0
+icNumber[12] => Equal3.IN0
+icNumber[12] => Equal4.IN0
+icNumber[12] => Equal5.IN0
+icNumber[12] => Equal6.IN23
+icNumber[12] => Equal7.IN0
+icNumber[12] => Equal8.IN0
+icNumber[12] => Equal9.IN0
+icNumber[12] => Equal10.IN0
+icNumber[12] => Equal11.IN0
+icNumber[12] => Equal12.IN0
+icNumber[12] => Equal13.IN0
+icNumber[12] => Equal14.IN0
+icNumber[12] => Equal15.IN0
+icNumber[12] => Equal16.IN0
+icNumber[13] => Equal0.IN25
+icNumber[13] => Equal1.IN27
+icNumber[13] => Equal2.IN25
+icNumber[13] => Equal3.IN26
+icNumber[13] => Equal4.IN23
+icNumber[13] => Equal5.IN27
+icNumber[13] => Equal6.IN1
+icNumber[13] => Equal7.IN26
+icNumber[13] => Equal8.IN27
+icNumber[13] => Equal9.IN26
+icNumber[13] => Equal10.IN24
+icNumber[13] => Equal11.IN27
+icNumber[13] => Equal12.IN28
+icNumber[13] => Equal13.IN24
+icNumber[13] => Equal14.IN26
+icNumber[13] => Equal15.IN27
+icNumber[13] => Equal16.IN27
+icNumber[14] => Equal0.IN24
+icNumber[14] => Equal1.IN26
+icNumber[14] => Equal2.IN24
+icNumber[14] => Equal3.IN25
+icNumber[14] => Equal4.IN22
+icNumber[14] => Equal5.IN26
+icNumber[14] => Equal6.IN22
+icNumber[14] => Equal7.IN25
+icNumber[14] => Equal8.IN26
+icNumber[14] => Equal9.IN25
+icNumber[14] => Equal10.IN23
+icNumber[14] => Equal11.IN26
+icNumber[14] => Equal12.IN27
+icNumber[14] => Equal13.IN23
+icNumber[14] => Equal14.IN25
+icNumber[14] => Equal15.IN26
+icNumber[14] => Equal16.IN26
+icNumber[15] => Equal0.IN23
+icNumber[15] => Equal1.IN25
+icNumber[15] => Equal2.IN23
+icNumber[15] => Equal3.IN24
+icNumber[15] => Equal4.IN21
+icNumber[15] => Equal5.IN25
+icNumber[15] => Equal6.IN21
+icNumber[15] => Equal7.IN24
+icNumber[15] => Equal8.IN25
+icNumber[15] => Equal9.IN24
+icNumber[15] => Equal10.IN22
+icNumber[15] => Equal11.IN25
+icNumber[15] => Equal12.IN26
+icNumber[15] => Equal13.IN22
+icNumber[15] => Equal14.IN24
+icNumber[15] => Equal15.IN25
+icNumber[15] => Equal16.IN25
+icNumber[16] => Equal0.IN22
+icNumber[16] => Equal1.IN24
+icNumber[16] => Equal2.IN22
+icNumber[16] => Equal3.IN23
+icNumber[16] => Equal4.IN20
+icNumber[16] => Equal5.IN24
+icNumber[16] => Equal6.IN0
+icNumber[16] => Equal7.IN23
+icNumber[16] => Equal8.IN24
+icNumber[16] => Equal9.IN23
+icNumber[16] => Equal10.IN21
+icNumber[16] => Equal11.IN24
+icNumber[16] => Equal12.IN25
+icNumber[16] => Equal13.IN21
+icNumber[16] => Equal14.IN23
+icNumber[16] => Equal15.IN24
+icNumber[16] => Equal16.IN24
+icNumber[17] => Equal0.IN21
+icNumber[17] => Equal1.IN23
+icNumber[17] => Equal2.IN21
+icNumber[17] => Equal3.IN22
+icNumber[17] => Equal4.IN19
+icNumber[17] => Equal5.IN23
+icNumber[17] => Equal6.IN20
+icNumber[17] => Equal7.IN22
+icNumber[17] => Equal8.IN23
+icNumber[17] => Equal9.IN22
+icNumber[17] => Equal10.IN20
+icNumber[17] => Equal11.IN23
+icNumber[17] => Equal12.IN24
+icNumber[17] => Equal13.IN20
+icNumber[17] => Equal14.IN22
+icNumber[17] => Equal15.IN23
+icNumber[17] => Equal16.IN23
+icNumber[18] => Equal0.IN20
+icNumber[18] => Equal1.IN22
+icNumber[18] => Equal2.IN20
+icNumber[18] => Equal3.IN21
+icNumber[18] => Equal4.IN18
+icNumber[18] => Equal5.IN22
+icNumber[18] => Equal6.IN19
+icNumber[18] => Equal7.IN21
+icNumber[18] => Equal8.IN22
+icNumber[18] => Equal9.IN21
+icNumber[18] => Equal10.IN19
+icNumber[18] => Equal11.IN22
+icNumber[18] => Equal12.IN23
+icNumber[18] => Equal13.IN19
+icNumber[18] => Equal14.IN21
+icNumber[18] => Equal15.IN22
+icNumber[18] => Equal16.IN22
+icNumber[19] => Equal0.IN19
+icNumber[19] => Equal1.IN21
+icNumber[19] => Equal2.IN19
+icNumber[19] => Equal3.IN20
+icNumber[19] => Equal4.IN17
+icNumber[19] => Equal5.IN21
+icNumber[19] => Equal6.IN18
+icNumber[19] => Equal7.IN20
+icNumber[19] => Equal8.IN21
+icNumber[19] => Equal9.IN20
+icNumber[19] => Equal10.IN18
+icNumber[19] => Equal11.IN21
+icNumber[19] => Equal12.IN22
+icNumber[19] => Equal13.IN18
+icNumber[19] => Equal14.IN20
+icNumber[19] => Equal15.IN21
+icNumber[19] => Equal16.IN21
+icNumber[20] => Equal0.IN18
+icNumber[20] => Equal1.IN20
+icNumber[20] => Equal2.IN18
+icNumber[20] => Equal3.IN19
+icNumber[20] => Equal4.IN16
+icNumber[20] => Equal5.IN20
+icNumber[20] => Equal6.IN17
+icNumber[20] => Equal7.IN19
+icNumber[20] => Equal8.IN20
+icNumber[20] => Equal9.IN19
+icNumber[20] => Equal10.IN17
+icNumber[20] => Equal11.IN20
+icNumber[20] => Equal12.IN21
+icNumber[20] => Equal13.IN17
+icNumber[20] => Equal14.IN19
+icNumber[20] => Equal15.IN20
+icNumber[20] => Equal16.IN20
+icNumber[21] => Equal0.IN17
+icNumber[21] => Equal1.IN19
+icNumber[21] => Equal2.IN17
+icNumber[21] => Equal3.IN18
+icNumber[21] => Equal4.IN15
+icNumber[21] => Equal5.IN19
+icNumber[21] => Equal6.IN16
+icNumber[21] => Equal7.IN18
+icNumber[21] => Equal8.IN19
+icNumber[21] => Equal9.IN18
+icNumber[21] => Equal10.IN16
+icNumber[21] => Equal11.IN19
+icNumber[21] => Equal12.IN20
+icNumber[21] => Equal13.IN16
+icNumber[21] => Equal14.IN18
+icNumber[21] => Equal15.IN19
+icNumber[21] => Equal16.IN19
+icNumber[22] => Equal0.IN16
+icNumber[22] => Equal1.IN18
+icNumber[22] => Equal2.IN16
+icNumber[22] => Equal3.IN17
+icNumber[22] => Equal4.IN14
+icNumber[22] => Equal5.IN18
+icNumber[22] => Equal6.IN15
+icNumber[22] => Equal7.IN17
+icNumber[22] => Equal8.IN18
+icNumber[22] => Equal9.IN17
+icNumber[22] => Equal10.IN15
+icNumber[22] => Equal11.IN18
+icNumber[22] => Equal12.IN19
+icNumber[22] => Equal13.IN15
+icNumber[22] => Equal14.IN17
+icNumber[22] => Equal15.IN18
+icNumber[22] => Equal16.IN18
+icNumber[23] => Equal0.IN15
+icNumber[23] => Equal1.IN17
+icNumber[23] => Equal2.IN15
+icNumber[23] => Equal3.IN16
+icNumber[23] => Equal4.IN13
+icNumber[23] => Equal5.IN17
+icNumber[23] => Equal6.IN14
+icNumber[23] => Equal7.IN16
+icNumber[23] => Equal8.IN17
+icNumber[23] => Equal9.IN16
+icNumber[23] => Equal10.IN14
+icNumber[23] => Equal11.IN17
+icNumber[23] => Equal12.IN18
+icNumber[23] => Equal13.IN14
+icNumber[23] => Equal14.IN16
+icNumber[23] => Equal15.IN17
+icNumber[23] => Equal16.IN17
+icNumber[24] => Equal0.IN14
+icNumber[24] => Equal1.IN16
+icNumber[24] => Equal2.IN14
+icNumber[24] => Equal3.IN15
+icNumber[24] => Equal4.IN12
+icNumber[24] => Equal5.IN16
+icNumber[24] => Equal6.IN13
+icNumber[24] => Equal7.IN15
+icNumber[24] => Equal8.IN16
+icNumber[24] => Equal9.IN15
+icNumber[24] => Equal10.IN13
+icNumber[24] => Equal11.IN16
+icNumber[24] => Equal12.IN17
+icNumber[24] => Equal13.IN13
+icNumber[24] => Equal14.IN15
+icNumber[24] => Equal15.IN16
+icNumber[24] => Equal16.IN16
+icNumber[25] => Equal0.IN13
+icNumber[25] => Equal1.IN15
+icNumber[25] => Equal2.IN13
+icNumber[25] => Equal3.IN14
+icNumber[25] => Equal4.IN11
+icNumber[25] => Equal5.IN15
+icNumber[25] => Equal6.IN12
+icNumber[25] => Equal7.IN14
+icNumber[25] => Equal8.IN15
+icNumber[25] => Equal9.IN14
+icNumber[25] => Equal10.IN12
+icNumber[25] => Equal11.IN15
+icNumber[25] => Equal12.IN16
+icNumber[25] => Equal13.IN12
+icNumber[25] => Equal14.IN14
+icNumber[25] => Equal15.IN15
+icNumber[25] => Equal16.IN15
+icNumber[26] => Equal0.IN12
+icNumber[26] => Equal1.IN14
+icNumber[26] => Equal2.IN12
+icNumber[26] => Equal3.IN13
+icNumber[26] => Equal4.IN10
+icNumber[26] => Equal5.IN14
+icNumber[26] => Equal6.IN11
+icNumber[26] => Equal7.IN13
+icNumber[26] => Equal8.IN14
+icNumber[26] => Equal9.IN13
+icNumber[26] => Equal10.IN11
+icNumber[26] => Equal11.IN14
+icNumber[26] => Equal12.IN15
+icNumber[26] => Equal13.IN11
+icNumber[26] => Equal14.IN13
+icNumber[26] => Equal15.IN14
+icNumber[26] => Equal16.IN14
+icNumber[27] => Equal0.IN11
+icNumber[27] => Equal1.IN13
+icNumber[27] => Equal2.IN11
+icNumber[27] => Equal3.IN12
+icNumber[27] => Equal4.IN9
+icNumber[27] => Equal5.IN13
+icNumber[27] => Equal6.IN10
+icNumber[27] => Equal7.IN12
+icNumber[27] => Equal8.IN13
+icNumber[27] => Equal9.IN12
+icNumber[27] => Equal10.IN10
+icNumber[27] => Equal11.IN13
+icNumber[27] => Equal12.IN14
+icNumber[27] => Equal13.IN10
+icNumber[27] => Equal14.IN12
+icNumber[27] => Equal15.IN13
+icNumber[27] => Equal16.IN13
+icNumber[28] => Equal0.IN10
+icNumber[28] => Equal1.IN12
+icNumber[28] => Equal2.IN10
+icNumber[28] => Equal3.IN11
+icNumber[28] => Equal4.IN8
+icNumber[28] => Equal5.IN12
+icNumber[28] => Equal6.IN9
+icNumber[28] => Equal7.IN11
+icNumber[28] => Equal8.IN12
+icNumber[28] => Equal9.IN11
+icNumber[28] => Equal10.IN9
+icNumber[28] => Equal11.IN12
+icNumber[28] => Equal12.IN13
+icNumber[28] => Equal13.IN9
+icNumber[28] => Equal14.IN11
+icNumber[28] => Equal15.IN12
+icNumber[28] => Equal16.IN12
+icNumber[29] => Equal0.IN9
+icNumber[29] => Equal1.IN11
+icNumber[29] => Equal2.IN9
+icNumber[29] => Equal3.IN10
+icNumber[29] => Equal4.IN7
+icNumber[29] => Equal5.IN11
+icNumber[29] => Equal6.IN8
+icNumber[29] => Equal7.IN10
+icNumber[29] => Equal8.IN11
+icNumber[29] => Equal9.IN10
+icNumber[29] => Equal10.IN8
+icNumber[29] => Equal11.IN11
+icNumber[29] => Equal12.IN12
+icNumber[29] => Equal13.IN8
+icNumber[29] => Equal14.IN10
+icNumber[29] => Equal15.IN11
+icNumber[29] => Equal16.IN11
+icNumber[30] => Equal0.IN8
+icNumber[30] => Equal1.IN10
+icNumber[30] => Equal2.IN8
+icNumber[30] => Equal3.IN9
+icNumber[30] => Equal4.IN6
+icNumber[30] => Equal5.IN10
+icNumber[30] => Equal6.IN7
+icNumber[30] => Equal7.IN9
+icNumber[30] => Equal8.IN10
+icNumber[30] => Equal9.IN9
+icNumber[30] => Equal10.IN7
+icNumber[30] => Equal11.IN10
+icNumber[30] => Equal12.IN11
+icNumber[30] => Equal13.IN7
+icNumber[30] => Equal14.IN9
+icNumber[30] => Equal15.IN10
+icNumber[30] => Equal16.IN10
+icNumber[31] => Equal0.IN7
+icNumber[31] => Equal1.IN9
+icNumber[31] => Equal2.IN7
+icNumber[31] => Equal3.IN8
+icNumber[31] => Equal4.IN5
+icNumber[31] => Equal5.IN9
+icNumber[31] => Equal6.IN6
+icNumber[31] => Equal7.IN8
+icNumber[31] => Equal8.IN9
+icNumber[31] => Equal9.IN8
+icNumber[31] => Equal10.IN6
+icNumber[31] => Equal11.IN9
+icNumber[31] => Equal12.IN10
+icNumber[31] => Equal13.IN6
+icNumber[31] => Equal14.IN8
+icNumber[31] => Equal15.IN9
+icNumber[31] => Equal16.IN9
+gate[0] <= gate[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+gate[1] <= gate[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+gate[2] <= gate[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+tester[0] <= tester[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+tester[1] <= tester[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+tester[2] <= tester[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1
 IN1 <= IN1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 IN2 <= IN2~reg0.DB_MAX_OUTPUT_PORT_TYPE
 IN3 <= IN3~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -80,9 +675,38 @@ fail6 <= fail6~reg0.DB_MAX_OUTPUT_PORT_TYPE
 pass <= pass~reg0.DB_MAX_OUTPUT_PORT_TYPE
 fail <= fail~reg0.DB_MAX_OUTPUT_PORT_TYPE
 clk => clk.IN5
+gate[0] => gate[0].IN4
+gate[1] => gate[1].IN4
+gate[2] => gate[2].IN4
+tester[0] => tester[0].IN1
+tester[1] => tester[1].IN1
+tester[2] => tester[2].IN1
 
 
-|ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|mux_test:mt1
+select[0] => Equal0.IN2
+select[0] => Equal1.IN0
+select[0] => Equal2.IN2
+select[0] => Equal3.IN1
+select[0] => Equal4.IN2
+select[1] => Equal0.IN1
+select[1] => Equal1.IN2
+select[1] => Equal2.IN0
+select[1] => Equal3.IN0
+select[1] => Equal4.IN1
+select[2] => Equal0.IN0
+select[2] => Equal1.IN1
+select[2] => Equal2.IN1
+select[2] => Equal3.IN2
+select[2] => Equal4.IN0
+W_NOT <= W_NOT$latch.DB_MAX_OUTPUT_PORT_TYPE
+W_TWO <= W_TWO$latch.DB_MAX_OUTPUT_PORT_TYPE
+W_THREE <= W_THREE$latch.DB_MAX_OUTPUT_PORT_TYPE
+W_FOUR <= W_FOUR$latch.DB_MAX_OUTPUT_PORT_TYPE
+W_EIGHT <= W_EIGHT$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst
 A1 <= A1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 A2 <= A2~reg0.DB_MAX_OUTPUT_PORT_TYPE
 A3 <= A3~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -258,45 +882,48 @@ enable => output_got1[0].ENA
 enable => output_got1[1].ENA
 enable => output_got1[2].ENA
 enable => output_got1[3].ENA
+gateSelect[0] => gateSelect[0].IN1
+gateSelect[1] => gateSelect[1].IN1
+gateSelect[2] => gateSelect[2].IN1
 
 
-|ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_and:and2
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_and:and2
 A => Y.IN0
 B => Y.IN1
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_or:or2
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_or:or2
 A => Y.IN0
 B => Y.IN1
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_nand:nand2
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_nand:nand2
 A => Y.IN0
 B => Y.IN1
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_nor:nor2
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_nor:nor2
 A => Y.IN0
 B => Y.IN1
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_xor:xor2
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_xor:xor2
 A => Y.IN0
 B => Y.IN1
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_xnor:xnor2
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_xnor:xnor2
 A => Y.IN0
 B => Y.IN1
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|mux_gate:m_gate1
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|mux_gate:m_gate1
 select[0] => Equal0.IN2
 select[0] => Equal1.IN0
 select[0] => Equal2.IN2
@@ -324,7 +951,7 @@ W_XNOR => Y.DATAA
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|three_input_checker:three_input_checker_inst
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst
 A1 <= A1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 A2 <= A2~reg0.DB_MAX_OUTPUT_PORT_TYPE
 A3 <= A3~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -534,44 +1161,47 @@ enable => output_got1[4].ENA
 enable => output_got1[5].ENA
 enable => output_got1[6].ENA
 enable => output_got1[7].ENA
+gateSelect[0] => gateSelect[0].IN1
+gateSelect[1] => gateSelect[1].IN1
+gateSelect[2] => gateSelect[2].IN1
 
 
-|ic_tester|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_and:and3
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_and:and3
 A => Y.IN0
 B => Y.IN1
 C => Y.IN1
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_or:or3
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_or:or3
 A => Y.IN0
 B => Y.IN1
 C => Y.IN1
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_nand:nand3
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_nand:nand3
 A => Y.IN0
 B => Y.IN1
 C => Y.IN1
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_nor:nor3
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_nor:nor3
 A => Y.IN0
 B => Y.IN1
 C => Y.IN1
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_xor:xor3
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_xor:xor3
 A => Y.IN0
 B => Y.IN1
 C => Y.IN1
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|mux_gate:m_gate2
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|mux_gate:m_gate2
 select[0] => Equal0.IN2
 select[0] => Equal1.IN0
 select[0] => Equal2.IN2
@@ -599,7 +1229,7 @@ W_XNOR => Y.DATAA
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|four_input_checker:four_input_checker_inst
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst
 A1 <= A1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 A2 <= A2~reg0.DB_MAX_OUTPUT_PORT_TYPE
 B1 <= B1~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -851,9 +1481,12 @@ enable => output_got1[12].ENA
 enable => output_got1[13].ENA
 enable => output_got1[14].ENA
 enable => output_got1[15].ENA
+gateSelect[0] => gateSelect[0].IN1
+gateSelect[1] => gateSelect[1].IN1
+gateSelect[2] => gateSelect[2].IN1
 
 
-|ic_tester|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|four_input_and:and3
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|four_input_and:and3
 A => Y.IN0
 B => Y.IN1
 C => Y.IN1
@@ -861,7 +1494,7 @@ D => Y.IN1
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|four_input_nand:nand3
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|four_input_nand:nand3
 A => Y.IN0
 B => Y.IN1
 C => Y.IN1
@@ -869,7 +1502,7 @@ D => Y.IN1
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|mux_gate:m_gate3
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|mux_gate:m_gate3
 select[0] => Equal0.IN2
 select[0] => Equal1.IN0
 select[0] => Equal2.IN2
@@ -897,7 +1530,7 @@ W_XNOR => Y.DATAA
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst
 A1 <= A1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 B1 <= B1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 C1 <= C1~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -1199,9 +1832,12 @@ enable => output_got1[28].ENA
 enable => output_got1[29].ENA
 enable => output_got1[30].ENA
 enable => output_got1[31].ENA
+gateSelect[0] => gateSelect[0].IN1
+gateSelect[1] => gateSelect[1].IN1
+gateSelect[2] => gateSelect[2].IN1
 
 
-|ic_tester|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|eight_input_nand:nand3
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|eight_input_nand:nand3
 A => Y.IN0
 B => Y.IN1
 C => Y.IN1
@@ -1213,7 +1849,7 @@ H => Y.IN1
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|mux_gate:m_gate2
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|mux_gate:m_gate2
 select[0] => Equal0.IN2
 select[0] => Equal1.IN0
 select[0] => Equal2.IN2
@@ -1241,7 +1877,7 @@ W_XNOR => Y.DATAA
 Y <= Y.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|ic_tester|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst
 A1 <= A1~reg0.DB_MAX_OUTPUT_PORT_TYPE
 A2 <= A2~reg0.DB_MAX_OUTPUT_PORT_TYPE
 A3 <= A3~reg0.DB_MAX_OUTPUT_PORT_TYPE
@@ -1406,7 +2042,7 @@ enable => output_got1[0].ENA
 enable => output_got1[1].ENA
 
 
-|ic_tester|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|not_gate:not_gate
+|ic_tester|testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|not_gate:not_gate
 A => Y.DATAIN
 Y <= A.DB_MAX_OUTPUT_PORT_TYPE
 

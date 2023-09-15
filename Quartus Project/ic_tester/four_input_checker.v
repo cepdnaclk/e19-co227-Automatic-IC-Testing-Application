@@ -8,7 +8,8 @@ module four_input_checker (
   fail1, fail2,
   pass, fail,
   clk,
-  enable
+  enable,
+  gateSelect
 );
 	
   // Store 0000, 0001, 0010, 0011, 0100, 0101, 0110, 0111, 1000, 1001, 1010, 1011, 1100, 1101, 1110, 1111
@@ -25,6 +26,8 @@ module four_input_checker (
   input op1, op2;
   input clk;
   input enable;
+  
+  input [2:0] gateSelect;
   
   output reg A1, A2;
   output reg B1, B2;
@@ -60,12 +63,21 @@ module four_input_checker (
   four_input_and and3 (.A(input_pattern[0]), .B(input_pattern[1]), .C(input_pattern[2]), .D(input_pattern[3]), .Y(W_AND));
   four_input_nand nand3 (.A(input_pattern[0]), .B(input_pattern[1]), .C(input_pattern[2]), .D(input_pattern[3]), .Y(W_NAND));
 
-  mux_gate m_gate3(.select(3'b001), .W_AND(W_AND), .W_OR(W_AND), .W_NAND(W_NAND), .W_NOR(W_AND), .W_XOR(W_AND), .W_XNOR(W_AND), .Y(W_SELECT));
+  mux_gate m_gate3(.select(gateSelect), .W_AND(W_AND), .W_OR(W_AND), .W_NAND(W_NAND), .W_NOR(W_AND), .W_XOR(W_AND), .W_XNOR(W_AND), .Y(W_SELECT));
+
+  initial begin
+    pass1 = 1'b0;
+    pass2 = 1'b0;
+    fail1 = 1'b0;
+    fail2 = 1'b0;
+	 pass = 1'b0;
+	 fail = 1'b0;
+	 
+	 counter = 0;
+  end
 
   
   always @(posedge clk) begin
-    
-    counter <= counter + 1;
 	 
     A1 <= input_pattern[0];
     B1 <= input_pattern[1];
@@ -78,6 +90,9 @@ module four_input_checker (
 	 D2 <= input_pattern[3];
 
 	 if (enable) begin
+	 
+	    counter <= counter + 1;
+	 
 		 if (counter == ONE_SECOND_DELAY) begin
 			case (state)
 			  S0000: begin

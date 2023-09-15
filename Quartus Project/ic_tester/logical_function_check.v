@@ -6,7 +6,8 @@ module logical_function_check (
   pass1, pass2, pass3, pass4, pass5, pass6,
   fail1, fail2, fail3, fail4, fail5, fail6,
   pass, fail,
-  clk
+  clk,
+  gate, tester
 );
   
   input OP1, OP2, OP3, OP4, OP5, OP6, OP8, OP9, OP10, OP11, OP12, OP13;
@@ -14,6 +15,9 @@ module logical_function_check (
   output reg pass1, pass2, pass3, pass4, pass5, pass6, fail1, fail2, fail3, fail4, fail5, fail6;
   output reg pass, fail;
   input clk;
+  
+  input [2:0] gate;
+  input [2:0] tester;
   
   reg mode = 3'b001;
   
@@ -33,6 +37,17 @@ module logical_function_check (
   wire IN1_WIRE_NOT, IN2_WIRE_NOT, IN3_WIRE_NOT, IN4_WIRE_NOT, IN5_WIRE_NOT, IN6_WIRE_NOT, IN8_WIRE_NOT, IN9_WIRE_NOT, IN10_WIRE_NOT, IN11_WIRE_NOT, IN12_WIRE_NOT, IN13_WIRE_NOT;
   wire PASS1_WIRE_NOT, PASS2_WIRE_NOT, PASS3_WIRE_NOT, PASS4_WIRE_NOT, PASS5_WIRE_NOT, PASS6_WIRE_NOT, FAIL1_WIRE_NOT, FAIL2_WIRE_NOT, FAIL3_WIRE_NOT, FAIL4_WIRE_NOT, FAIL5_WIRE_NOT, FAIL6_WIRE_NOT;
   wire PASS_WIRE_NOT, FAIL_WIRE_NOT;
+  
+  wire W_NOT, W_TWO, W_THREE, W_FOUR, W_EIGHT;
+  
+  mux_test mt1(
+    .select(tester),
+    .W_NOT(W_NOT), 
+	 .W_TWO(W_TWO), 
+	 .W_THREE(W_THREE), 
+	 .W_FOUR(W_FOUR), 
+	 .W_EIGHT(W_EIGHT)
+);
   
   two_input_checker two_input_checker_inst(
     .A1(IN1_WIRE2),
@@ -58,7 +73,8 @@ module logical_function_check (
     .pass(PASS_WIRE2),
     .fail(FAIL_WIRE2),
 	 .clk(clk),
-	 .enable(1'b1)
+	 .enable(W_TWO),
+	 .gateSelect(gate)
   );
   
   three_input_checker three_input_checker_inst (
@@ -83,7 +99,8 @@ module logical_function_check (
     .pass(PASS_WIRE3), 
 	 .fail(FAIL_WIRE3),
     .clk(clk),
-	 .enable(1'b0)
+	 .enable(W_THREE),
+	 .gateSelect(gate)
 	 
   );
 	
@@ -105,7 +122,8 @@ module logical_function_check (
     .pass(PASS_WIRE4), 
 	 .fail(FAIL_WIRE4),
     .clk(clk),
-	 .enable(1'b0)
+	 .enable(W_FOUR),
+	 .gateSelect(gate)
   );
   
   eight_input_checker eight_input_checker_inst (
@@ -123,7 +141,8 @@ module logical_function_check (
     .pass(PASS_WIRE8), 
 	 .fail(FAIL_WIRE8),
     .clk(clk),
-	 .enable(1'b0)
+	 .enable(W_EIGHT),
+	 .gateSelect(gate)
   );
 
   not_gate_checker not_gate_checker_inst(
@@ -154,7 +173,7 @@ module logical_function_check (
     .pass(PASS_WIRE_NOT), 
 	 .fail(FAIL_WIRE_NOT),
     .clk(clk),
-    .enable(1'b0)
+    .enable(W_NOT)
 );
 
 	
@@ -165,7 +184,7 @@ module logical_function_check (
 	  
 	  if (counter == ONE_SECOND_DELAY) begin
 	  
-	    if (mode == 3'b000) begin
+	    if (tester == 3'b000) begin
 		 	 IN1 <= IN1_WIRE_NOT;
 			 IN2 <= IN2_WIRE_NOT;
 			 IN3 <= IN3_WIRE_NOT;
@@ -196,7 +215,7 @@ module logical_function_check (
 			 pass <= PASS_WIRE_NOT;
 			 fail <= FAIL_WIRE_NOT;
 		 end
-		 else if (mode == 3'b001) begin
+		 else if (tester == 3'b001) begin
 			 IN1 <= IN1_WIRE2;
 			 IN2 <= IN2_WIRE2;
 			 IN3 <= IN3_WIRE2;
@@ -227,7 +246,7 @@ module logical_function_check (
 			 pass <= PASS_WIRE2;
 			 fail <= FAIL_WIRE2;
 		 end
-		 else if (mode == 3'b010) begin
+		 else if (tester == 3'b010) begin
 		 	 IN1 <= IN1_WIRE3;
 			 IN2 <= IN2_WIRE3;
 			 IN3 <= IN3_WIRE3;
@@ -258,7 +277,7 @@ module logical_function_check (
 			 pass <= PASS_WIRE3;
 			 fail <= FAIL_WIRE3;
 		 end
-		 else if (mode == 3'b011) begin
+		 else if (tester == 3'b011) begin
 		 	 IN1 <= IN1_WIRE4;
 			 IN2 <= IN2_WIRE4;
 			 IN3 <= IN3_WIRE4;
@@ -289,7 +308,7 @@ module logical_function_check (
 			 pass <= PASS_WIRE4;
 			 fail <= FAIL_WIRE4;
 		 end
-		 else if (mode == 3'b100) begin
+		 else if (tester == 3'b100) begin
 		 	 IN1 <= IN1_WIRE8;
 			 IN2 <= IN2_WIRE8;
 			 IN3 <= IN3_WIRE8;

@@ -1,5 +1,5 @@
 Fitter report for ic_tester
-Tue Sep 12 20:53:02 2023
+Fri Sep 15 16:31:51 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -66,7 +66,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Fitter Summary                                                                  ;
 +------------------------------------+--------------------------------------------+
-; Fitter Status                      ; Successful - Tue Sep 12 20:53:02 2023      ;
+; Fitter Status                      ; Successful - Fri Sep 15 16:31:51 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; ic_tester                                  ;
 ; Top-level Entity Name              ; ic_tester                                  ;
@@ -152,12 +152,12 @@ applicable agreement for further details.
 ; Number detected on machine ; 12          ;
 ; Maximum allowed            ; 6           ;
 ;                            ;             ;
-; Average used               ; 1.83        ;
+; Average used               ; 2.67        ;
 ; Maximum used               ; 6           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-6         ;  16.7%      ;
+;     Processors 2-6         ;  33.3%      ;
 ;     Processors 7-12        ;   0.0%      ;
 +----------------------------+-------------+
 
@@ -1240,16 +1240,17 @@ The pin-out file can be found in D:/Projects/FPGA Test/ic_tester/output_files/ic
 Note: Pin directions (input, output or bidir) are based on device operating in user mode.
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                ;
-+--------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                       ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                ; Library Name ;
-+--------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------+--------------+
-; |ic_tester                                       ; 164 (0)     ; 120 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 39   ; 0            ; 44 (0)       ; 22 (0)            ; 98 (0)           ; |ic_tester                                                                                         ; work         ;
-;    |logical_function_check:lfc1|                 ; 164 (67)    ; 120 (50)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 44 (17)      ; 22 (10)           ; 98 (40)          ; |ic_tester|logical_function_check:lfc1                                                             ; work         ;
-;       |two_input_checker:two_input_checker_inst| ; 97 (96)     ; 70 (70)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 27 (26)      ; 12 (12)           ; 58 (58)          ; |ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst                    ; work         ;
-;          |two_input_and:and2|                    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_and:and2 ; work         ;
-+--------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Fitter Resource Utilization by Entity                                                                                                                                                                                                                                                                                                                                                     ;
++-----------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                          ; Logic Cells ; Dedicated Logic Registers ; I/O Registers ; Memory Bits ; M9Ks ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Full Hierarchy Name                                                                                                  ; Library Name ;
++-----------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------------------------+--------------+
+; |ic_tester                                          ; 164 (0)     ; 120 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 39   ; 0            ; 44 (0)       ; 22 (0)            ; 98 (0)           ; |ic_tester                                                                                                           ; work         ;
+;    |testing_logic:tl1|                              ; 164 (0)     ; 120 (0)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 44 (0)       ; 22 (0)            ; 98 (0)           ; |ic_tester|testing_logic:tl1                                                                                         ; work         ;
+;       |logical_function_check:lfc1|                 ; 164 (67)    ; 120 (50)                  ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 44 (17)      ; 22 (10)           ; 98 (40)          ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1                                                             ; work         ;
+;          |two_input_checker:two_input_checker_inst| ; 97 (96)     ; 70 (70)                   ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 27 (26)      ; 12 (12)           ; 58 (58)          ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst                    ; work         ;
+;             |two_input_and:and2|                    ; 1 (1)       ; 0 (0)                     ; 0 (0)         ; 0           ; 0    ; 0            ; 0       ; 0         ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_and:and2 ; work         ;
++-----------------------------------------------------+-------------+---------------------------+---------------+-------------+------+--------------+---------+-----------+------+--------------+--------------+-------------------+------------------+----------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -1300,57 +1301,57 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-------+----------+---------------+---------------+-----------------------+-----+------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------+
-; Pad To Core Delay Chain Fanout                                                                                                  ;
-+---------------------------------------------------------------------------------------------------+-------------------+---------+
-; Source Pin / Fanout                                                                               ; Pad To Core Index ; Setting ;
-+---------------------------------------------------------------------------------------------------+-------------------+---------+
-; OP1                                                                                               ;                   ;         ;
-; OP2                                                                                               ;                   ;         ;
-; OP4                                                                                               ;                   ;         ;
-; OP5                                                                                               ;                   ;         ;
-; OP9                                                                                               ;                   ;         ;
-; OP10                                                                                              ;                   ;         ;
-; OP12                                                                                              ;                   ;         ;
-; OP13                                                                                              ;                   ;         ;
-; clk                                                                                               ;                   ;         ;
-; OP3                                                                                               ;                   ;         ;
-;      - logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got1[3]        ; 1                 ; 6       ;
-;      - logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got1[2]        ; 1                 ; 6       ;
-;      - logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got1[0]        ; 1                 ; 6       ;
-;      - logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got1[1]~feeder ; 1                 ; 6       ;
-; OP6                                                                                               ;                   ;         ;
-;      - logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got2[3]        ; 0                 ; 6       ;
-;      - logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got2[2]        ; 0                 ; 6       ;
-;      - logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got2[1]        ; 0                 ; 6       ;
-;      - logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got2[0]        ; 0                 ; 6       ;
-; OP8                                                                                               ;                   ;         ;
-;      - logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got3[3]        ; 0                 ; 6       ;
-;      - logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got3[2]        ; 0                 ; 6       ;
-;      - logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got3[1]        ; 0                 ; 6       ;
-;      - logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got3[0]        ; 0                 ; 6       ;
-; OP11                                                                                              ;                   ;         ;
-;      - logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got4[3]        ; 0                 ; 6       ;
-;      - logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got4[2]        ; 0                 ; 6       ;
-;      - logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got4[1]        ; 0                 ; 6       ;
-;      - logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got4[0]        ; 0                 ; 6       ;
-+---------------------------------------------------------------------------------------------------+-------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------+
+; Pad To Core Delay Chain Fanout                                                                                                                    ;
++---------------------------------------------------------------------------------------------------------------------+-------------------+---------+
+; Source Pin / Fanout                                                                                                 ; Pad To Core Index ; Setting ;
++---------------------------------------------------------------------------------------------------------------------+-------------------+---------+
+; OP1                                                                                                                 ;                   ;         ;
+; OP2                                                                                                                 ;                   ;         ;
+; OP4                                                                                                                 ;                   ;         ;
+; OP5                                                                                                                 ;                   ;         ;
+; OP9                                                                                                                 ;                   ;         ;
+; OP10                                                                                                                ;                   ;         ;
+; OP12                                                                                                                ;                   ;         ;
+; OP13                                                                                                                ;                   ;         ;
+; clk                                                                                                                 ;                   ;         ;
+; OP3                                                                                                                 ;                   ;         ;
+;      - testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got1[3]        ; 1                 ; 6       ;
+;      - testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got1[2]        ; 1                 ; 6       ;
+;      - testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got1[0]        ; 1                 ; 6       ;
+;      - testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got1[1]~feeder ; 1                 ; 6       ;
+; OP6                                                                                                                 ;                   ;         ;
+;      - testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got2[3]        ; 0                 ; 6       ;
+;      - testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got2[2]        ; 0                 ; 6       ;
+;      - testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got2[1]        ; 0                 ; 6       ;
+;      - testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got2[0]        ; 0                 ; 6       ;
+; OP8                                                                                                                 ;                   ;         ;
+;      - testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got3[3]        ; 0                 ; 6       ;
+;      - testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got3[2]        ; 0                 ; 6       ;
+;      - testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got3[1]        ; 0                 ; 6       ;
+;      - testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got3[0]        ; 0                 ; 6       ;
+; OP11                                                                                                                ;                   ;         ;
+;      - testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got4[3]        ; 0                 ; 6       ;
+;      - testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got4[2]        ; 0                 ; 6       ;
+;      - testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got4[1]        ; 0                 ; 6       ;
+;      - testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got4[0]        ; 0                 ; 6       ;
++---------------------------------------------------------------------------------------------------------------------+-------------------+---------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Control Signals                                                                                                                                                                                                   ;
-+--------------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; Name                                                                                 ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
-+--------------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
-; clk                                                                                  ; PIN_Y2             ; 120     ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
-; logical_function_check:lfc1|Equal0~10                                                ; LCCOMB_X96_Y12_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~10       ; LCCOMB_X90_Y11_N10 ; 24      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[0]~0 ; LCCOMB_X91_Y11_N28 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[1]~1 ; LCCOMB_X91_Y11_N22 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[2]~2 ; LCCOMB_X92_Y12_N14 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass1~0         ; LCCOMB_X92_Y12_N26 ; 13      ; Clock enable ; no     ; --                   ; --               ; --                        ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass~1          ; LCCOMB_X91_Y12_N16 ; 2       ; Clock enable ; no     ; --                   ; --               ; --                        ;
-+--------------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Control Signals                                                                                                                                                                                                                     ;
++--------------------------------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; Name                                                                                                   ; Location           ; Fan-Out ; Usage        ; Global ; Global Resource Used ; Global Line Name ; Enable Signal Source Name ;
++--------------------------------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
+; clk                                                                                                    ; PIN_Y2             ; 120     ; Clock        ; yes    ; Global Clock         ; GCLK4            ; --                        ;
+; testing_logic:tl1|logical_function_check:lfc1|Equal0~10                                                ; LCCOMB_X96_Y12_N22 ; 32      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~10       ; LCCOMB_X90_Y11_N10 ; 24      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[0]~0 ; LCCOMB_X91_Y11_N28 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[1]~1 ; LCCOMB_X91_Y11_N22 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[2]~2 ; LCCOMB_X92_Y12_N14 ; 5       ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass1~0         ; LCCOMB_X92_Y12_N26 ; 13      ; Clock enable ; no     ; --                   ; --               ; --                        ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass~1          ; LCCOMB_X91_Y12_N16 ; 2       ; Clock enable ; no     ; --                   ; --               ; --                        ;
++--------------------------------------------------------------------------------------------------------+--------------------+---------+--------------+--------+----------------------+------------------+---------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------+
@@ -1362,340 +1363,340 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +------+----------+---------+--------------------------------------+----------------------+------------------+---------------------------+
 
 
-+-----------------------------------------------------------------------------------------------------+
-; Non-Global High Fan-Out Signals                                                                     ;
-+-------------------------------------------------------------------------------------------+---------+
-; Name                                                                                      ; Fan-Out ;
-+-------------------------------------------------------------------------------------------+---------+
-; logical_function_check:lfc1|Equal0~10                                                     ; 32      ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~10            ; 24      ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass1~0              ; 13      ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[2]~2      ; 5       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[1]~1      ; 5       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[0]~0      ; 5       ;
-; OP11~input                                                                                ; 4       ;
-; OP8~input                                                                                 ; 4       ;
-; OP6~input                                                                                 ; 4       ;
-; OP3~input                                                                                 ; 4       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_and:and2|Y ; 4       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state.S00            ; 4       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state.S11            ; 4       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[3]        ; 4       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[2]        ; 4       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[1]        ; 4       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[0]        ; 4       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B4                   ; 4       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A4                   ; 4       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state.S10            ; 3       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|always0~0            ; 3       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state.S01            ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass~1               ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal4~2             ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal3~2             ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal2~2             ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[31]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[30]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[29]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[28]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[27]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[26]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[24]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[25]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[23]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[22]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[21]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[20]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[18]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[16]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[19]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[17]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[15]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[14]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[13]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[12]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[11]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[10]          ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[9]           ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[8]           ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[6]           ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[5]           ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[4]           ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[7]           ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[3]           ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[2]           ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[1]           ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[0]           ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal1~2             ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|input_pattern[1]     ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|input_pattern[0]     ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail4                ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail3                ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail2                ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail1                ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass4                ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass3                ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass2                ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass1                ; 2       ;
-; logical_function_check:lfc1|Add0~62                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~60                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~58                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~56                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~54                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~52                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~50                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~48                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~46                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~44                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~42                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~40                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~38                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~36                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~34                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~32                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~30                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~28                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~26                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~24                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~22                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~20                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~18                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~16                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~14                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~12                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~10                                                       ; 2       ;
-; logical_function_check:lfc1|Add0~8                                                        ; 2       ;
-; logical_function_check:lfc1|Add0~6                                                        ; 2       ;
-; logical_function_check:lfc1|Add0~4                                                        ; 2       ;
-; logical_function_check:lfc1|Add0~2                                                        ; 2       ;
-; logical_function_check:lfc1|Add0~0                                                        ; 2       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state.S01~0          ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state.S00~0          ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail~0               ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail4~0              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail3~0              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail2~0              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail1~0              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~12           ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~11           ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~10           ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~9            ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~8            ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~7            ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~6            ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~5            ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~4            ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~3            ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~2            ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~1            ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~0            ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|input_pattern~1      ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|input_pattern~0      ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass~0               ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal4~1             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got4[2]       ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got4[3]       ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal4~0             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got4[0]       ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got4[1]       ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal3~1             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got3[2]       ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got3[3]       ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal3~0             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got3[0]       ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got3[1]       ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal2~1             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got2[2]       ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got2[3]       ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal2~0             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got2[0]       ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got2[1]       ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~9             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~8             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~7             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~6             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~5             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~4             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~3             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~2             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~1             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~0             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal1~1             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got1[2]       ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got1[3]       ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal1~0             ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got1[0]       ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got1[1]       ; 1       ;
-; logical_function_check:lfc1|counter~13                                                    ; 1       ;
-; logical_function_check:lfc1|counter~12                                                    ; 1       ;
-; logical_function_check:lfc1|counter~11                                                    ; 1       ;
-; logical_function_check:lfc1|counter~10                                                    ; 1       ;
-; logical_function_check:lfc1|counter~9                                                     ; 1       ;
-; logical_function_check:lfc1|counter~8                                                     ; 1       ;
-; logical_function_check:lfc1|counter~7                                                     ; 1       ;
-; logical_function_check:lfc1|counter~6                                                     ; 1       ;
-; logical_function_check:lfc1|counter~5                                                     ; 1       ;
-; logical_function_check:lfc1|counter~4                                                     ; 1       ;
-; logical_function_check:lfc1|counter~3                                                     ; 1       ;
-; logical_function_check:lfc1|counter~2                                                     ; 1       ;
-; logical_function_check:lfc1|counter~1                                                     ; 1       ;
-; logical_function_check:lfc1|counter~0                                                     ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail                 ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass                 ; 1       ;
-; logical_function_check:lfc1|Equal0~9                                                      ; 1       ;
-; logical_function_check:lfc1|Equal0~8                                                      ; 1       ;
-; logical_function_check:lfc1|Equal0~7                                                      ; 1       ;
-; logical_function_check:lfc1|Equal0~6                                                      ; 1       ;
-; logical_function_check:lfc1|Equal0~5                                                      ; 1       ;
-; logical_function_check:lfc1|Equal0~4                                                      ; 1       ;
-; logical_function_check:lfc1|Equal0~3                                                      ; 1       ;
-; logical_function_check:lfc1|Equal0~2                                                      ; 1       ;
-; logical_function_check:lfc1|Equal0~1                                                      ; 1       ;
-; logical_function_check:lfc1|Equal0~0                                                      ; 1       ;
-; logical_function_check:lfc1|counter[31]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[30]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[0]                                                    ; 1       ;
-; logical_function_check:lfc1|counter[1]                                                    ; 1       ;
-; logical_function_check:lfc1|counter[2]                                                    ; 1       ;
-; logical_function_check:lfc1|counter[3]                                                    ; 1       ;
-; logical_function_check:lfc1|counter[4]                                                    ; 1       ;
-; logical_function_check:lfc1|counter[5]                                                    ; 1       ;
-; logical_function_check:lfc1|counter[6]                                                    ; 1       ;
-; logical_function_check:lfc1|counter[7]                                                    ; 1       ;
-; logical_function_check:lfc1|counter[8]                                                    ; 1       ;
-; logical_function_check:lfc1|counter[9]                                                    ; 1       ;
-; logical_function_check:lfc1|counter[10]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[11]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[12]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[13]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[14]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[15]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[16]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[17]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[18]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[19]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[20]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[21]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[22]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[23]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[24]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[25]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[26]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[27]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[28]                                                   ; 1       ;
-; logical_function_check:lfc1|counter[29]                                                   ; 1       ;
-; logical_function_check:lfc1|fail                                                          ; 1       ;
-; logical_function_check:lfc1|pass                                                          ; 1       ;
-; logical_function_check:lfc1|fail4                                                         ; 1       ;
-; logical_function_check:lfc1|fail3                                                         ; 1       ;
-; logical_function_check:lfc1|fail2                                                         ; 1       ;
-; logical_function_check:lfc1|fail1                                                         ; 1       ;
-; logical_function_check:lfc1|pass4                                                         ; 1       ;
-; logical_function_check:lfc1|pass3                                                         ; 1       ;
-; logical_function_check:lfc1|pass2                                                         ; 1       ;
-; logical_function_check:lfc1|pass1                                                         ; 1       ;
-; logical_function_check:lfc1|IN13                                                          ; 1       ;
-; logical_function_check:lfc1|IN12                                                          ; 1       ;
-; logical_function_check:lfc1|IN10                                                          ; 1       ;
-; logical_function_check:lfc1|IN9                                                           ; 1       ;
-; logical_function_check:lfc1|IN5                                                           ; 1       ;
-; logical_function_check:lfc1|IN4                                                           ; 1       ;
-; logical_function_check:lfc1|IN2                                                           ; 1       ;
-; logical_function_check:lfc1|IN1                                                           ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~62              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~61              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~60              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~59              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~58              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~57              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~56              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~55              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~54              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~53              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~52              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~51              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~50              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~49              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~48              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~47              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~46              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~45              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~44              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~43              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~42              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~41              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~40              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~39              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~38              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~37              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~36              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~35              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~34              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~33              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~32              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~31              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~30              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~29              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~28              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~27              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~26              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~25              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~24              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~23              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~22              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~21              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~20              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~19              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~18              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~17              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~16              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~15              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~14              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~13              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~12              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~11              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~10              ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~9               ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~8               ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~7               ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~6               ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~5               ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~4               ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~3               ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~2               ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~1               ; 1       ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~0               ; 1       ;
-; logical_function_check:lfc1|Add0~61                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~59                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~57                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~55                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~53                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~51                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~49                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~47                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~45                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~43                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~41                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~39                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~37                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~35                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~33                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~31                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~29                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~27                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~25                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~23                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~21                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~19                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~17                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~15                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~13                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~11                                                       ; 1       ;
-; logical_function_check:lfc1|Add0~9                                                        ; 1       ;
-; logical_function_check:lfc1|Add0~7                                                        ; 1       ;
-; logical_function_check:lfc1|Add0~5                                                        ; 1       ;
-; logical_function_check:lfc1|Add0~3                                                        ; 1       ;
-; logical_function_check:lfc1|Add0~1                                                        ; 1       ;
-+-------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------+
+; Non-Global High Fan-Out Signals                                                                                       ;
++-------------------------------------------------------------------------------------------------------------+---------+
+; Name                                                                                                        ; Fan-Out ;
++-------------------------------------------------------------------------------------------------------------+---------+
+; testing_logic:tl1|logical_function_check:lfc1|Equal0~10                                                     ; 32      ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~10            ; 24      ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass1~0              ; 13      ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[2]~2      ; 5       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[1]~1      ; 5       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[0]~0      ; 5       ;
+; OP11~input                                                                                                  ; 4       ;
+; OP8~input                                                                                                   ; 4       ;
+; OP6~input                                                                                                   ; 4       ;
+; OP3~input                                                                                                   ; 4       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_and:and2|Y ; 4       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state.S00            ; 4       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state.S11            ; 4       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[3]        ; 4       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[2]        ; 4       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[1]        ; 4       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_ori[0]        ; 4       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B4                   ; 4       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A4                   ; 4       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state.S10            ; 3       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|always0~0            ; 3       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state.S01            ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass~1               ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal4~2             ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal3~2             ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal2~2             ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[31]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[30]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[29]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[28]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[27]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[26]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[24]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[25]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[23]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[22]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[21]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[20]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[18]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[16]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[19]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[17]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[15]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[14]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[13]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[12]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[11]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[10]          ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[9]           ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[8]           ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[6]           ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[5]           ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[4]           ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[7]           ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[3]           ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[2]           ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[1]           ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter[0]           ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal1~2             ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|input_pattern[1]     ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|input_pattern[0]     ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail4                ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail3                ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail2                ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail1                ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass4                ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass3                ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass2                ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass1                ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~62                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~60                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~58                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~56                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~54                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~52                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~50                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~48                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~46                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~44                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~42                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~40                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~38                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~36                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~34                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~32                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~30                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~28                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~26                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~24                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~22                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~20                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~18                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~16                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~14                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~12                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~10                                                       ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~8                                                        ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~6                                                        ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~4                                                        ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~2                                                        ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~0                                                        ; 2       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state.S01~0          ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state.S00~0          ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail~0               ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail4~0              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail3~0              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail2~0              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail1~0              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~12           ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~11           ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~10           ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~9            ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~8            ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~7            ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~6            ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~5            ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~4            ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~3            ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~2            ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~1            ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|counter~0            ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|input_pattern~1      ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|input_pattern~0      ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass~0               ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal4~1             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got4[2]       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got4[3]       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal4~0             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got4[0]       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got4[1]       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal3~1             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got3[2]       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got3[3]       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal3~0             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got3[0]       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got3[1]       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal2~1             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got2[2]       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got2[3]       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal2~0             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got2[0]       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got2[1]       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~9             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~8             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~7             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~6             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~5             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~4             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~3             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~2             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~1             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal0~0             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal1~1             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got1[2]       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got1[3]       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Equal1~0             ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got1[0]       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|output_got1[1]       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter~13                                                    ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter~12                                                    ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter~11                                                    ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter~10                                                    ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter~9                                                     ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter~8                                                     ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter~7                                                     ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter~6                                                     ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter~5                                                     ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter~4                                                     ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter~3                                                     ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter~2                                                     ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter~1                                                     ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter~0                                                     ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail                 ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass                 ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Equal0~9                                                      ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Equal0~8                                                      ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Equal0~7                                                      ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Equal0~6                                                      ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Equal0~5                                                      ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Equal0~4                                                      ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Equal0~3                                                      ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Equal0~2                                                      ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Equal0~1                                                      ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Equal0~0                                                      ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[31]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[30]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[0]                                                    ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[1]                                                    ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[2]                                                    ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[3]                                                    ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[4]                                                    ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[5]                                                    ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[6]                                                    ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[7]                                                    ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[8]                                                    ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[9]                                                    ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[10]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[11]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[12]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[13]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[14]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[15]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[16]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[17]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[18]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[19]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[20]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[21]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[22]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[23]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[24]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[25]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[26]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[27]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[28]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|counter[29]                                                   ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|fail                                                          ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|pass                                                          ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|fail4                                                         ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|fail3                                                         ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|fail2                                                         ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|fail1                                                         ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|pass4                                                         ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|pass3                                                         ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|pass2                                                         ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|pass1                                                         ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|IN13                                                          ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|IN12                                                          ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|IN10                                                          ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|IN9                                                           ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|IN5                                                           ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|IN4                                                           ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|IN2                                                           ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|IN1                                                           ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~62              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~61              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~60              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~59              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~58              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~57              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~56              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~55              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~54              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~53              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~52              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~51              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~50              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~49              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~48              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~47              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~46              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~45              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~44              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~43              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~42              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~41              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~40              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~39              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~38              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~37              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~36              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~35              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~34              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~33              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~32              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~31              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~30              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~29              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~28              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~27              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~26              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~25              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~24              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~23              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~22              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~21              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~20              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~19              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~18              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~17              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~16              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~15              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~14              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~13              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~12              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~11              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~10              ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~9               ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~8               ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~7               ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~6               ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~5               ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~4               ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~3               ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~2               ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~1               ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|Add0~0               ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~61                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~59                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~57                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~55                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~53                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~51                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~49                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~47                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~45                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~43                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~41                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~39                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~37                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~35                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~33                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~31                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~29                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~27                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~25                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~23                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~21                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~19                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~17                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~15                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~13                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~11                                                       ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~9                                                        ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~7                                                        ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~5                                                        ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~3                                                        ; 1       ;
+; testing_logic:tl1|logical_function_check:lfc1|Add0~1                                                        ; 1       ;
++-------------------------------------------------------------------------------------------------------------+---------+
 
 
 +-------------------------------------------------+
@@ -2051,7 +2052,7 @@ Info (170195): Router estimated average interconnect usage is 0% of the availabl
 Info (170194): Fitter routing operations ending: elapsed time is 00:00:01
 Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
     Info (170201): Optimizations that may affect the design's routability were skipped
-Info (11888): Total time spent on timing analysis during the Fitter is 0.14 seconds.
+Info (11888): Total time spent on timing analysis during the Fitter is 0.02 seconds.
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (334003): Started post-fitting delay annotation
@@ -2059,10 +2060,10 @@ Info (334004): Delay annotation completed successfully
 Info (11218): Fitter post-fit operations ending: elapsed time is 00:00:01
 Info (144001): Generated suppressed messages file D:/Projects/FPGA Test/ic_tester/output_files/ic_tester.fit.smsg
 Info: Quartus II 64-Bit Fitter was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 5745 megabytes
-    Info: Processing ended: Tue Sep 12 20:53:02 2023
-    Info: Elapsed time: 00:00:14
-    Info: Total CPU time (on all processors): 00:00:13
+    Info: Peak virtual memory: 5742 megabytes
+    Info: Processing ended: Fri Sep 15 16:31:51 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:11
 
 
 +----------------------------+

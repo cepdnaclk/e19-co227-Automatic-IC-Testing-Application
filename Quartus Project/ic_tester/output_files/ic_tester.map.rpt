@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ic_tester
-Tue Sep 12 20:52:47 2023
+Fri Sep 15 16:31:37 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -13,32 +13,26 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. State Machine - |ic_tester|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state
-  9. State Machine - |ic_tester|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state
- 10. State Machine - |ic_tester|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state
- 11. State Machine - |ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state
+  8. State Machine - |ic_tester|testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state
+  9. State Machine - |ic_tester|testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state
+ 10. State Machine - |ic_tester|testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state
+ 11. State Machine - |ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state
  12. Registers Removed During Synthesis
  13. Removed Registers Triggering Further Register Optimizations
  14. General Register Statistics
  15. Multiplexer Restructuring Statistics (Restructuring Performed)
- 16. Parameter Settings for User Entity Instance: logical_function_check:lfc1
- 17. Parameter Settings for User Entity Instance: logical_function_check:lfc1|two_input_checker:two_input_checker_inst
- 18. Parameter Settings for User Entity Instance: logical_function_check:lfc1|three_input_checker:three_input_checker_inst
- 19. Parameter Settings for User Entity Instance: logical_function_check:lfc1|four_input_checker:four_input_checker_inst
- 20. Parameter Settings for User Entity Instance: logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst
- 21. Parameter Settings for User Entity Instance: logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst
- 22. Port Connectivity Checks: "logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst"
- 23. Port Connectivity Checks: "logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|mux_gate:m_gate2"
- 24. Port Connectivity Checks: "logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst"
- 25. Port Connectivity Checks: "logical_function_check:lfc1|four_input_checker:four_input_checker_inst|mux_gate:m_gate3"
- 26. Port Connectivity Checks: "logical_function_check:lfc1|four_input_checker:four_input_checker_inst"
- 27. Port Connectivity Checks: "logical_function_check:lfc1|three_input_checker:three_input_checker_inst|mux_gate:m_gate2"
- 28. Port Connectivity Checks: "logical_function_check:lfc1|three_input_checker:three_input_checker_inst"
- 29. Port Connectivity Checks: "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|mux_gate:m_gate1"
- 30. Port Connectivity Checks: "logical_function_check:lfc1|two_input_checker:two_input_checker_inst"
- 31. Elapsed Time Per Partition
- 32. Analysis & Synthesis Messages
- 33. Analysis & Synthesis Suppressed Messages
+ 16. Parameter Settings for User Entity Instance: testing_logic:tl1|logical_function_check:lfc1
+ 17. Parameter Settings for User Entity Instance: testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst
+ 18. Parameter Settings for User Entity Instance: testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst
+ 19. Parameter Settings for User Entity Instance: testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst
+ 20. Parameter Settings for User Entity Instance: testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst
+ 21. Parameter Settings for User Entity Instance: testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst
+ 22. Port Connectivity Checks: "testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|mux_gate:m_gate2"
+ 23. Port Connectivity Checks: "testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|mux_gate:m_gate3"
+ 24. Port Connectivity Checks: "testing_logic:tl1|icNumber_decoder:icd1"
+ 25. Elapsed Time Per Partition
+ 26. Analysis & Synthesis Messages
+ 27. Analysis & Synthesis Suppressed Messages
 
 
 
@@ -64,7 +58,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Sep 12 20:52:47 2023      ;
+; Analysis & Synthesis Status        ; Successful - Fri Sep 15 16:31:37 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; ic_tester                                  ;
 ; Top-level Entity Name              ; ic_tester                                  ;
@@ -210,9 +204,12 @@ applicable agreement for further details.
 ; four_input_checker.v             ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/four_input_checker.v     ;         ;
 ; eight_input_checker.v            ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/eight_input_checker.v    ;         ;
 ; mux_gate.v                       ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/mux_gate.v               ;         ;
+; mux_test.v                       ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/mux_test.v               ;         ;
 ; logical_function_check.v         ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/logical_function_check.v ;         ;
 ; two_input_xnor.v                 ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/two_input_xnor.v         ;         ;
 ; three_input_xor.v                ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/three_input_xor.v        ;         ;
+; icNumber_decoder.v               ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/icNumber_decoder.v       ;         ;
+; testing_logic.v                  ; yes             ; User Verilog HDL File  ; D:/Projects/FPGA Test/ic_tester/testing_logic.v          ;         ;
 +----------------------------------+-----------------+------------------------+----------------------------------------------------------+---------+
 
 
@@ -246,22 +243,23 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                              ;
-+--------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+--------------+
-; Compilation Hierarchy Node                       ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                ; Library Name ;
-+--------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+--------------+
-; |ic_tester                                       ; 142 (0)           ; 120 (0)      ; 0           ; 0            ; 0       ; 0         ; 39   ; 0            ; |ic_tester                                                                                         ; work         ;
-;    |logical_function_check:lfc1|                 ; 142 (57)          ; 120 (50)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|logical_function_check:lfc1                                                             ; work         ;
-;       |two_input_checker:two_input_checker_inst| ; 85 (84)           ; 70 (70)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst                    ; work         ;
-;          |two_input_and:and2|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_and:and2 ; work         ;
-+--------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------+--------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                                                   ;
++-----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+--------------+
+; Compilation Hierarchy Node                          ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                  ; Library Name ;
++-----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+--------------+
+; |ic_tester                                          ; 142 (0)           ; 120 (0)      ; 0           ; 0            ; 0       ; 0         ; 39   ; 0            ; |ic_tester                                                                                                           ; work         ;
+;    |testing_logic:tl1|                              ; 142 (0)           ; 120 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1                                                                                         ; work         ;
+;       |logical_function_check:lfc1|                 ; 142 (57)          ; 120 (50)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1                                                             ; work         ;
+;          |two_input_checker:two_input_checker_inst| ; 85 (84)           ; 70 (70)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst                    ; work         ;
+;             |two_input_and:and2|                    ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_and:and2 ; work         ;
++-----------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
 +--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |ic_tester|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state                                                                                                                                                                                                                                                                                                                                                                                                    ;
+; State Machine - |ic_tester|testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state                                                                                                                                                                                                                                                                                                                                                                                  ;
 +--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
 ; Name         ; state.S11111 ; state.S11110 ; state.S11101 ; state.S11100 ; state.S11011 ; state.S11010 ; state.S11001 ; state.S11000 ; state.S10111 ; state.S10110 ; state.S10101 ; state.S10100 ; state.S10011 ; state.S10010 ; state.S10001 ; state.S10000 ; state.S01111 ; state.S01110 ; state.S01101 ; state.S01100 ; state.S01011 ; state.S01010 ; state.S01001 ; state.S01000 ; state.S00111 ; state.S00110 ; state.S00101 ; state.S00100 ; state.S00011 ; state.S00010 ; state.S00001 ; state.S00000 ;
 +--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+--------------+
@@ -302,7 +300,7 @@ Encoding Type:  One-Hot
 
 Encoding Type:  One-Hot
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; State Machine - |ic_tester|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state                                                                                                                                     ;
+; State Machine - |ic_tester|testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state                                                                                                                   ;
 +-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
 ; Name        ; state.S1111 ; state.S1110 ; state.S1101 ; state.S1100 ; state.S1011 ; state.S1010 ; state.S1001 ; state.S1000 ; state.S0111 ; state.S0110 ; state.S0101 ; state.S0100 ; state.S0011 ; state.S0010 ; state.S0001 ; state.S0000 ;
 +-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+-------------+
@@ -326,164 +324,297 @@ Encoding Type:  One-Hot
 
 
 Encoding Type:  One-Hot
-+--------------------------------------------------------------------------------------------------------------------+
-; State Machine - |ic_tester|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state          ;
-+------------+------------+------------+------------+------------+------------+------------+------------+------------+
-; Name       ; state.S111 ; state.S110 ; state.S101 ; state.S100 ; state.S011 ; state.S010 ; state.S001 ; state.S000 ;
-+------------+------------+------------+------------+------------+------------+------------+------------+------------+
-; state.S000 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ;
-; state.S001 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 1          ;
-; state.S010 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 1          ;
-; state.S011 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 1          ;
-; state.S100 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 1          ;
-; state.S101 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 1          ;
-; state.S110 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
-; state.S111 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ;
-+------------+------------+------------+------------+------------+------------+------------+------------+------------+
++-----------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |ic_tester|testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state ;
++------------+------------+------------+------------+------------+------------+------------+------------+---------------------+
+; Name       ; state.S111 ; state.S110 ; state.S101 ; state.S100 ; state.S011 ; state.S010 ; state.S001 ; state.S000          ;
++------------+------------+------------+------------+------------+------------+------------+------------+---------------------+
+; state.S000 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0                   ;
+; state.S001 ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 1                   ;
+; state.S010 ; 0          ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 1                   ;
+; state.S011 ; 0          ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 1                   ;
+; state.S100 ; 0          ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 1                   ;
+; state.S101 ; 0          ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 1                   ;
+; state.S110 ; 0          ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1                   ;
+; state.S111 ; 1          ; 0          ; 0          ; 0          ; 0          ; 0          ; 0          ; 1                   ;
++------------+------------+------------+------------+------------+------------+------------+------------+---------------------+
 
 
 Encoding Type:  One-Hot
-+-------------------------------------------------------------------------------------------------------+
-; State Machine - |ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state ;
-+-----------+-----------+-----------+-----------+-------------------------------------------------------+
-; Name      ; state.S11 ; state.S10 ; state.S01 ; state.S00                                             ;
-+-----------+-----------+-----------+-----------+-------------------------------------------------------+
-; state.S00 ; 0         ; 0         ; 0         ; 0                                                     ;
-; state.S01 ; 0         ; 0         ; 1         ; 1                                                     ;
-; state.S10 ; 0         ; 1         ; 0         ; 1                                                     ;
-; state.S11 ; 1         ; 0         ; 0         ; 1                                                     ;
-+-----------+-----------+-----------+-----------+-------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state ;
++-----------+-----------+-----------+-----------+-------------------------------------------------------------------------+
+; Name      ; state.S11 ; state.S10 ; state.S01 ; state.S00                                                               ;
++-----------+-----------+-----------+-----------+-------------------------------------------------------------------------+
+; state.S00 ; 0         ; 0         ; 0         ; 0                                                                       ;
+; state.S01 ; 0         ; 0         ; 1         ; 1                                                                       ;
+; state.S10 ; 0         ; 1         ; 0         ; 1                                                                       ;
+; state.S11 ; 1         ; 0         ; 0         ; 1                                                                       ;
++-----------+-----------+-----------+-----------+-------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                                                                                                                            ;
-+-----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
-; Register name                                                                           ; Reason for Removal                                                                  ;
-+-----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
-; logical_function_check:lfc1|fail6                                                       ; Stuck at GND due to stuck port data_in                                              ;
-; logical_function_check:lfc1|fail5                                                       ; Stuck at GND due to stuck port data_in                                              ;
-; logical_function_check:lfc1|pass6                                                       ; Stuck at GND due to stuck port data_in                                              ;
-; logical_function_check:lfc1|pass5                                                       ; Stuck at GND due to stuck port data_in                                              ;
-; logical_function_check:lfc1|IN11                                                        ; Stuck at GND due to stuck port data_in                                              ;
-; logical_function_check:lfc1|IN8                                                         ; Stuck at GND due to stuck port data_in                                              ;
-; logical_function_check:lfc1|IN6                                                         ; Stuck at GND due to stuck port data_in                                              ;
-; logical_function_check:lfc1|IN3                                                         ; Stuck at GND due to stuck port data_in                                              ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|counter[0..31] ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|counter[0..31]   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|counter[0..31] ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B3                 ; Merged with logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B4 ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B2                 ; Merged with logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B4 ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B1                 ; Merged with logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B4 ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A3                 ; Merged with logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A4 ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A2                 ; Merged with logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A4 ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A1                 ; Merged with logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A4 ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~2        ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~3        ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~4        ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~5        ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~6        ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~2          ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~3          ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~4          ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~5          ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~2        ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~3        ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~4        ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state~2            ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state~3            ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00000   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00001   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00010   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00011   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00100   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00101   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00110   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00111   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01000   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01001   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01010   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01011   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01100   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01101   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01110   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01111   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10000   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10001   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10010   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10011   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10100   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10101   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10110   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10111   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11000   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11001   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11010   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11011   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11100   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11101   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11110   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11111   ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0000      ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0001      ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0010      ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0011      ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0100      ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0101      ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0110      ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0111      ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1000      ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1001      ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1010      ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1011      ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1100      ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1101      ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1110      ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1111      ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S000     ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S001     ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S010     ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S011     ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S100     ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S101     ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S110     ; Lost fanout                                                                         ;
-; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S111     ; Lost fanout                                                                         ;
-; Total Number of Removed Registers = 180                                                 ;                                                                                     ;
-+-----------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                                                                                                                                                     ;
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
+; Register name                                                                                                  ; Reason for Removal                                                                                    ;
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|A1                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|B1                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|C1                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|D1                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|E1                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|F1                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|H1                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|G1                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|A1                    ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|B1                    ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|C1                    ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|D1                    ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|D2                    ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|C2                    ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|B2                    ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|A2                    ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|A1                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|B1                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|A2                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|B2                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|C2                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|C3                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|B3                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|A3                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|C1                  ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|A1                        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|A2                        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|A3                        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|A4                        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|A5                        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|A6                        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|fail6                     ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|pass6                     ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|pass                      ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|fail                      ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|state                     ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|pass5                     ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|fail5                     ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|pass4                     ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|fail4                     ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|pass3                     ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|fail3                     ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|pass2                     ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|fail2                     ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|pass1                     ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|fail1                     ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|output_ori[0,1]           ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|output_got6[0,1]          ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|output_got5[0,1]          ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|output_got4[0,1]          ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|output_got3[0,1]          ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|output_got2[0,1]          ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|output_got1[0,1]          ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|fail1               ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|pass1               ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|pass                ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|fail                ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|output_ori[0..31]   ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|output_got1[0..31]  ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|fail1                 ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|pass1                 ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|fail2                 ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|pass2                 ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|pass                  ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|fail                  ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|output_ori[0..15]     ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|output_got2[0..15]    ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|output_got1[0..15]    ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|fail1               ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|pass1               ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|fail2               ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|pass2               ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|fail3               ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|pass3               ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|pass                ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|fail                ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|output_ori[0..7]    ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|output_got3[0..7]   ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|output_got2[0..7]   ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|output_got1[0..7]   ; Stuck at GND due to stuck port clock_enable                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|input_pattern             ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|counter[0..31]            ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|input_pattern[0..7] ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|counter[0..31]      ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|input_pattern[0..3]   ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|counter[0..31]        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|input_pattern[0..2] ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|counter[0..31]      ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|fail6                                                            ; Stuck at GND due to stuck port data_in                                                                ;
+; testing_logic:tl1|logical_function_check:lfc1|fail5                                                            ; Stuck at GND due to stuck port data_in                                                                ;
+; testing_logic:tl1|logical_function_check:lfc1|pass6                                                            ; Stuck at GND due to stuck port data_in                                                                ;
+; testing_logic:tl1|logical_function_check:lfc1|pass5                                                            ; Stuck at GND due to stuck port data_in                                                                ;
+; testing_logic:tl1|logical_function_check:lfc1|IN11                                                             ; Stuck at GND due to stuck port data_in                                                                ;
+; testing_logic:tl1|logical_function_check:lfc1|IN8                                                              ; Stuck at GND due to stuck port data_in                                                                ;
+; testing_logic:tl1|logical_function_check:lfc1|IN6                                                              ; Stuck at GND due to stuck port data_in                                                                ;
+; testing_logic:tl1|logical_function_check:lfc1|IN3                                                              ; Stuck at GND due to stuck port data_in                                                                ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B3                      ; Merged with testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B4 ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B2                      ; Merged with testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B4 ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B1                      ; Merged with testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|B4 ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A3                      ; Merged with testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A4 ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A2                      ; Merged with testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A4 ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A1                      ; Merged with testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|A4 ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~2             ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~3             ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~4             ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~5             ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~6             ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~2               ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~3               ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~4               ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~5               ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~2             ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~3             ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~4             ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state~2                 ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state~3                 ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00000        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00001        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00010        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00011        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00100        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00101        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00110        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S00111        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01000        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01001        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01010        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01011        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01100        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01101        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01110        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S01111        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10000        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10001        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10010        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10011        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10100        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10101        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10110        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10111        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11000        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11001        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11010        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11011        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11100        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11101        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11110        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11111        ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0000           ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0001           ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0010           ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0011           ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0100           ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0101           ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0110           ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0111           ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1000           ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1001           ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1010           ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1011           ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1100           ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1101           ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1110           ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1111           ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S000          ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S001          ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S010          ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S011          ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S100          ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S101          ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S110          ; Lost fanout                                                                                           ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S111          ; Lost fanout                                                                                           ;
+; Total Number of Removed Registers = 450                                                                        ;                                                                                                       ;
++----------------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Removed Registers Triggering Further Register Optimizations                                                                                                                                    ;
-+----------------------------------------------------------------------------------+--------------------+----------------------------------------------------------------------------------------+
-; Register name                                                                    ; Reason for Removal ; Registers Removed due to This Register                                                 ;
-+----------------------------------------------------------------------------------+--------------------+----------------------------------------------------------------------------------------+
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~2 ; Lost Fanouts       ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10101, ;
-;                                                                                  ;                    ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10111, ;
-;                                                                                  ;                    ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11001, ;
-;                                                                                  ;                    ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11011, ;
-;                                                                                  ;                    ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11101, ;
-;                                                                                  ;                    ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11111  ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~2   ; Lost Fanouts       ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0101,    ;
-;                                                                                  ;                    ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0111,    ;
-;                                                                                  ;                    ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1001,    ;
-;                                                                                  ;                    ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1011,    ;
-;                                                                                  ;                    ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1101,    ;
-;                                                                                  ;                    ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1111     ;
-; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~2 ; Lost Fanouts       ; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S001,   ;
-;                                                                                  ;                    ; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S011,   ;
-;                                                                                  ;                    ; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S101,   ;
-;                                                                                  ;                    ; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S111    ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~3 ; Lost Fanouts       ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10110, ;
-;                                                                                  ;                    ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11010, ;
-;                                                                                  ;                    ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11110  ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~3   ; Lost Fanouts       ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0110,    ;
-;                                                                                  ;                    ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1010,    ;
-;                                                                                  ;                    ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1110     ;
-; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~3 ; Lost Fanouts       ; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S010,   ;
-;                                                                                  ;                    ; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S110    ;
-; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~4 ; Lost Fanouts       ; logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11100  ;
-; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~4   ; Lost Fanouts       ; logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1100     ;
-; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~4 ; Lost Fanouts       ; logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S100    ;
-+----------------------------------------------------------------------------------+--------------------+----------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Removed Registers Triggering Further Register Optimizations                                                                                                                                                                                       ;
++----------------------------------------------------------------------------------------------------+--------------------------------+-------------------------------------------------------------------------------------------------------------+
+; Register name                                                                                      ; Reason for Removal             ; Registers Removed due to This Register                                                                      ;
++----------------------------------------------------------------------------------------------------+--------------------------------+-------------------------------------------------------------------------------------------------------------+
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|fail6         ; Stuck at GND                   ; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|pass,                  ;
+;                                                                                                    ; due to stuck port clock_enable ; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|fail,                  ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|counter[19],           ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|counter[20],           ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|counter[21],           ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|counter[22],           ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|counter[23],           ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|counter[25]            ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|fail1   ; Stuck at GND                   ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|pass,            ;
+;                                                                                                    ; due to stuck port clock_enable ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|fail,            ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|counter[19],     ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|counter[20],     ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|counter[21],     ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|counter[22],     ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|counter[23],     ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|counter[25]      ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|fail1     ; Stuck at GND                   ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|pass,              ;
+;                                                                                                    ; due to stuck port clock_enable ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|fail,              ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|counter[19],       ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|counter[20],       ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|counter[21],       ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|counter[22],       ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|counter[23],       ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|counter[25]        ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|fail1   ; Stuck at GND                   ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|pass,            ;
+;                                                                                                    ; due to stuck port clock_enable ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|fail,            ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|counter[19],     ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|counter[20],     ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|counter[21],     ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|counter[22],     ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|counter[23],     ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|counter[25]      ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~2 ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10101,    ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10111,    ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11001,    ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11011,    ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11101,    ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11111     ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~2   ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0101,       ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0111,       ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1001,       ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1011,       ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1101,       ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1111        ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~2 ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S001,      ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S011,      ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S101,      ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S111       ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~3 ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S10110,    ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11010,    ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11110     ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~3   ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S0110,       ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1010,       ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1110        ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~3 ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S010,      ;
+;                                                                                                    ;                                ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S110       ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|A1      ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|input_pattern[0] ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|B1      ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|input_pattern[1] ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|C1      ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|input_pattern[2] ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|D1      ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|input_pattern[3] ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|E1      ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|input_pattern[4] ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|F1      ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|input_pattern[5] ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|H1      ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|input_pattern[7] ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|G1      ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|input_pattern[6] ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|A1        ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|input_pattern[0]   ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|B1        ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|input_pattern[1]   ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|C1        ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|input_pattern[2]   ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|D1        ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|input_pattern[3]   ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|A1      ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|input_pattern[0] ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|B1      ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|input_pattern[1] ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|C2      ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|input_pattern[2] ;
+; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|A1            ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|input_pattern          ;
+; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~4 ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state.S11100     ;
+; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state~4   ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state.S1100        ;
+; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~4 ; Lost Fanouts                   ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state.S100       ;
++----------------------------------------------------------------------------------------------------+--------------------------------+-------------------------------------------------------------------------------------------------------------+
 
 
 +------------------------------------------------------+
@@ -501,284 +632,166 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                     ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ic_tester|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                                                                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                             ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------+
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------------------------------------------------------------+
 
 
-+--------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logical_function_check:lfc1 ;
-+------------------+----------+--------------------------------------------+
-; Parameter Name   ; Value    ; Type                                       ;
-+------------------+----------+--------------------------------------------+
-; ONE_SECOND_DELAY ; 50000005 ; Signed Integer                             ;
-+------------------+----------+--------------------------------------------+
++--------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: testing_logic:tl1|logical_function_check:lfc1 ;
++------------------+----------+--------------------------------------------------------------+
+; Parameter Name   ; Value    ; Type                                                         ;
++------------------+----------+--------------------------------------------------------------+
+; ONE_SECOND_DELAY ; 50000005 ; Signed Integer                                               ;
++------------------+----------+--------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logical_function_check:lfc1|two_input_checker:two_input_checker_inst ;
-+------------------+----------+-------------------------------------------------------------------------------------+
-; Parameter Name   ; Value    ; Type                                                                                ;
-+------------------+----------+-------------------------------------------------------------------------------------+
-; S00              ; 00       ; Unsigned Binary                                                                     ;
-; S01              ; 01       ; Unsigned Binary                                                                     ;
-; S10              ; 10       ; Unsigned Binary                                                                     ;
-; S11              ; 11       ; Unsigned Binary                                                                     ;
-; ONE_SECOND_DELAY ; 50000000 ; Signed Integer                                                                      ;
-+------------------+----------+-------------------------------------------------------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst ;
++------------------+----------+-------------------------------------------------------------------------------------------------------+
+; Parameter Name   ; Value    ; Type                                                                                                  ;
++------------------+----------+-------------------------------------------------------------------------------------------------------+
+; S00              ; 00       ; Unsigned Binary                                                                                       ;
+; S01              ; 01       ; Unsigned Binary                                                                                       ;
+; S10              ; 10       ; Unsigned Binary                                                                                       ;
+; S11              ; 11       ; Unsigned Binary                                                                                       ;
+; ONE_SECOND_DELAY ; 50000000 ; Signed Integer                                                                                        ;
++------------------+----------+-------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logical_function_check:lfc1|three_input_checker:three_input_checker_inst ;
-+------------------+----------+-----------------------------------------------------------------------------------------+
-; Parameter Name   ; Value    ; Type                                                                                    ;
-+------------------+----------+-----------------------------------------------------------------------------------------+
-; S000             ; 000      ; Unsigned Binary                                                                         ;
-; S001             ; 001      ; Unsigned Binary                                                                         ;
-; S010             ; 010      ; Unsigned Binary                                                                         ;
-; S011             ; 011      ; Unsigned Binary                                                                         ;
-; S100             ; 100      ; Unsigned Binary                                                                         ;
-; S101             ; 101      ; Unsigned Binary                                                                         ;
-; S110             ; 110      ; Unsigned Binary                                                                         ;
-; S111             ; 111      ; Unsigned Binary                                                                         ;
-; ONE_SECOND_DELAY ; 50000000 ; Signed Integer                                                                          ;
-+------------------+----------+-----------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst ;
++------------------+----------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name   ; Value    ; Type                                                                                                      ;
++------------------+----------+-----------------------------------------------------------------------------------------------------------+
+; S000             ; 000      ; Unsigned Binary                                                                                           ;
+; S001             ; 001      ; Unsigned Binary                                                                                           ;
+; S010             ; 010      ; Unsigned Binary                                                                                           ;
+; S011             ; 011      ; Unsigned Binary                                                                                           ;
+; S100             ; 100      ; Unsigned Binary                                                                                           ;
+; S101             ; 101      ; Unsigned Binary                                                                                           ;
+; S110             ; 110      ; Unsigned Binary                                                                                           ;
+; S111             ; 111      ; Unsigned Binary                                                                                           ;
+; ONE_SECOND_DELAY ; 50000000 ; Signed Integer                                                                                            ;
++------------------+----------+-----------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logical_function_check:lfc1|four_input_checker:four_input_checker_inst ;
-+------------------+----------+---------------------------------------------------------------------------------------+
-; Parameter Name   ; Value    ; Type                                                                                  ;
-+------------------+----------+---------------------------------------------------------------------------------------+
-; S0000            ; 0000     ; Unsigned Binary                                                                       ;
-; S0001            ; 0001     ; Unsigned Binary                                                                       ;
-; S0010            ; 0010     ; Unsigned Binary                                                                       ;
-; S0011            ; 0011     ; Unsigned Binary                                                                       ;
-; S0100            ; 0100     ; Unsigned Binary                                                                       ;
-; S0101            ; 0101     ; Unsigned Binary                                                                       ;
-; S0110            ; 0110     ; Unsigned Binary                                                                       ;
-; S0111            ; 0111     ; Unsigned Binary                                                                       ;
-; S1000            ; 1000     ; Unsigned Binary                                                                       ;
-; S1001            ; 1001     ; Unsigned Binary                                                                       ;
-; S1010            ; 1010     ; Unsigned Binary                                                                       ;
-; S1011            ; 1011     ; Unsigned Binary                                                                       ;
-; S1100            ; 1100     ; Unsigned Binary                                                                       ;
-; S1101            ; 1101     ; Unsigned Binary                                                                       ;
-; S1110            ; 1110     ; Unsigned Binary                                                                       ;
-; S1111            ; 1111     ; Unsigned Binary                                                                       ;
-; ONE_SECOND_DELAY ; 50000000 ; Signed Integer                                                                        ;
-+------------------+----------+---------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst ;
++------------------+----------+---------------------------------------------------------------------------------------------------------+
+; Parameter Name   ; Value    ; Type                                                                                                    ;
++------------------+----------+---------------------------------------------------------------------------------------------------------+
+; S0000            ; 0000     ; Unsigned Binary                                                                                         ;
+; S0001            ; 0001     ; Unsigned Binary                                                                                         ;
+; S0010            ; 0010     ; Unsigned Binary                                                                                         ;
+; S0011            ; 0011     ; Unsigned Binary                                                                                         ;
+; S0100            ; 0100     ; Unsigned Binary                                                                                         ;
+; S0101            ; 0101     ; Unsigned Binary                                                                                         ;
+; S0110            ; 0110     ; Unsigned Binary                                                                                         ;
+; S0111            ; 0111     ; Unsigned Binary                                                                                         ;
+; S1000            ; 1000     ; Unsigned Binary                                                                                         ;
+; S1001            ; 1001     ; Unsigned Binary                                                                                         ;
+; S1010            ; 1010     ; Unsigned Binary                                                                                         ;
+; S1011            ; 1011     ; Unsigned Binary                                                                                         ;
+; S1100            ; 1100     ; Unsigned Binary                                                                                         ;
+; S1101            ; 1101     ; Unsigned Binary                                                                                         ;
+; S1110            ; 1110     ; Unsigned Binary                                                                                         ;
+; S1111            ; 1111     ; Unsigned Binary                                                                                         ;
+; ONE_SECOND_DELAY ; 50000000 ; Signed Integer                                                                                          ;
++------------------+----------+---------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst ;
-+------------------+----------+-----------------------------------------------------------------------------------------+
-; Parameter Name   ; Value    ; Type                                                                                    ;
-+------------------+----------+-----------------------------------------------------------------------------------------+
-; S00000           ; 00000    ; Unsigned Binary                                                                         ;
-; S00001           ; 00001    ; Unsigned Binary                                                                         ;
-; S00010           ; 00010    ; Unsigned Binary                                                                         ;
-; S00011           ; 00011    ; Unsigned Binary                                                                         ;
-; S00100           ; 00100    ; Unsigned Binary                                                                         ;
-; S00101           ; 00101    ; Unsigned Binary                                                                         ;
-; S00110           ; 00110    ; Unsigned Binary                                                                         ;
-; S00111           ; 00111    ; Unsigned Binary                                                                         ;
-; S01000           ; 01000    ; Unsigned Binary                                                                         ;
-; S01001           ; 01001    ; Unsigned Binary                                                                         ;
-; S01010           ; 01010    ; Unsigned Binary                                                                         ;
-; S01011           ; 01011    ; Unsigned Binary                                                                         ;
-; S01100           ; 01100    ; Unsigned Binary                                                                         ;
-; S01101           ; 01101    ; Unsigned Binary                                                                         ;
-; S01110           ; 01110    ; Unsigned Binary                                                                         ;
-; S01111           ; 01111    ; Unsigned Binary                                                                         ;
-; S10000           ; 10000    ; Unsigned Binary                                                                         ;
-; S10001           ; 10001    ; Unsigned Binary                                                                         ;
-; S10010           ; 10010    ; Unsigned Binary                                                                         ;
-; S10011           ; 10011    ; Unsigned Binary                                                                         ;
-; S10100           ; 10100    ; Unsigned Binary                                                                         ;
-; S10101           ; 10101    ; Unsigned Binary                                                                         ;
-; S10110           ; 10110    ; Unsigned Binary                                                                         ;
-; S10111           ; 10111    ; Unsigned Binary                                                                         ;
-; S11000           ; 11000    ; Unsigned Binary                                                                         ;
-; S11001           ; 11001    ; Unsigned Binary                                                                         ;
-; S11010           ; 11010    ; Unsigned Binary                                                                         ;
-; S11011           ; 11011    ; Unsigned Binary                                                                         ;
-; S11100           ; 11100    ; Unsigned Binary                                                                         ;
-; S11101           ; 11101    ; Unsigned Binary                                                                         ;
-; S11110           ; 11110    ; Unsigned Binary                                                                         ;
-; S11111           ; 11111    ; Unsigned Binary                                                                         ;
-; ONE_SECOND_DELAY ; 50000000 ; Signed Integer                                                                          ;
-+------------------+----------+-----------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst ;
++------------------+----------+-----------------------------------------------------------------------------------------------------------+
+; Parameter Name   ; Value    ; Type                                                                                                      ;
++------------------+----------+-----------------------------------------------------------------------------------------------------------+
+; S00000           ; 00000    ; Unsigned Binary                                                                                           ;
+; S00001           ; 00001    ; Unsigned Binary                                                                                           ;
+; S00010           ; 00010    ; Unsigned Binary                                                                                           ;
+; S00011           ; 00011    ; Unsigned Binary                                                                                           ;
+; S00100           ; 00100    ; Unsigned Binary                                                                                           ;
+; S00101           ; 00101    ; Unsigned Binary                                                                                           ;
+; S00110           ; 00110    ; Unsigned Binary                                                                                           ;
+; S00111           ; 00111    ; Unsigned Binary                                                                                           ;
+; S01000           ; 01000    ; Unsigned Binary                                                                                           ;
+; S01001           ; 01001    ; Unsigned Binary                                                                                           ;
+; S01010           ; 01010    ; Unsigned Binary                                                                                           ;
+; S01011           ; 01011    ; Unsigned Binary                                                                                           ;
+; S01100           ; 01100    ; Unsigned Binary                                                                                           ;
+; S01101           ; 01101    ; Unsigned Binary                                                                                           ;
+; S01110           ; 01110    ; Unsigned Binary                                                                                           ;
+; S01111           ; 01111    ; Unsigned Binary                                                                                           ;
+; S10000           ; 10000    ; Unsigned Binary                                                                                           ;
+; S10001           ; 10001    ; Unsigned Binary                                                                                           ;
+; S10010           ; 10010    ; Unsigned Binary                                                                                           ;
+; S10011           ; 10011    ; Unsigned Binary                                                                                           ;
+; S10100           ; 10100    ; Unsigned Binary                                                                                           ;
+; S10101           ; 10101    ; Unsigned Binary                                                                                           ;
+; S10110           ; 10110    ; Unsigned Binary                                                                                           ;
+; S10111           ; 10111    ; Unsigned Binary                                                                                           ;
+; S11000           ; 11000    ; Unsigned Binary                                                                                           ;
+; S11001           ; 11001    ; Unsigned Binary                                                                                           ;
+; S11010           ; 11010    ; Unsigned Binary                                                                                           ;
+; S11011           ; 11011    ; Unsigned Binary                                                                                           ;
+; S11100           ; 11100    ; Unsigned Binary                                                                                           ;
+; S11101           ; 11101    ; Unsigned Binary                                                                                           ;
+; S11110           ; 11110    ; Unsigned Binary                                                                                           ;
+; S11111           ; 11111    ; Unsigned Binary                                                                                           ;
+; ONE_SECOND_DELAY ; 50000000 ; Signed Integer                                                                                            ;
++------------------+----------+-----------------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst ;
-+------------------+----------+-----------------------------------------------------------------------------------+
-; Parameter Name   ; Value    ; Type                                                                              ;
-+------------------+----------+-----------------------------------------------------------------------------------+
-; S0               ; 0        ; Unsigned Binary                                                                   ;
-; S1               ; 1        ; Unsigned Binary                                                                   ;
-; ONE_SECOND_DELAY ; 50000000 ; Signed Integer                                                                    ;
-+------------------+----------+-----------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst ;
++------------------+----------+-----------------------------------------------------------------------------------------------------+
+; Parameter Name   ; Value    ; Type                                                                                                ;
++------------------+----------+-----------------------------------------------------------------------------------------------------+
+; S0               ; 0        ; Unsigned Binary                                                                                     ;
+; S1               ; 1        ; Unsigned Binary                                                                                     ;
+; ONE_SECOND_DELAY ; 50000000 ; Signed Integer                                                                                      ;
++------------------+----------+-----------------------------------------------------------------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst"                   ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; A1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; A2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; A3     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; A4     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; A5     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; A6     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pass1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pass2  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pass3  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pass4  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pass5  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pass6  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; fail1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; fail2  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; fail3  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; fail4  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; fail5  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; fail6  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pass   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; fail   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; enable ; Input  ; Info     ; Stuck at GND                                                                        ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|mux_gate:m_gate2" ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                      ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------+
+; Y    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                          ;
++------+--------+----------+--------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|mux_gate:m_gate2"  ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                             ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-; select[2..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; select[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; Y            ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
++---------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|mux_gate:m_gate3" ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                    ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------+
+; Y    ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed.                        ;
++------+--------+----------+------------------------------------------------------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst"             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; A1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; B1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; C1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; D1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; E1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; F1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; G1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; H1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pass1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; fail1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pass   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; fail   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; enable ; Input  ; Info     ; Stuck at GND                                                                        ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "logical_function_check:lfc1|four_input_checker:four_input_checker_inst|mux_gate:m_gate3"    ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-; Port         ; Type   ; Severity ; Details                                                                             ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-; select[2..1] ; Input  ; Info     ; Stuck at GND                                                                        ;
-; select[0]    ; Input  ; Info     ; Stuck at VCC                                                                        ;
-; Y            ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+--------------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "logical_function_check:lfc1|four_input_checker:four_input_checker_inst"               ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; A1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; A2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; B1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; B2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; C1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; C2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; D1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; D2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pass1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pass2  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; fail1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; fail2  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pass   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; fail   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; enable ; Input  ; Info     ; Stuck at GND                                                                        ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-----------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "logical_function_check:lfc1|three_input_checker:three_input_checker_inst|mux_gate:m_gate2" ;
-+--------------+-------+----------+-------------------------------------------------------------------------------------+
-; Port         ; Type  ; Severity ; Details                                                                             ;
-+--------------+-------+----------+-------------------------------------------------------------------------------------+
-; select[2..1] ; Input ; Info     ; Stuck at GND                                                                        ;
-; select[0]    ; Input ; Info     ; Stuck at VCC                                                                        ;
-+--------------+-------+----------+-------------------------------------------------------------------------------------+
-
-
-+------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "logical_function_check:lfc1|three_input_checker:three_input_checker_inst"             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; Port   ; Type   ; Severity ; Details                                                                             ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-; A1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; A2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; A3     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; B1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; B2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; B3     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; C1     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; C2     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; C3     ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pass1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pass2  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pass3  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; fail1  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; fail2  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; fail3  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; pass   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; fail   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-; enable ; Input  ; Info     ; Stuck at GND                                                                        ;
-+--------+--------+----------+-------------------------------------------------------------------------------------+
-
-
-+-------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|mux_gate:m_gate1" ;
-+--------+-------+----------+---------------------------------------------------------------------------------------+
-; Port   ; Type  ; Severity ; Details                                                                               ;
-+--------+-------+----------+---------------------------------------------------------------------------------------+
-; select ; Input ; Info     ; Stuck at GND                                                                          ;
-+--------+-------+----------+---------------------------------------------------------------------------------------+
-
-
-+--------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "logical_function_check:lfc1|two_input_checker:two_input_checker_inst" ;
-+--------+-------+----------+----------------------------------------------------------------------+
-; Port   ; Type  ; Severity ; Details                                                              ;
-+--------+-------+----------+----------------------------------------------------------------------+
-; enable ; Input ; Info     ; Stuck at VCC                                                         ;
-+--------+-------+----------+----------------------------------------------------------------------+
++---------------------------------------------------------------------+
+; Port Connectivity Checks: "testing_logic:tl1|icNumber_decoder:icd1" ;
++------------------+-------+----------+-------------------------------+
+; Port             ; Type  ; Severity ; Details                       ;
++------------------+-------+----------+-------------------------------+
+; icNumber[12..10] ; Input ; Info     ; Stuck at VCC                  ;
+; icNumber[7..4]   ; Input ; Info     ; Stuck at VCC                  ;
+; icNumber[31..13] ; Input ; Info     ; Stuck at GND                  ;
+; icNumber[9..8]   ; Input ; Info     ; Stuck at GND                  ;
+; icNumber[3..0]   ; Input ; Info     ; Stuck at GND                  ;
++------------------+-------+----------+-------------------------------+
 
 
 +-------------------------------+
@@ -796,7 +809,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Tue Sep 12 20:52:46 2023
+    Info: Processing started: Fri Sep 15 16:31:36 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ic_tester -c ic_tester
 Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file two_input_and.v
@@ -849,95 +862,158 @@ Info (12021): Found 1 design units, including 1 entities, in source file three_i
     Info (12023): Found entity 1: three_input_xor
 Info (12021): Found 1 design units, including 1 entities, in source file input_decoder.v
     Info (12023): Found entity 1: input_decoder
+Info (12021): Found 1 design units, including 1 entities, in source file icnumber_decoder.v
+    Info (12023): Found entity 1: icNumber_decoder
+Info (12021): Found 1 design units, including 1 entities, in source file testing_logic.v
+    Info (12023): Found entity 1: testing_logic
 Info (12127): Elaborating entity "ic_tester" for the top level hierarchy
-Info (12128): Elaborating entity "logical_function_check" for hierarchy "logical_function_check:lfc1"
-Warning (10858): Verilog HDL warning at logical_function_check.v(21): object IN3_WIRE2 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(21): object IN6_WIRE2 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(21): object IN8_WIRE2 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(21): object IN11_WIRE2 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(22): object PASS5_WIRE2 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(22): object PASS6_WIRE2 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(22): object FAIL5_WIRE2 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(22): object FAIL6_WIRE2 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(24): object IN6_WIRE3 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(24): object IN8_WIRE3 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(24): object IN12_WIRE3 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(25): object PASS4_WIRE3 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(25): object PASS5_WIRE3 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(25): object PASS6_WIRE3 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(25): object FAIL4_WIRE3 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(25): object FAIL5_WIRE3 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(25): object FAIL6_WIRE3 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(27): object IN3_WIRE4 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(27): object IN6_WIRE4 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(27): object IN8_WIRE4 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(27): object IN11_WIRE4 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(28): object PASS3_WIRE4 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(28): object PASS4_WIRE4 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(28): object PASS5_WIRE4 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(28): object PASS6_WIRE4 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(28): object FAIL3_WIRE4 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(28): object FAIL4_WIRE4 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(28): object FAIL5_WIRE4 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(28): object FAIL6_WIRE4 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(30): object IN8_WIRE8 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(30): object IN9_WIRE8 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(30): object IN10_WIRE8 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(30): object IN13_WIRE8 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(31): object PASS2_WIRE8 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(31): object PASS3_WIRE8 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(31): object PASS4_WIRE8 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(31): object PASS5_WIRE8 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(31): object PASS6_WIRE8 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(31): object FAIL2_WIRE8 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(31): object FAIL3_WIRE8 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(31): object FAIL4_WIRE8 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(31): object FAIL5_WIRE8 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(31): object FAIL6_WIRE8 used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(33): object IN2_WIRE_NOT used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(33): object IN4_WIRE_NOT used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(33): object IN6_WIRE_NOT used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(33): object IN8_WIRE_NOT used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(33): object IN10_WIRE_NOT used but never assigned
-Warning (10858): Verilog HDL warning at logical_function_check.v(33): object IN12_WIRE_NOT used but never assigned
-Warning (10230): Verilog HDL assignment warning at logical_function_check.v(18): truncated value with size 3 to match size of target (1)
-Warning (10030): Net "IN3_WIRE2" at logical_function_check.v(21) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "IN6_WIRE2" at logical_function_check.v(21) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "IN8_WIRE2" at logical_function_check.v(21) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "IN11_WIRE2" at logical_function_check.v(21) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "PASS5_WIRE2" at logical_function_check.v(22) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "PASS6_WIRE2" at logical_function_check.v(22) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "FAIL5_WIRE2" at logical_function_check.v(22) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "FAIL6_WIRE2" at logical_function_check.v(22) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "IN2_WIRE_NOT" at logical_function_check.v(33) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "IN4_WIRE_NOT" at logical_function_check.v(33) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "IN6_WIRE_NOT" at logical_function_check.v(33) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "IN8_WIRE_NOT" at logical_function_check.v(33) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "IN10_WIRE_NOT" at logical_function_check.v(33) has no driver or initial value, using a default initial value '0'
-Warning (10030): Net "IN12_WIRE_NOT" at logical_function_check.v(33) has no driver or initial value, using a default initial value '0'
-Info (12128): Elaborating entity "two_input_checker" for hierarchy "logical_function_check:lfc1|two_input_checker:two_input_checker_inst"
-Info (12128): Elaborating entity "two_input_and" for hierarchy "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_and:and2"
-Info (12128): Elaborating entity "two_input_or" for hierarchy "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_or:or2"
-Info (12128): Elaborating entity "two_input_nand" for hierarchy "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_nand:nand2"
-Info (12128): Elaborating entity "two_input_nor" for hierarchy "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_nor:nor2"
-Info (12128): Elaborating entity "two_input_xor" for hierarchy "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_xor:xor2"
-Info (12128): Elaborating entity "two_input_xnor" for hierarchy "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_xnor:xnor2"
-Info (12128): Elaborating entity "mux_gate" for hierarchy "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|mux_gate:m_gate1"
-Info (12128): Elaborating entity "three_input_checker" for hierarchy "logical_function_check:lfc1|three_input_checker:three_input_checker_inst"
-Info (12128): Elaborating entity "three_input_and" for hierarchy "logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_and:and3"
-Info (12128): Elaborating entity "three_input_or" for hierarchy "logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_or:or3"
-Info (12128): Elaborating entity "three_input_nand" for hierarchy "logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_nand:nand3"
-Info (12128): Elaborating entity "three_input_nor" for hierarchy "logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_nor:nor3"
-Info (12128): Elaborating entity "three_input_xor" for hierarchy "logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_xor:xor3"
-Info (12128): Elaborating entity "four_input_checker" for hierarchy "logical_function_check:lfc1|four_input_checker:four_input_checker_inst"
-Info (12128): Elaborating entity "four_input_and" for hierarchy "logical_function_check:lfc1|four_input_checker:four_input_checker_inst|four_input_and:and3"
-Info (12128): Elaborating entity "four_input_nand" for hierarchy "logical_function_check:lfc1|four_input_checker:four_input_checker_inst|four_input_nand:nand3"
-Info (12128): Elaborating entity "eight_input_checker" for hierarchy "logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst"
-Info (12128): Elaborating entity "eight_input_nand" for hierarchy "logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|eight_input_nand:nand3"
-Info (12128): Elaborating entity "not_gate_checker" for hierarchy "logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst"
-Info (12128): Elaborating entity "not_gate" for hierarchy "logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|not_gate:not_gate"
+Info (12128): Elaborating entity "testing_logic" for hierarchy "testing_logic:tl1"
+Info (12128): Elaborating entity "icNumber_decoder" for hierarchy "testing_logic:tl1|icNumber_decoder:icd1"
+Warning (10240): Verilog HDL Always Construct warning at icNumber_decoder.v(14): inferring latch(es) for variable "gate", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at icNumber_decoder.v(14): inferring latch(es) for variable "tester", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "tester[0]" at icNumber_decoder.v(20)
+Info (10041): Inferred latch for "tester[1]" at icNumber_decoder.v(20)
+Info (10041): Inferred latch for "tester[2]" at icNumber_decoder.v(20)
+Info (10041): Inferred latch for "gate[0]" at icNumber_decoder.v(20)
+Info (10041): Inferred latch for "gate[1]" at icNumber_decoder.v(20)
+Info (10041): Inferred latch for "gate[2]" at icNumber_decoder.v(20)
+Info (12128): Elaborating entity "logical_function_check" for hierarchy "testing_logic:tl1|logical_function_check:lfc1"
+Warning (10036): Verilog HDL or VHDL warning at logical_function_check.v(22): object "mode" assigned a value but never read
+Warning (10858): Verilog HDL warning at logical_function_check.v(25): object IN3_WIRE2 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(25): object IN6_WIRE2 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(25): object IN8_WIRE2 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(25): object IN11_WIRE2 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(26): object PASS5_WIRE2 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(26): object PASS6_WIRE2 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(26): object FAIL5_WIRE2 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(26): object FAIL6_WIRE2 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(28): object IN6_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(28): object IN8_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(28): object IN12_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(29): object PASS4_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(29): object PASS5_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(29): object PASS6_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(29): object FAIL4_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(29): object FAIL5_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(29): object FAIL6_WIRE3 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(31): object IN3_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(31): object IN6_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(31): object IN8_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(31): object IN11_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(32): object PASS3_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(32): object PASS4_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(32): object PASS5_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(32): object PASS6_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(32): object FAIL3_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(32): object FAIL4_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(32): object FAIL5_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(32): object FAIL6_WIRE4 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(34): object IN8_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(34): object IN9_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(34): object IN10_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(34): object IN13_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(35): object PASS2_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(35): object PASS3_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(35): object PASS4_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(35): object PASS5_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(35): object PASS6_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(35): object FAIL2_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(35): object FAIL3_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(35): object FAIL4_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(35): object FAIL5_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(35): object FAIL6_WIRE8 used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(37): object IN2_WIRE_NOT used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(37): object IN4_WIRE_NOT used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(37): object IN6_WIRE_NOT used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(37): object IN8_WIRE_NOT used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(37): object IN10_WIRE_NOT used but never assigned
+Warning (10858): Verilog HDL warning at logical_function_check.v(37): object IN12_WIRE_NOT used but never assigned
+Warning (10230): Verilog HDL assignment warning at logical_function_check.v(22): truncated value with size 3 to match size of target (1)
+Warning (10030): Net "IN3_WIRE2" at logical_function_check.v(25) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN6_WIRE2" at logical_function_check.v(25) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN8_WIRE2" at logical_function_check.v(25) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN11_WIRE2" at logical_function_check.v(25) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PASS5_WIRE2" at logical_function_check.v(26) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PASS6_WIRE2" at logical_function_check.v(26) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "FAIL5_WIRE2" at logical_function_check.v(26) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "FAIL6_WIRE2" at logical_function_check.v(26) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN6_WIRE3" at logical_function_check.v(28) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN8_WIRE3" at logical_function_check.v(28) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN12_WIRE3" at logical_function_check.v(28) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PASS4_WIRE3" at logical_function_check.v(29) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PASS5_WIRE3" at logical_function_check.v(29) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PASS6_WIRE3" at logical_function_check.v(29) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "FAIL4_WIRE3" at logical_function_check.v(29) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "FAIL5_WIRE3" at logical_function_check.v(29) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "FAIL6_WIRE3" at logical_function_check.v(29) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN3_WIRE4" at logical_function_check.v(31) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN6_WIRE4" at logical_function_check.v(31) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN8_WIRE4" at logical_function_check.v(31) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN11_WIRE4" at logical_function_check.v(31) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PASS3_WIRE4" at logical_function_check.v(32) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PASS4_WIRE4" at logical_function_check.v(32) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PASS5_WIRE4" at logical_function_check.v(32) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PASS6_WIRE4" at logical_function_check.v(32) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "FAIL3_WIRE4" at logical_function_check.v(32) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "FAIL4_WIRE4" at logical_function_check.v(32) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "FAIL5_WIRE4" at logical_function_check.v(32) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "FAIL6_WIRE4" at logical_function_check.v(32) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN8_WIRE8" at logical_function_check.v(34) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN9_WIRE8" at logical_function_check.v(34) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN10_WIRE8" at logical_function_check.v(34) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN13_WIRE8" at logical_function_check.v(34) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PASS2_WIRE8" at logical_function_check.v(35) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PASS3_WIRE8" at logical_function_check.v(35) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PASS4_WIRE8" at logical_function_check.v(35) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PASS5_WIRE8" at logical_function_check.v(35) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "PASS6_WIRE8" at logical_function_check.v(35) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "FAIL2_WIRE8" at logical_function_check.v(35) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "FAIL3_WIRE8" at logical_function_check.v(35) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "FAIL4_WIRE8" at logical_function_check.v(35) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "FAIL5_WIRE8" at logical_function_check.v(35) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "FAIL6_WIRE8" at logical_function_check.v(35) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN2_WIRE_NOT" at logical_function_check.v(37) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN4_WIRE_NOT" at logical_function_check.v(37) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN6_WIRE_NOT" at logical_function_check.v(37) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN8_WIRE_NOT" at logical_function_check.v(37) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN10_WIRE_NOT" at logical_function_check.v(37) has no driver or initial value, using a default initial value '0'
+Warning (10030): Net "IN12_WIRE_NOT" at logical_function_check.v(37) has no driver or initial value, using a default initial value '0'
+Info (12128): Elaborating entity "mux_test" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|mux_test:mt1"
+Warning (10240): Verilog HDL Always Construct warning at mux_test.v(9): inferring latch(es) for variable "W_NOT", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at mux_test.v(9): inferring latch(es) for variable "W_TWO", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at mux_test.v(9): inferring latch(es) for variable "W_THREE", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at mux_test.v(9): inferring latch(es) for variable "W_FOUR", which holds its previous value in one or more paths through the always construct
+Warning (10240): Verilog HDL Always Construct warning at mux_test.v(9): inferring latch(es) for variable "W_EIGHT", which holds its previous value in one or more paths through the always construct
+Info (10041): Inferred latch for "W_EIGHT" at mux_test.v(43)
+Info (10041): Inferred latch for "W_FOUR" at mux_test.v(43)
+Info (10041): Inferred latch for "W_THREE" at mux_test.v(43)
+Info (10041): Inferred latch for "W_TWO" at mux_test.v(43)
+Info (10041): Inferred latch for "W_NOT" at mux_test.v(43)
+Info (12128): Elaborating entity "two_input_checker" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst"
+Info (12128): Elaborating entity "two_input_and" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_and:and2"
+Info (12128): Elaborating entity "two_input_or" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_or:or2"
+Info (12128): Elaborating entity "two_input_nand" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_nand:nand2"
+Info (12128): Elaborating entity "two_input_nor" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_nor:nor2"
+Info (12128): Elaborating entity "two_input_xor" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_xor:xor2"
+Info (12128): Elaborating entity "two_input_xnor" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|two_input_xnor:xnor2"
+Info (12128): Elaborating entity "mux_gate" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|mux_gate:m_gate1"
+Info (12128): Elaborating entity "three_input_checker" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst"
+Info (12128): Elaborating entity "three_input_and" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_and:and3"
+Info (12128): Elaborating entity "three_input_or" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_or:or3"
+Info (12128): Elaborating entity "three_input_nand" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_nand:nand3"
+Info (12128): Elaborating entity "three_input_nor" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_nor:nor3"
+Info (12128): Elaborating entity "three_input_xor" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|three_input_xor:xor3"
+Info (12128): Elaborating entity "four_input_checker" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst"
+Info (12128): Elaborating entity "four_input_and" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|four_input_and:and3"
+Info (12128): Elaborating entity "four_input_nand" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|four_input_nand:nand3"
+Info (12128): Elaborating entity "eight_input_checker" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst"
+Info (12128): Elaborating entity "eight_input_nand" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|eight_input_nand:nand3"
+Info (12128): Elaborating entity "not_gate_checker" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst"
+Info (12128): Elaborating entity "not_gate" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|not_gate:not_gate"
+Warning (14025): LATCH primitive "testing_logic:tl1|icNumber_decoder:icd1|tester[0]" is permanently disabled
+Warning (14025): LATCH primitive "testing_logic:tl1|logical_function_check:lfc1|mux_test:mt1|W_TWO" is permanently disabled
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
-    Warning (13049): Converted tri-state buffer "logical_function_check:lfc1|two_input_checker:two_input_checker_inst|mux_gate:m_gate1|Y" feeding internal logic into a wire
+    Warning (13049): Converted tri-state buffer "testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|mux_gate:m_gate1|Y" feeding internal logic into a wire
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "IN3" is stuck at GND
     Warning (13410): Pin "IN6" is stuck at GND
@@ -948,7 +1024,7 @@ Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "fail5" is stuck at GND
     Warning (13410): Pin "fail6" is stuck at GND
 Info (286030): Timing-Driven Synthesis is running
-Info (17049): 166 registers lost all their fanouts during netlist optimizations.
+Info (17049): 245 registers lost all their fanouts during netlist optimizations.
 Info (144001): Generated suppressed messages file D:/Projects/FPGA Test/ic_tester/output_files/ic_tester.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -965,9 +1041,9 @@ Info (21057): Implemented 246 device resources after synthesis - the final resou
     Info (21058): Implemented 13 input pins
     Info (21059): Implemented 26 output pins
     Info (21061): Implemented 207 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 84 warnings
-    Info: Peak virtual memory: 4662 megabytes
-    Info: Processing ended: Tue Sep 12 20:52:47 2023
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 129 warnings
+    Info: Peak virtual memory: 4670 megabytes
+    Info: Processing ended: Fri Sep 15 16:31:37 2023
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

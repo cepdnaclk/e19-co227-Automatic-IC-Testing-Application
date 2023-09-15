@@ -12,7 +12,8 @@ module eight_input_checker (
   fail1,
   pass, fail,
   clk,
-  enable
+  enable,
+  gateSelect
 );
 	
   // Store 00000, 00001, 00010, 00011, 00100, 00101, 00110, 00111, 01000, 01001, 01010, 01011, 01100, 01101, 01110, 01111
@@ -30,6 +31,8 @@ module eight_input_checker (
   input op1;
   input clk;
   input enable;
+  
+  input [2:0] gateSelect;
   
   output reg A1;
   output reg B1;
@@ -84,12 +87,20 @@ module eight_input_checker (
 
   eight_input_nand nand3 (.A(input_pattern[0]), .B(input_pattern[1]), .C(input_pattern[2]), .D(input_pattern[3]),.E(input_pattern[4]), .F(input_pattern[5]), .G(input_pattern[6]), .H(input_pattern[7]), .Y(W_NAND));
 
-  mux_gate m_gate2(.select(3'b001), .W_AND(W_NAND), .W_OR(W_NAND), .W_NAND(W_NAND), .W_NOR(W_NAND), .W_XOR(W_NAND), .W_XNOR(W_NAND), .Y(W_SELECT));
+  mux_gate m_gate2(.select(gateSelect), .W_AND(W_NAND), .W_OR(W_NAND), .W_NAND(W_NAND), .W_NOR(W_NAND), .W_XOR(W_NAND), .W_XNOR(W_NAND), .Y(W_SELECT));
+
+  
+  initial begin
+    pass1 = 1'b0;
+    fail1 = 1'b0;
+	 pass = 1'b0;
+	 fail = 1'b0;
+	 
+	 counter = 0;
+  end
 
   
   always @(posedge clk) begin
-    
-    counter <= counter + 1;
 	 
     A1 <= input_pattern[0];
     B1 <= input_pattern[1];
@@ -101,6 +112,9 @@ module eight_input_checker (
 	 H1 <= input_pattern[7];
 	 
 	 if (enable) begin
+	 
+	    counter <= counter + 1;
+	 
 		 if (counter == ONE_SECOND_DELAY) begin
 			case (state)
 			  S00000: begin

@@ -6,7 +6,8 @@ module two_input_checker (
   fail1, fail2, fail3, fail4,
   pass, fail,
   clk,
-  enable
+  enable,
+  gateSelect
 );
 	
   // Store 00, 01, 10, 11
@@ -25,6 +26,8 @@ module two_input_checker (
   input op1, op2, op3, op4;
   input clk;
   input enable;
+  
+  input [2:0] gateSelect;
   
   output reg A1, A2, A3, A4;
   output reg B1, B2, B3, B4;
@@ -50,7 +53,7 @@ module two_input_checker (
   two_input_xor xor2 (.A(input_pattern[0]), .B(input_pattern[1]), .Y(W_XOR));
   two_input_xnor xnor2 (.A(input_pattern[0]), .B(input_pattern[1]), .Y(W_XNOR));
   
-  mux_gate m_gate1(.select(3'b000), .W_AND(W_AND), .W_OR(W_OR), .W_NAND(W_NAND), .W_NOR(W_NOR), .W_XOR(W_XOR), .W_XNOR(W_XNOR), .Y(W_SELECT));
+  mux_gate m_gate1(.select(gateSelect), .W_AND(W_AND), .W_OR(W_OR), .W_NAND(W_NAND), .W_NOR(W_NOR), .W_XOR(W_XOR), .W_XNOR(W_XNOR), .Y(W_SELECT));
 
   initial begin
     pass1 = 1'b0;
@@ -63,11 +66,11 @@ module two_input_checker (
     fail4 = 1'b0;
 	 pass = 1'b0;
 	 fail = 1'b0;
+	 
+	 counter = 0;
   end
   
   always @(posedge clk) begin
-    
-    counter <= counter + 1;
 	 
     A1 <= input_pattern[0];
     B1 <= input_pattern[1];
@@ -82,6 +85,9 @@ module two_input_checker (
     B4 <= input_pattern[1];
 		
 	 if (enable) begin
+	 
+	    counter <= counter + 1;
+		 
 		 if (counter == ONE_SECOND_DELAY) begin
 			case (state)
 			  S00: begin

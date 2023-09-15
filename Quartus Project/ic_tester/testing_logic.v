@@ -1,4 +1,4 @@
-module ic_tester (
+module testing_logic (
   IN1, IN2, IN3, IN4, IN5, IN6, 
   IN8, IN9, IN10, IN11, IN12, IN13,
   OP1, OP2, OP3, OP4, OP5, OP6,
@@ -16,7 +16,18 @@ module ic_tester (
   output pass, fail;
   input clk;
   
-  testing_logic tl1(
+  wire [2:0] gate;
+  wire [2:0] tester;
+  
+  reg [31:0] icNum;
+  
+  icNumber_decoder icd1(
+    .icNumber(7408),
+    .gate(gate), 
+    .tester(tester)
+);
+  
+  logical_function_check lfc1(
 	  .IN1(IN1), 
 	  .IN2(IN2), 
 	  .IN3(IN3), 
@@ -55,7 +66,9 @@ module ic_tester (
 	  .fail6(fail6),
 	  .pass(pass), 
 	  .fail(fail),
-	  .clk(clk)
+	  .clk(clk),
+	  .gate(gate),
+	  .tester(tester)
 );
 
 endmodule
