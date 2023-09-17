@@ -98,7 +98,7 @@ The main model consists of a KEYPAD, TESTING modules, LCD, SEVEN SEGMENT, and a 
 
 The design of this tester supports 14-pin DIP basic digital logic ICs from the 74 series TTL and CMOS family. The devices tested in this project are 74LS32, 74LS00, 74LS02, 74LS08, 74LS86 and 74LS386. The testing model used will be based on the functional fault.
 
-![IC Tester Logical Testing Unit](https://github.com/cepdnaclk/e19-co227-Automatic-IC-Testing-Application-Using-FPGA/assets/78247019/31a4bdf2-bf59-4227-a770-b6412a20dc13)
+![IC Tester Logical Testing Unit](./images/testing%20module.png)
 
 ## Assembly Instructions
 ## Setup and Configuration 
