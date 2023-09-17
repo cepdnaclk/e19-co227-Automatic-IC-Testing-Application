@@ -53,6 +53,9 @@ The design of this tester supports 14-pin DIP basic digital logic ICs from the 7
 ![IC Tester Logical Testing Unit](https://github.com/cepdnaclk/e19-co227-Automatic-IC-Testing-Application-Using-FPGA/assets/78247019/31a4bdf2-bf59-4227-a770-b6412a20dc13)
 
 ## Assembly Instructions
+
+![Assembly Instructions](./assets/assemly.png)
+
 ## Setup and Configuration 
 ## Usage
 ## Testing and Troubleshooting
