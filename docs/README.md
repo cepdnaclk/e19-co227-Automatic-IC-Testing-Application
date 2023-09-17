@@ -94,7 +94,7 @@ This project aims to design a cost-effective, reconfigurable test instrument bas
 
 The main model consists of a KEYPAD, TESTING modules, LCD, SEVEN SEGMENT, and a DUT. Those modules are connected with each other in the following format. The DELAY TESTING module is an extra module and it will be implemented in a later step.
 
-![IC Tester Design Structure](https://github.com/cepdnaclk/e19-co227-Automatic-IC-Testing-Application-Using-FPGA/assets/78247019/5419e397-d831-40bb-a5a2-6d574031d537)
+![IC Tester Design Structure](./images/full module.png)
 
 The design of this tester supports 14-pin DIP basic digital logic ICs from the 74 series TTL and CMOS family. The devices tested in this project are 74LS32, 74LS00, 74LS02, 74LS08, 74LS86 and 74LS386. The testing model used will be based on the functional fault.
 
