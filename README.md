@@ -44,7 +44,7 @@ This project aims to design a cost-effective, reconfigurable test instrument bas
 
 ## Schematics and Diagrams
 
-The main model consists of a KEYPAD, TESTING modules, LCD, SEVEN SEGMENT, and a DUT. Those modules are connected with each other in the following format. The DELAY TESTING module is a extra module and it will be implemented in a later step.
+The primary model consists of a KEYPAD, TESTING modules, LCD, SEVEN SEGMENT, and a DUT. Those modules are connected with each other in the following format. The DELAY TESTING module is an extra module and it will be implemented in a later step.
 
 ![IC Tester Design Structure](https://github.com/cepdnaclk/e19-co227-Automatic-IC-Testing-Application-Using-FPGA/assets/78247019/5419e397-d831-40bb-a5a2-6d574031d537)
 
@@ -53,6 +53,8 @@ The design of this tester supports 14-pin DIP basic digital logic ICs from the 7
 ![IC Tester Logical Testing Unit](https://github.com/cepdnaclk/e19-co227-Automatic-IC-Testing-Application-Using-FPGA/assets/78247019/31a4bdf2-bf59-4227-a770-b6412a20dc13)
 
 ## Assembly Instructions
+
+The assembly instructions are as follows. You need to connect the corresponding pins of the GPIO connector to the ZIF Socket as shown in the following figure. Then you can start the FPGA board.
 
 ![Assembly Instructions](./assets/assemly.png)
 
