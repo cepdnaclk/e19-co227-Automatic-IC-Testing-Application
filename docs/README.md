@@ -31,7 +31,7 @@ This is a sample image, to show how to add images to your page. To learn more op
 1. [Introduction](#introduction)
 2. [Hardwear Components](#Hardwear-Components)
 3. [Technology Stack](#Technology-Stack)
-4. [BOM](#Bill-of-Materials-(BOM))
+4. [BOM](<#Bill-of-Materials-(BOM)>)
 5. [Solution Architecture](#Solution-Architecture)
 6. [Schematics and Diagrams](#Schematics-and-Diagrams)
 7. [Assembly Instructions]
@@ -43,12 +43,13 @@ This is a sample image, to show how to add images to your page. To learn more op
 13. [Contact Information]
 14. [Acknowledgments]
 15. [References]
-8. [Links](#links)
+16. [Links](#links)
 
 ---
 
 ## Introduction
-Welcome to the Automated IC Testing Application Repository! 
+
+Welcome to the Automated IC Testing Application Repository!
 
 The key challenge is to distinguish faulty chips from good ones efficiently, especially for users in research and educational institutions who work with a limited range of digital ICs. Current digital IC testers on the market are often prohibitively expensive and support a wide array of ICs, making them impractical for this user base. These testers are typically not reprogrammable or customizable, forcing users to own multiple testers for different devices, which is costly and wasteful.
 
@@ -74,21 +75,21 @@ This project aims to design a cost-effective, reconfigurable test instrument bas
 
 ## Bill of Materials (BOM)
 
-| Component Name  | Quantity | Unit Cost(LKR) | Cost(LKR) |
-| ------------- | ------------- | ------------- | ------------- |
-| FPGA Board EP1C3T144 | 1  | 16000  | 16000  |
-| Jumper Wires | 30  | 8  | 240  |
-| ZIF Socket | 1  | 120  | 120  |
-| Testing ICs | 5  | 100  | 500  |
-| Total Cost |     |      | 16860  |
+| Component Name       | Quantity | Unit Cost(LKR) | Cost(LKR) |
+| -------------------- | -------- | -------------- | --------- |
+| FPGA Board EP1C3T144 | 1        | 16000          | 16000     |
+| Jumper Wires         | 30       | 8              | 240       |
+| ZIF Socket           | 1        | 120            | 120       |
+| Testing ICs          | 5        | 100            | 500       |
+| Total Cost           |          |                | 16860     |
 
 ## Solution Architecture
 
 1. There is a Zero Insertion Force (ZIF) Socket to configure the IC.
 2. The FPGA takes the IC number as the User Input through its IR Sensor Module.
 3. Then, fetch the related data belonging to that particular IC. That data includes testing patterns, pin configurations, and all required other data.
-5. Then the FPGA tests the IC with the testing pattern and compares the expected output.
-6. Finally, display the result and if there is an error indicate the gate that has an error in the LCD board and the Seven Segment display of the FPGA.
+4. Then the FPGA tests the IC with the testing pattern and compares the expected output.
+5. Finally, display the result and if there is an error indicate the gate that has an error in the LCD board and the Seven Segment display of the FPGA.
 
 ## Schematics and Diagrams
 
@@ -101,14 +102,27 @@ The design of this tester supports 14-pin DIP basic digital logic ICs from the 7
 ![IC Tester Logical Testing Unit](./images/testing%20module.png)
 
 ## Assembly Instructions
-## Setup and Configuration 
+
+The assembly instructions are as follows. You need to connect the corresponding pins of the GPIO connector to the ZIF Socket as shown in the following figure. Then you can start the FPGA board.
+
+![Assembly Instructions](./images/assemly.png)
+
+## Setup and Configuration
+
 ## Usage
+
 ## Testing and Troubleshooting
-## Power Requirements 
+
+## Power Requirements
+
 ## Safety Considerations
+
 ## Contact Information
+
 ## Acknowledgments
+
 ## References
+
 .....
 
 ## Links
