@@ -1,5 +1,5 @@
 Flow report for ic_tester
-Fri Sep 15 23:02:15 2023
+Mon Sep 25 07:38:01 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,17 +40,17 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Successful - Fri Sep 15 23:02:15 2023      ;
+; Flow Status                        ; Successful - Mon Sep 25 07:38:01 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; ic_tester                                  ;
 ; Top-level Entity Name              ; ic_tester                                  ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE115F29C7                              ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; 1,143                                      ;
-;     Total combinational functions  ; 943                                        ;
-;     Dedicated logic registers      ; 656                                        ;
-; Total registers                    ; 656                                        ;
+; Total logic elements               ; 1,164                                      ;
+;     Total combinational functions  ; 966                                        ;
+;     Dedicated logic registers      ; 657                                        ;
+; Total registers                    ; 657                                        ;
 ; Total pins                         ; 75                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 09/15/2023 23:02:11 ;
+; Start date & time ; 09/25/2023 07:37:58 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ic_tester           ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                          ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+--------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 39908809766747.169479913113520 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 39908809766747.169560767801480 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)         ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                             ; --            ; --          ; --             ;
@@ -96,8 +96,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:03     ; 1.0                     ; 4687 MB             ; 00:00:03                           ;
-; Total                ; 00:00:03     ; --                      ; --                  ; 00:00:03                           ;
+; Analysis & Synthesis ; 00:00:02     ; 1.0                     ; 4677 MB             ; 00:00:02                           ;
+; Total                ; 00:00:02     ; --                      ; --                  ; 00:00:02                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

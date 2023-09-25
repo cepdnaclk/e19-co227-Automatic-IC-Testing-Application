@@ -180,7 +180,23 @@ module not_gate_checker (
 			counter <= 0;
 		 end
 	 end
-
+	 
+	 else begin
+	   pass1 = 1'b0;
+		pass2 = 1'b0;
+		pass3 = 1'b0;
+		pass4 = 1'b0;
+		pass5 = 1'b0;
+		pass6 = 1'b0;
+		fail1 = 1'b0;
+		fail2 = 1'b0;
+		fail3 = 1'b0;
+		fail4 = 1'b0;
+		fail5 = 1'b0;
+		fail6 = 1'b0;
+		pass = 1'b0;
+		fail = 1'b0;
+	 end
     
   end
 

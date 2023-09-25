@@ -324,7 +324,16 @@ module four_input_checker (
 			counter <= 0;
 		 end
 	 end
-    
+    	 
+	 else begin
+	   pass1 = 1'b0;
+		pass2 = 1'b0;
+		fail1 = 1'b0;
+		fail2 = 1'b0;
+		pass = 1'b0;
+		fail = 1'b0;
+	 end
+	 
   end
 
 endmodule

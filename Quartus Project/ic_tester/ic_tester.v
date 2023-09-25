@@ -90,6 +90,11 @@ module ic_tester (
 	  .ICNumber(ICNumber)
 );
 
+	LCD_MUX(
+		.LCD_STATE(),
+		.icg(ICRead)
+	);
+
 	always@(ICNumber) begin
 		if (ICNumber == 7408) begin
 			testLED = 1;

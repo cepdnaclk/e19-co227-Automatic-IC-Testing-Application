@@ -8,7 +8,7 @@ module Input_Reciver(
 	LEDR,
 	IRDA_RXD,
 	number,
-	icg
+	icg,
 );
 
 
@@ -72,7 +72,8 @@ module Input_Reciver(
 		.HEX2(HEX2), 
 		.HEX3(HEX3),
 		.number(number),
-		.ic_no_generated(icg)
+		.ic_no_generated(icg),
+		.clk(CLOCK_50)
 );
 
 endmodule

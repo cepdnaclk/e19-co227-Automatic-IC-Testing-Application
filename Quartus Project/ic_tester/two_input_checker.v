@@ -197,7 +197,21 @@ module two_input_checker (
 
 			counter <= 0;
 		 end
-    end  
+    end
+	 
+	 else begin
+	   pass1 = 1'b0;
+		pass2 = 1'b0;
+		pass3 = 1'b0;
+		pass4 = 1'b0;
+		fail1 = 1'b0;
+		fail2 = 1'b0;
+		fail3 = 1'b0;
+		fail4 = 1'b0;
+		pass = 1'b0;
+		fail = 1'b0;
+	 end
+	 
   end
 
 endmodule

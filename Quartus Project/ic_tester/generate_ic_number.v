@@ -2,7 +2,8 @@ module generate_ic_number (
     input ic_read,
     input [6:0] HEX0, HEX1, HEX2, HEX3,
     output reg [31:0] number,
-    output reg ic_no_generated
+    output reg ic_no_generated,
+	 input clk
 );
 
     reg [31:0] num1000;
@@ -10,7 +11,13 @@ module generate_ic_number (
     reg [31:0] num10;
     reg [31:0] num;
 
-    always @(posedge ic_read) begin
+    always @(posedge clk) begin
+		
+		if (ic_read) begin
+	 
+	         number <= 0;
+				ic_no_generated <= 0;
+
             case(HEX0)
                 7'b1000000: num <= 0; // 0
                 7'b1111001: num <= 1; // 1
@@ -65,9 +72,10 @@ module generate_ic_number (
                 default: num1000 <= 0; // 0
             endcase
 
-            number = num1000 * 1000 + num100 * 100 + num10 * 10 + num;
-            ic_no_generated = 1'b1;
+            number <= num1000 * 1000 + num100 * 100 + num10 * 10 + num;
+            ic_no_generated <= 1'b1;
         end
+		end
 
     initial begin
         num1000 <= 0;

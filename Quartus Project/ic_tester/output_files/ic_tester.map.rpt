@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ic_tester
-Fri Sep 15 23:02:15 2023
+Mon Sep 25 07:38:01 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -37,10 +37,10 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
  29. Parameter Settings for Inferred Entity Instance: Input_Reciver:comb_3|generate_ic_number:gin1|lpm_mult:Mult1
  30. altpll Parameter Settings by Entity Instance
  31. lpm_mult Parameter Settings by Entity Instance
- 32. Port Connectivity Checks: "testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|mux_gate:m_gate2"
- 33. Port Connectivity Checks: "testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|mux_gate:m_gate3"
- 34. Port Connectivity Checks: "Input_Reciver:comb_3|pll1:u0"
- 35. Port Connectivity Checks: "Input_Reciver:comb_3"
+ 32. Port Connectivity Checks: "LCD_MUX:comb_4"
+ 33. Port Connectivity Checks: "testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|mux_gate:m_gate2"
+ 34. Port Connectivity Checks: "testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|mux_gate:m_gate3"
+ 35. Port Connectivity Checks: "Input_Reciver:comb_3|pll1:u0"
  36. Elapsed Time Per Partition
  37. Analysis & Synthesis Messages
  38. Analysis & Synthesis Suppressed Messages
@@ -69,15 +69,15 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                    ;
 +------------------------------------+--------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Fri Sep 15 23:02:15 2023      ;
+; Analysis & Synthesis Status        ; Successful - Mon Sep 25 07:38:01 2023      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; ic_tester                                  ;
 ; Top-level Entity Name              ; ic_tester                                  ;
 ; Family                             ; Cyclone IV E                               ;
-; Total logic elements               ; 1,143                                      ;
-;     Total combinational functions  ; 943                                        ;
-;     Dedicated logic registers      ; 656                                        ;
-; Total registers                    ; 656                                        ;
+; Total logic elements               ; 1,164                                      ;
+;     Total combinational functions  ; 966                                        ;
+;     Dedicated logic registers      ; 657                                        ;
+; Total registers                    ; 657                                        ;
 ; Total pins                         ; 75                                         ;
 ; Total virtual pins                 ; 0                                          ;
 ; Total memory bits                  ; 0                                          ;
@@ -227,6 +227,7 @@ applicable agreement for further details.
 ; State_machine.v                  ; yes             ; User Verilog HDL File        ; D:/Projects/FPGA Test/ic_tester/State_machine.v                   ;         ;
 ; Input_Reciver.v                  ; yes             ; User Verilog HDL File        ; D:/Projects/FPGA Test/ic_tester/Input_Reciver.v                   ;         ;
 ; generate_ic_number.v             ; yes             ; User Verilog HDL File        ; D:/Projects/FPGA Test/ic_tester/generate_ic_number.v              ;         ;
+; LCD_MUX.v                        ; yes             ; User Verilog HDL File        ; D:/Projects/FPGA Test/ic_tester/LCD_MUX.v                         ;         ;
 ; altpll.tdf                       ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/altpll.tdf         ;         ;
 ; aglobal131.inc                   ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal131.inc     ;         ;
 ; stratix_pll.inc                  ; yes             ; Megafunction                 ; c:/altera/13.1/quartus/libraries/megafunctions/stratix_pll.inc    ;         ;
@@ -257,20 +258,20 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 1,143     ;
+; Estimated Total logic elements              ; 1,164     ;
 ;                                             ;           ;
-; Total combinational functions               ; 943       ;
+; Total combinational functions               ; 966       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 375       ;
-;     -- 3 input functions                    ; 115       ;
-;     -- <=2 input functions                  ; 453       ;
+;     -- 4 input functions                    ; 399       ;
+;     -- 3 input functions                    ; 142       ;
+;     -- <=2 input functions                  ; 425       ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 665       ;
+;     -- normal mode                          ; 688       ;
 ;     -- arithmetic mode                      ; 278       ;
 ;                                             ;           ;
-; Total registers                             ; 656       ;
-;     -- Dedicated logic registers            ; 656       ;
+; Total registers                             ; 657       ;
+;     -- Dedicated logic registers            ; 657       ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 75        ;
@@ -279,9 +280,9 @@ applicable agreement for further details.
 ;     -- PLLs                                 ; 1         ;
 ;                                             ;           ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 490       ;
-; Total fan-out                               ; 4818      ;
-; Average fan-out                             ; 2.75      ;
+; Maximum fan-out                             ; 522       ;
+; Total fan-out                               ; 4992      ;
+; Average fan-out                             ; 2.81      ;
 +---------------------------------------------+-----------+
 
 
@@ -290,10 +291,10 @@ applicable agreement for further details.
 +---------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+--------------+
 ; Compilation Hierarchy Node                              ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                                                                                                     ; Library Name ;
 +---------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+--------------+
-; |ic_tester                                              ; 943 (5)           ; 656 (0)      ; 0           ; 0            ; 0       ; 0         ; 75   ; 0            ; |ic_tester                                                                                                              ; work         ;
-;    |Input_Reciver:comb_3|                               ; 288 (0)           ; 167 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|Input_Reciver:comb_3                                                                                         ; work         ;
-;       |IR_RECEIVE:u1|                                   ; 127 (127)         ; 100 (100)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|Input_Reciver:comb_3|IR_RECEIVE:u1                                                                           ; work         ;
-;       |State_machine:u2|                                ; 50 (50)           ; 36 (36)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|Input_Reciver:comb_3|State_machine:u2                                                                        ; work         ;
+; |ic_tester                                              ; 966 (5)           ; 657 (0)      ; 0           ; 0            ; 0       ; 0         ; 75   ; 0            ; |ic_tester                                                                                                              ; work         ;
+;    |Input_Reciver:comb_3|                               ; 294 (0)           ; 167 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|Input_Reciver:comb_3                                                                                         ; work         ;
+;       |IR_RECEIVE:u1|                                   ; 128 (128)         ; 100 (100)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|Input_Reciver:comb_3|IR_RECEIVE:u1                                                                           ; work         ;
+;       |State_machine:u2|                                ; 55 (55)           ; 36 (36)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|Input_Reciver:comb_3|State_machine:u2                                                                        ; work         ;
 ;       |generate_ic_number:gin1|                         ; 111 (96)          ; 31 (31)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|Input_Reciver:comb_3|generate_ic_number:gin1                                                                 ; work         ;
 ;          |lpm_mult:Mult0|                               ; 9 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|Input_Reciver:comb_3|generate_ic_number:gin1|lpm_mult:Mult0                                                  ; work         ;
 ;             |multcore:mult_core|                        ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|Input_Reciver:comb_3|generate_ic_number:gin1|lpm_mult:Mult0|multcore:mult_core                               ; work         ;
@@ -302,17 +303,17 @@ applicable agreement for further details.
 ;       |pll1:u0|                                         ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|Input_Reciver:comb_3|pll1:u0                                                                                 ; work         ;
 ;          |altpll:altpll_component|                      ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|Input_Reciver:comb_3|pll1:u0|altpll:altpll_component                                                         ; work         ;
 ;             |pll1_altpll:auto_generated|                ; 0 (0)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|Input_Reciver:comb_3|pll1:u0|altpll:altpll_component|pll1_altpll:auto_generated                              ; work         ;
-;    |testing_logic:tl1|                                  ; 650 (0)           ; 489 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1                                                                                            ; work         ;
-;       |icNumber_decoder:icd1|                           ; 45 (45)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|icNumber_decoder:icd1                                                                      ; work         ;
-;       |logical_function_check:lfc1|                     ; 605 (102)         ; 489 (56)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1                                                                ; work         ;
-;          |eight_input_checker:eight_input_checker_inst| ; 123 (123)         ; 110 (110)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst                   ; work         ;
-;          |four_input_checker:four_input_checker_inst|   ; 113 (112)         ; 110 (110)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst                     ; work         ;
+;    |testing_logic:tl1|                                  ; 667 (0)           ; 490 (0)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1                                                                                            ; work         ;
+;       |icNumber_decoder:icd1|                           ; 43 (43)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|icNumber_decoder:icd1                                                                      ; work         ;
+;       |logical_function_check:lfc1|                     ; 624 (102)         ; 490 (56)     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1                                                                ; work         ;
+;          |eight_input_checker:eight_input_checker_inst| ; 127 (127)         ; 110 (110)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst                   ; work         ;
+;          |four_input_checker:four_input_checker_inst|   ; 117 (116)         ; 110 (110)    ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst                     ; work         ;
 ;             |four_input_and:and3|                       ; 1 (1)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|four_input_and:and3 ; work         ;
 ;          |mux_test:mt1|                                 ; 9 (9)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|mux_test:mt1                                                   ; work         ;
-;          |not_gate_checker:not_gate_checker_inst|       ; 76 (76)           ; 57 (57)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst                         ; work         ;
-;          |three_input_checker:three_input_checker_inst| ; 95 (92)           ; 86 (86)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst                   ; work         ;
+;          |not_gate_checker:not_gate_checker_inst|       ; 79 (79)           ; 58 (58)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst                         ; work         ;
+;          |three_input_checker:three_input_checker_inst| ; 100 (97)          ; 86 (86)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst                   ; work         ;
 ;             |mux_gate:m_gate2|                          ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|mux_gate:m_gate2  ; work         ;
-;          |two_input_checker:two_input_checker_inst|     ; 87 (85)           ; 70 (70)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst                       ; work         ;
+;          |two_input_checker:two_input_checker_inst|     ; 90 (88)           ; 70 (70)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst                       ; work         ;
 ;             |mux_gate:m_gate1|                          ; 2 (2)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|mux_gate:m_gate1      ; work         ;
 +---------------------------------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------------------------------------------------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
@@ -487,9 +488,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|output_got5[0]            ; Merged with testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|output_got4[0] ;
 ; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|output_got6[0]            ; Merged with testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|output_got4[0] ;
 ; testing_logic:tl1|logical_function_check:lfc1|IN8                                                              ; Stuck at GND due to stuck port data_in                                                                          ;
-; Input_Reciver:comb_3|generate_ic_number:gin1|number[17..31]                                                    ; Stuck at GND due to stuck port data_in                                                                          ;
-; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|fail5                     ; Merged with testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|pass5          ;
-; Input_Reciver:comb_3|generate_ic_number:gin1|number[15,16]                                                     ; Stuck at GND due to stuck port data_in                                                                          ;
+; Input_Reciver:comb_3|generate_ic_number:gin1|number[15..31]                                                    ; Stuck at GND due to stuck port data_in                                                                          ;
 ; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|output_ori[0]             ; Stuck at VCC due to stuck port data_in                                                                          ;
 ; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|output_ori[1]             ; Stuck at GND due to stuck port data_in                                                                          ;
 ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state~2             ; Lost fanout                                                                                                     ;
@@ -506,7 +505,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state~4             ; Lost fanout                                                                                                     ;
 ; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state~2                 ; Lost fanout                                                                                                     ;
 ; testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|state~3                 ; Lost fanout                                                                                                     ;
-; Total Number of Removed Registers = 210                                                                        ;                                                                                                                 ;
+; Total Number of Removed Registers = 209                                                                        ;                                                                                                                 ;
 +----------------------------------------------------------------------------------------------------------------+-----------------------------------------------------------------------------------------------------------------+
 
 
@@ -556,8 +555,6 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ;                                                                                                             ;                           ; Input_Reciver:comb_3|generate_ic_number:gin1|number[31]                                                    ;
 ; Input_Reciver:comb_3|generate_ic_number:gin1|num[4]                                                         ; Stuck at GND              ; Input_Reciver:comb_3|generate_ic_number:gin1|number[23],                                                   ;
 ;                                                                                                             ; due to stuck port data_in ; Input_Reciver:comb_3|generate_ic_number:gin1|number[24]                                                    ;
-; Input_Reciver:comb_3|generate_ic_number:gin1|number[16]                                                     ; Stuck at GND              ; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|output_ori[0],        ;
-;                                                                                                             ; due to stuck port data_in ; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|output_ori[1]         ;
 ; Input_Reciver:comb_3|generate_ic_number:gin1|num10[4]                                                       ; Stuck at GND              ; Input_Reciver:comb_3|generate_ic_number:gin1|number[25]                                                    ;
 ;                                                                                                             ; due to stuck port data_in ;                                                                                                            ;
 ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|input_pattern[6] ; Stuck at GND              ; testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|G1              ;
@@ -572,28 +569,27 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 656   ;
+; Total registers                              ; 657   ;
 ; Number of registers using Synchronous Clear  ; 82    ;
 ; Number of registers using Synchronous Load   ; 7     ;
 ; Number of registers using Asynchronous Clear ; 91    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 476   ;
+; Number of registers using Clock Enable       ; 507   ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------+
-; Inverted Register Statistics                                                                         ;
-+--------------------------------------------------------------------------------------------+---------+
-; Inverted Register                                                                          ; Fan out ;
-+--------------------------------------------------------------------------------------------+---------+
-; Input_Reciver:comb_3|State_machine:u2|HEX0[6]                                              ; 8       ;
-; Input_Reciver:comb_3|State_machine:u2|HEX1[6]                                              ; 7       ;
-; Input_Reciver:comb_3|State_machine:u2|HEX2[6]                                              ; 7       ;
-; Input_Reciver:comb_3|State_machine:u2|HEX3[6]                                              ; 6       ;
-; testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|pass5 ; 4       ;
-; Total number of inverted registers = 5                                                     ;         ;
-+--------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------+
+; Inverted Register Statistics                            ;
++-----------------------------------------------+---------+
+; Inverted Register                             ; Fan out ;
++-----------------------------------------------+---------+
+; Input_Reciver:comb_3|State_machine:u2|HEX0[6] ; 7       ;
+; Input_Reciver:comb_3|State_machine:u2|HEX1[6] ; 7       ;
+; Input_Reciver:comb_3|State_machine:u2|HEX2[6] ; 7       ;
+; Input_Reciver:comb_3|State_machine:u2|HEX3[6] ; 6       ;
+; Total number of inverted registers = 4        ;         ;
++-----------------------------------------------+---------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -601,24 +597,29 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                                                                  ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------+
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|pass  ;
-; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |ic_tester|Input_Reciver:comb_3|IR_RECEIVE:u1|bitcount[0]                                                   ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|fail        ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass      ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|fail  ;
-; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|fail    ;
+; 3:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |ic_tester|Input_Reciver:comb_3|IR_RECEIVE:u1|bitcount[1]                                                   ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|pass1 ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|pass1   ;
+; 4:1                ; 6 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|pass3 ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|fail1     ;
 ; 8:1                ; 4 bits    ; 20 LEs        ; 4 LEs                ; 16 LEs                 ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|pass5                                              ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|pass4                                              ;
-; 8:1                ; 2 bits    ; 10 LEs        ; 6 LEs                ; 4 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|fail3                                              ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 6 LEs                ; 4 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|pass3                                              ;
 ; 8:1                ; 2 bits    ; 10 LEs        ; 6 LEs                ; 4 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|pass2                                              ;
 ; 8:1                ; 4 bits    ; 20 LEs        ; 12 LEs               ; 8 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|pass1                                              ;
-; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|IN10                                               ;
+; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|IN11                                               ;
 ; 4:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|IN3                                                ;
-; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |ic_tester|Input_Reciver:comb_3|State_machine:u2|HEX3[0]                                                    ;
+; 5:1                ; 6 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |ic_tester|Input_Reciver:comb_3|State_machine:u2|HEX3[3]                                                    ;
+; 4:1                ; 12 bits   ; 24 LEs        ; 12 LEs               ; 12 LEs                 ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|pass3       ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|IN1                                                ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; Yes        ; |ic_tester|Input_Reciver:comb_3|State_machine:u2|HEX1[2]                                                    ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; Yes        ; |ic_tester|Input_Reciver:comb_3|State_machine:u2|HEX2[2]                                                    ;
-; 6:1                ; 6 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; Yes        ; |ic_tester|Input_Reciver:comb_3|State_machine:u2|HEX0[5]                                                    ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; Yes        ; |ic_tester|Input_Reciver:comb_3|State_machine:u2|HEX1[0]                                                    ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; Yes        ; |ic_tester|Input_Reciver:comb_3|State_machine:u2|HEX2[0]                                                    ;
+; 6:1                ; 6 bits    ; 24 LEs        ; 6 LEs                ; 18 LEs                 ; Yes        ; |ic_tester|Input_Reciver:comb_3|State_machine:u2|HEX0[0]                                                    ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|fail  ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|pass        ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|pass      ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|fail  ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|fail    ;
 ; 3:1                ; 32 bits   ; 64 LEs        ; 32 LEs               ; 32 LEs                 ; No         ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state ;
 ; 3:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; No         ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|four_input_checker:four_input_checker_inst|state   ;
 ; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; No         ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|state ;
@@ -626,8 +627,8 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |ic_tester|testing_logic:tl1|logical_function_check:lfc1|IN1                                                ;
 ; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; No         ; |ic_tester|Input_Reciver:comb_3|State_machine:u2|main_state                                                 ;
 ; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; No         ; |ic_tester|Input_Reciver:comb_3|State_machine:u2|iDIG                                                       ;
-; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |ic_tester|Input_Reciver:comb_3|IR_RECEIVE:u1|Selector1                                                     ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 10 LEs               ; 4 LEs                  ; No         ; |ic_tester|testing_logic:tl1|icNumber_decoder:icd1|tester[1]                                                ;
+; 6:1                ; 3 bits    ; 12 LEs        ; 6 LEs                ; 6 LEs                  ; No         ; |ic_tester|Input_Reciver:comb_3|IR_RECEIVE:u1|Selector0                                                     ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 10 LEs               ; 4 LEs                  ; No         ; |ic_tester|testing_logic:tl1|icNumber_decoder:icd1|tester[0]                                                ;
 ; 12:1               ; 2 bits    ; 16 LEs        ; 12 LEs               ; 4 LEs                  ; No         ; |ic_tester|testing_logic:tl1|icNumber_decoder:icd1|tester[2]                                                ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-------------------------------------------------------------------------------------------------------------+
 
@@ -1277,6 +1278,15 @@ Note: In order to hide this table in the UI and the text report file, please set
 +---------------------------------------+-------------------------------------------------------------+
 
 
++--------------------------------------------------------+
+; Port Connectivity Checks: "LCD_MUX:comb_4"             ;
++-----------+--------+----------+------------------------+
+; Port      ; Type   ; Severity ; Details                ;
++-----------+--------+----------+------------------------+
+; LCD_STATE ; Output ; Info     ; Explicitly unconnected ;
++-----------+--------+----------+------------------------+
+
+
 +-----------------------------------------------------------------------------------------------------------------------------------------+
 ; Port Connectivity Checks: "testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|mux_gate:m_gate2" ;
 +------+--------+----------+--------------------------------------------------------------------------------------------------------------+
@@ -1304,21 +1314,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "Input_Reciver:comb_3"                                                               ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; Port ; Type   ; Severity ; Details                                                                             ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-; icg  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
-+------+--------+----------+-------------------------------------------------------------------------------------+
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -1328,7 +1329,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
-    Info: Processing started: Fri Sep 15 23:02:11 2023
+    Info: Processing started: Mon Sep 25 07:37:58 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ic_tester -c ic_tester
 Info (11104): Parallel Compilation has detected 12 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 6 of the 6 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file two_input_and.v
@@ -1391,12 +1392,16 @@ Info (12021): Found 1 design units, including 1 entities, in source file ir_rece
     Info (12023): Found entity 1: IR_RECEIVE
 Info (12021): Found 1 design units, including 1 entities, in source file state_machine.v
     Info (12023): Found entity 1: State_machine
+Warning (10238): Verilog Module Declaration warning at Input_Reciver.v(12): ignored anonymous port(s) indicated by duplicate or dangling comma(s) in the port list for module "Input_Reciver"
 Info (12021): Found 1 design units, including 1 entities, in source file input_reciver.v
     Info (12023): Found entity 1: Input_Reciver
 Info (12021): Found 1 design units, including 1 entities, in source file generate_ic_number.v
     Info (12023): Found entity 1: generate_ic_number
+Info (12021): Found 1 design units, including 1 entities, in source file lcd_mux.v
+    Info (12023): Found entity 1: LCD_MUX
 Warning (10037): Verilog HDL or VHDL warning at State_machine.v(100): conditional expression evaluates to a constant
 Critical Warning (10846): Verilog HDL Instantiation warning at ic_tester.v(48): instance has no name
+Critical Warning (10846): Verilog HDL Instantiation warning at ic_tester.v(96): instance has no name
 Info (12127): Elaborating entity "ic_tester" for the top level hierarchy
 Info (12128): Elaborating entity "Input_Reciver" for hierarchy "Input_Reciver:comb_3"
 Warning (10034): Output port "LEDR[4]" at Input_Reciver.v(24) has no driver
@@ -1618,6 +1623,7 @@ Info (12128): Elaborating entity "eight_input_checker" for hierarchy "testing_lo
 Info (12128): Elaborating entity "eight_input_nand" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|eight_input_nand:nand3"
 Info (12128): Elaborating entity "not_gate_checker" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst"
 Info (12128): Elaborating entity "not_gate" for hierarchy "testing_logic:tl1|logical_function_check:lfc1|not_gate_checker:not_gate_checker_inst|not_gate:not_gate"
+Info (12128): Elaborating entity "LCD_MUX" for hierarchy "LCD_MUX:comb_4"
 Warning (13046): Tri-state node(s) do not directly drive top-level pin(s)
     Warning (13049): Converted tri-state buffer "testing_logic:tl1|logical_function_check:lfc1|three_input_checker:three_input_checker_inst|mux_gate:m_gate2|Y" feeding internal logic into a wire
     Warning (13049): Converted tri-state buffer "testing_logic:tl1|logical_function_check:lfc1|two_input_checker:two_input_checker_inst|mux_gate:m_gate1|Y" feeding internal logic into a wire
@@ -1667,16 +1673,16 @@ Warning (21074): Design contains 4 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "OP5"
     Warning (15610): No output dependent on input pin "OP9"
     Warning (15610): No output dependent on input pin "OP13"
-Info (21057): Implemented 1272 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1274 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 15 input pins
     Info (21059): Implemented 60 output pins
-    Info (21061): Implemented 1196 logic cells
+    Info (21061): Implemented 1198 logic cells
     Info (21065): Implemented 1 PLLs
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 130 warnings
-    Info: Peak virtual memory: 4687 megabytes
-    Info: Processing ended: Fri Sep 15 23:02:15 2023
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 132 warnings
+    Info: Peak virtual memory: 4677 megabytes
+    Info: Processing ended: Mon Sep 25 07:38:01 2023
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +------------------------------------------+
