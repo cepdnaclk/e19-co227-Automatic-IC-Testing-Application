@@ -14,7 +14,7 @@
 
 # Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 # File: D:\Projects\FPGA Test\ic_tester\ic_tester.csv
-# Generated on: Fri Sep 15 22:26:58 2023
+# Generated on: Mon Sep 25 11:27:51 2023
 
 # Note: The column header names should not be changed if you wish to import this .csv file into the Quartus II software.
 
@@ -77,8 +77,17 @@ OP10,Input,PIN_AE24,4,B4_N0,PIN_AE24,,,,,
 OP11,Input,PIN_AG22,4,B4_N1,PIN_AG22,,,,,
 OP12,Input,PIN_AE25,4,B4_N1,PIN_AE25,,,,,
 OP13,Input,PIN_AH25,4,B4_N1,PIN_AH25,,,,,
+RLCD,Input,PIN_AB28,5,B5_N1,PIN_AH14,,,,,
 Rkey,Input,PIN_M23,6,B6_N2,PIN_M23,,,,,
 clk,Input,PIN_Y2,2,B2_N0,PIN_Y2,,,,,
+data_bus_0,Bidir,PIN_L3,1,B1_N1,PIN_K27,,,,,
+data_bus_1,Bidir,PIN_L1,1,B1_N2,PIN_L24,,,,,
+data_bus_2,Bidir,PIN_L2,1,B1_N2,PIN_M25,,,,,
+data_bus_3,Bidir,PIN_K7,1,B1_N1,PIN_A21,,,,,
+data_bus_4,Bidir,PIN_K1,1,B1_N1,PIN_L28,,,,,
+data_bus_5,Bidir,PIN_K2,1,B1_N1,PIN_C21,,,,,
+data_bus_6,Bidir,PIN_M3,1,B1_N1,PIN_J26,,,,,
+data_bus_7,Bidir,PIN_M5,1,B1_N2,PIN_L27,,,,,
 fail,Output,PIN_H16,7,B7_N2,PIN_H16,,,,,
 fail1,Output,PIN_G19,7,B7_N2,PIN_G19,,,,,
 fail2,Output,PIN_F19,7,B7_N0,PIN_F19,,,,,
@@ -86,6 +95,11 @@ fail3,Output,PIN_E19,7,B7_N0,PIN_E19,,,,,
 fail4,Output,PIN_F21,7,B7_N0,PIN_F21,,,,,
 fail5,Output,PIN_F18,7,B7_N1,PIN_F18,,,,,
 fail6,Output,PIN_E18,7,B7_N1,PIN_E18,,,,,
+lcd_blon,Output,PIN_L6,1,B1_N2,PIN_G11,,,,,
+lcd_e,Output,PIN_L4,1,B1_N1,PIN_K28,,,,,
+lcd_on,Output,PIN_L5,1,B1_N1,PIN_F10,,,,,
+lcd_rs,Output,PIN_M2,1,B1_N2,PIN_L23,,,,,
+lcd_rw,Output,PIN_M1,1,B1_N2,PIN_AG3,,,,,
 pass,Output,PIN_F17,7,B7_N2,PIN_F17,,,,,
 pass1,Output,PIN_E21,7,B7_N0,PIN_E21,,,,,
 pass2,Output,PIN_E22,7,B7_N0,PIN_E22,,,,,
@@ -93,4 +107,4 @@ pass3,Output,PIN_E25,7,B7_N1,PIN_E25,,,,,
 pass4,Output,PIN_E24,7,B7_N1,PIN_E24,,,,,
 pass5,Output,PIN_H21,7,B7_N2,PIN_H21,,,,,
 pass6,Output,PIN_G20,7,B7_N1,PIN_G20,,,,,
-testLED,Output,PIN_G21,7,B7_N1,PIN_C23,,,,,
+testLED,Output,PIN_G21,7,B7_N1,PIN_G21,,,,,

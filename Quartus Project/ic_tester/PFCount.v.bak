@@ -1,0 +1,78 @@
+module PFCount(
+	pass1,
+	pass2,
+	pass3,
+	pass4,
+	pass5,
+	pass6,
+	fail1,
+	fail2,
+	fail3,
+	fail4,
+	fail5,
+	fail6,
+	icg,
+	COUNT
+);
+
+	input pass1, pass2, pass3, pass4, pass5, pass6, fail1, fail2, fail3, fail4, fail5, fail6;
+	output reg [5:0] COUNT;
+	reg [2:0] PASS;
+	reg [2:0] FAIL;
+	
+	always @(*) begin
+	
+		if(pass1== 1'b1) begin
+			PASS = PASS + 1;
+		end
+		
+		if(pass2== 1'b1) begin
+			PASS = PASS + 1;
+		end
+		
+		if(pass3== 1'b1) begin
+			PASS = PASS + 1;
+		end
+		
+		if(pass4== 1'b1) begin
+			PASS = PASS + 1;
+		end
+		
+		if(pass5== 1'b1) begin
+			PASS = PASS + 1;
+		end
+		
+		if(pass6== 1'b1) begin
+			PASS = PASS + 1;
+		end
+		
+		if(fail1== 1'b1) begin
+			FAIL = FAIL + 1;
+		end
+			
+		if(fail2== 1'b1) begin
+			FAIL = FAIL + 1;
+		end
+			
+		if(fail3== 1'b1) begin
+			FAIL = FAIL + 1;
+		end
+			
+		if(fail4== 1'b1) begin
+			FAIL = FAIL + 1;
+		end
+			
+		if(fail5== 1'b1) begin
+			FAIL = FAIL + 1;
+		end
+			
+		if(fail6== 1'b1) begin
+			FAIL = FAIL + 1;
+		end
+		
+		COUNT [2:0] = FAIL;
+		COUNT [5:3] = PASS;
+	
+	end
+
+endmodule

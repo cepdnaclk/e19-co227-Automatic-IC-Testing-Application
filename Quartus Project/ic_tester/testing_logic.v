@@ -7,7 +7,9 @@ module testing_logic (
   fail1, fail2, fail3, fail4, fail5, fail6,
   pass, fail,
   clk,
-  ICNumber
+  ICNumber,
+  to_LCD,
+  icg
 );
   
   // Initiate the other input & outputs
@@ -16,6 +18,8 @@ module testing_logic (
   output pass1, pass2, pass3, pass4, pass5, pass6, fail1, fail2, fail3, fail4, fail5, fail6;
   output pass, fail;
   input clk;
+  input icg;
+  output to_LCD;
   
   wire [2:0] gate;
   wire [2:0] tester;
@@ -25,7 +29,8 @@ module testing_logic (
   icNumber_decoder icd1(
     .icNumber(ICNumber),
     .gate(gate), 
-    .tester(tester)
+    .tester(tester),
+	 .to_LCD(to_LCD)
 );
   
   logical_function_check lfc1(
@@ -69,7 +74,8 @@ module testing_logic (
 	  .fail(fail),
 	  .clk(clk),
 	  .gate(gate),
-	  .tester(tester)
+	  .tester(tester),
+	  .icg(icg)
 );
 
 endmodule

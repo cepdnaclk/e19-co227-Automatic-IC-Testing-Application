@@ -1,0 +1,61 @@
+module LCD_DISPLAY (
+   input reset,
+   input clock_50,
+	input [3:0] binary_input,
+	input [7:0] hex_input,
+   output lcd_rs,
+   output lcd_e,
+   output lcd_rw,
+   output lcd_on,
+   output lcd_blon,
+   inout data_bus_0,
+   inout data_bus_1,
+   inout data_bus_2,
+   inout data_bus_3,
+   inout data_bus_4,
+   inout data_bus_5,
+   inout data_bus_6,
+   inout data_bus_7
+);
+
+// Declare internal signals to hold the values
+reg [3:0] internal_LCD_CHAR_ARRAY;
+reg [7:0] internal_Hex_Display_Data;
+reg [24:0] delay_counter;  // Counter for delay
+
+// Outputs connected to DISPLAY1
+wire LCD_CHAR_ARRAY_0 = internal_LCD_CHAR_ARRAY[0];
+wire LCD_CHAR_ARRAY_1 = internal_LCD_CHAR_ARRAY[1];
+wire LCD_CHAR_ARRAY_2 = internal_LCD_CHAR_ARRAY[2];
+wire LCD_CHAR_ARRAY_3 = internal_LCD_CHAR_ARRAY[3];
+wire Hex_Display_Data_0 = internal_Hex_Display_Data[0];
+wire Hex_Display_Data_1 = internal_Hex_Display_Data[1];
+wire Hex_Display_Data_2 = internal_Hex_Display_Data[2];
+wire Hex_Display_Data_3 = internal_Hex_Display_Data[3];
+wire Hex_Display_Data_4 = internal_Hex_Display_Data[4];
+wire Hex_Display_Data_5 = internal_Hex_Display_Data[5];
+wire Hex_Display_Data_6 = internal_Hex_Display_Data[6];
+wire Hex_Display_Data_7 = internal_Hex_Display_Data[7];
+
+
+// Instantiate LCD_DISPLAY1 module and connect inputs and outputs
+LCD_DISPLAY1 LCD_WRAPPER_INST (
+   .reset              (reset),
+   .clock_50           (clock_50),
+   .lcd_rs             (lcd_rs),
+   .lcd_e              (lcd_e),
+   .lcd_rw             (lcd_rw),
+   .lcd_on             (lcd_on),
+   .lcd_blon           (lcd_blon),
+   .data_bus_0         (data_bus_0),
+   .data_bus_1         (data_bus_1),
+   .data_bus_2         (data_bus_2),
+   .data_bus_3         (data_bus_3),
+   .data_bus_4         (data_bus_4),
+   .data_bus_5         (data_bus_5),
+   .data_bus_6         (data_bus_6),
+   .data_bus_7         (data_bus_7),
+   .binary_input       (binary_input),
+	.hex_input			  (hex_input)
+);
+endmodule

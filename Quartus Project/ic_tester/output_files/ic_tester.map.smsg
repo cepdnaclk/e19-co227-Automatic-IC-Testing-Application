@@ -3,6 +3,6 @@ Warning (10268): Verilog HDL information at three_input_checker.v(77): always co
 Warning (10268): Verilog HDL information at not_gate_checker.v(65): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at four_input_checker.v(80): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at eight_input_checker.v(103): always construct contains both blocking and non-blocking assignments
-Warning (10268): Verilog HDL information at logical_function_check.v(182): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at logical_function_check.v(184): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at IR_RECEIVE.v(172): always construct contains both blocking and non-blocking assignments
 Warning (10268): Verilog HDL information at State_machine.v(87): always construct contains both blocking and non-blocking assignments

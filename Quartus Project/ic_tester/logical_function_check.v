@@ -7,7 +7,8 @@ module logical_function_check (
   fail1, fail2, fail3, fail4, fail5, fail6,
   pass, fail,
   clk,
-  gate, tester
+  gate, tester,
+  icg
 );
   
   input OP1, OP2, OP3, OP4, OP5, OP6, OP8, OP9, OP10, OP11, OP12, OP13;
@@ -15,6 +16,7 @@ module logical_function_check (
   output reg pass1, pass2, pass3, pass4, pass5, pass6, fail1, fail2, fail3, fail4, fail5, fail6;
   output reg pass, fail;
   input clk;
+  input icg;
   
   input [2:0] gate;
   input [2:0] tester;
@@ -180,6 +182,28 @@ module logical_function_check (
   reg [31:0] counter;
   parameter ONE_SECOND_DELAY = 50000005;
 	always @(posedge clk) begin
+	  
+	  if (icg == 0) begin
+	
+				 pass1 <= 1'b0;
+				 pass2 <= 1'b0;
+				 pass3 <= 1'b0;
+				 pass4 <= 1'b0;
+				 pass5 <= 1'b0;
+				 pass6 <= 1'b0;
+
+				 fail1 <= 1'b0;
+				 fail2 <= 1'b0;
+				 fail3 <= 1'b0;
+				 fail4 <= 1'b0;
+				 fail5 <= 1'b0;
+				 fail6 <= 1'b0;
+
+				 pass <= 1'b0;
+				 fail <= 1'b0;
+	  
+	  end
+	  
 	  counter = counter + 1;
 	  
 	  if (counter == ONE_SECOND_DELAY) begin

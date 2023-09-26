@@ -47,6 +47,15 @@ module mux_test (
 		W_FOUR = 1'b0;
 		W_EIGHT = 1'b1;
 	 end
+	 	     
+	 if (select == 3'b111) begin
+	   W_NOT = 1'b0;
+		W_TWO = 1'b0;
+		W_THREE = 1'b0;
+		W_FOUR = 1'b0;
+		W_EIGHT = 1'b0;
+	 end
+	
 	 
   end
 endmodule

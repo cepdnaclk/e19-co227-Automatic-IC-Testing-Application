@@ -11,7 +11,20 @@ module ic_tester (
   HEX0, HEX1, HEX2, HEX3,
   LEDR,
   IRDA_RXD,
-  testLED
+  RLCD,
+  lcd_rs,
+  lcd_e,
+  lcd_rw,
+  lcd_on,
+  lcd_blon,
+  data_bus_0,
+  data_bus_1,
+  data_bus_2,
+  data_bus_3,
+  data_bus_4,
+  data_bus_5,
+  data_bus_6,
+  data_bus_7
 );
   
   // Initiate the other input & outputs
@@ -20,7 +33,10 @@ module ic_tester (
   output pass1, pass2, pass3, pass4, pass5, pass6, fail1, fail2, fail3, fail4, fail5, fail6;
   output pass, fail;
   input clk;
-  output reg testLED;
+  
+  input RLCD;
+  output lcd_rs, lcd_e, lcd_rw, lcd_on, lcd_blon;
+  inout data_bus_0, data_bus_1, data_bus_2, data_bus_3, data_bus_4, data_bus_5, data_bus_6, data_bus_7;
   
   input Rkey;
 
@@ -33,6 +49,10 @@ module ic_tester (
   
   wire [31:0] ICNumber;
   wire ICRead;
+  
+  wire [3:0] LCDstate;
+  wire [7:0] PF_State;
+  wire InvalidIC;
   
   Input_Reciver(		
     .CLOCK_50(clk),
@@ -87,22 +107,56 @@ module ic_tester (
 	  .pass(pass), 
 	  .fail(fail),
 	  .clk(clk),
-	  .ICNumber(ICNumber)
+	  .ICNumber(ICNumber),
+	  .to_LCD(InvalidIC),
+	  .icg(ICRead)
 );
 
-	LCD_MUX(
-		.LCD_STATE(),
-		.icg(ICRead)
+	LCD_MUX lcdmux1(
+		.LCD_STATE(LCDstate),
+		.icg(ICRead),
+		.pass(pass),
+		.fail(fail),
+		.clk(clk),
+		.InvalidIC(InvalidIC)
 	);
 
-	always@(ICNumber) begin
-		if (ICNumber == 7408) begin
-			testLED = 1;
-		end
-		else begin
-			testLED = 0;
-		end
-	end
+	LCD_DISPLAY lcddisplay1(
+		.reset(RLCD),
+		.clock_50(clk),
+		.binary_input(LCDstate),
+		.lcd_rs(lcd_rs),
+		.lcd_e(lcd_e),
+		.lcd_rw(lcd_rw),
+		.lcd_on(lcd_on),
+		.lcd_blon(lcd_blon),
+		.data_bus_0(data_bus_0),
+		.data_bus_1(data_bus_1),
+		.data_bus_2(data_bus_2),
+		.data_bus_3(data_bus_3),
+		.data_bus_4(data_bus_4),
+		.data_bus_5(data_bus_5),
+		.data_bus_6(data_bus_6),
+		.data_bus_7(data_bus_7),
+		.hex_input(PF_State)
+);
+
+	PFCount pfcount1(
+		.pass1(pass1),
+		.pass2(pass2),
+		.pass3(pass3),
+		.pass4(pass4),
+		.pass5(pass5),
+		.pass6(pass6),
+		.fail1(fail1),
+		.fail2(fail2),
+		.fail3(fail3),
+		.fail4(fail4),
+		.fail5(fail5),
+		.fail6(fail6),
+		.icg(ICRead),
+		.COUNT(PF_State)
+);
 
 
 endmodule

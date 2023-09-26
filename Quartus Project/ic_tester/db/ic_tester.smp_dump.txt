@@ -1,4 +1,34 @@
 
+State Machine - |ic_tester|LCD_DISPLAY:lcddisplay1|LCD_DISPLAY1:LCD_WRAPPER_INST|LCD_DISPLAY_nty:LCD_WRAPPER_INST|next_command
+Name next_command.display_clear next_command.display_off next_command.reset3 next_command.func_set next_command.reset1 next_command.drop_lcd_e next_command.return_home next_command.line2 next_command.print_string next_command.mode_set next_command.display_on next_command.reset2 
+next_command.reset2 0 0 0 0 0 0 0 0 0 0 0 0 
+next_command.display_on 0 0 0 0 0 0 0 0 0 0 1 1 
+next_command.mode_set 0 0 0 0 0 0 0 0 0 1 0 1 
+next_command.print_string 0 0 0 0 0 0 0 0 1 0 0 1 
+next_command.line2 0 0 0 0 0 0 0 1 0 0 0 1 
+next_command.return_home 0 0 0 0 0 0 1 0 0 0 0 1 
+next_command.drop_lcd_e 0 0 0 0 0 1 0 0 0 0 0 1 
+next_command.reset1 0 0 0 0 1 0 0 0 0 0 0 1 
+next_command.func_set 0 0 0 1 0 0 0 0 0 0 0 1 
+next_command.reset3 0 0 1 0 0 0 0 0 0 0 0 1 
+next_command.display_off 0 1 0 0 0 0 0 0 0 0 0 1 
+next_command.display_clear 1 0 0 0 0 0 0 0 0 0 0 1 
+
+State Machine - |ic_tester|LCD_DISPLAY:lcddisplay1|LCD_DISPLAY1:LCD_WRAPPER_INST|LCD_DISPLAY_nty:LCD_WRAPPER_INST|state
+Name state.display_clear state.display_off state.reset3 state.reset2 state.func_set state.drop_lcd_e state.return_home state.line2 state.print_string state.mode_set state.display_on state.reset1 
+state.reset1 0 0 0 0 0 0 0 0 0 0 0 0 
+state.display_on 0 0 0 0 0 0 0 0 0 0 1 1 
+state.mode_set 0 0 0 0 0 0 0 0 0 1 0 1 
+state.print_string 0 0 0 0 0 0 0 0 1 0 0 1 
+state.line2 0 0 0 0 0 0 0 1 0 0 0 1 
+state.return_home 0 0 0 0 0 0 1 0 0 0 0 1 
+state.drop_lcd_e 0 0 0 0 0 1 0 0 0 0 0 1 
+state.func_set 0 0 0 0 1 0 0 0 0 0 0 1 
+state.reset2 0 0 0 1 0 0 0 0 0 0 0 1 
+state.reset3 0 0 1 0 0 0 0 0 0 0 0 1 
+state.display_off 0 1 0 0 0 0 0 0 0 0 0 1 
+state.display_clear 1 0 0 0 0 0 0 0 0 0 0 1 
+
 State Machine - |ic_tester|testing_logic:tl1|logical_function_check:lfc1|eight_input_checker:eight_input_checker_inst|state
 Name state.S11111 state.S11110 state.S11101 state.S11100 state.S11011 state.S11010 state.S11001 state.S11000 state.S10111 state.S10110 state.S10101 state.S10100 state.S10011 state.S10010 state.S10001 state.S10000 state.S01111 state.S01110 state.S01101 state.S01100 state.S01011 state.S01010 state.S01001 state.S01000 state.S00111 state.S00110 state.S00101 state.S00100 state.S00011 state.S00010 state.S00001 state.S00000 
 state.S00000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
