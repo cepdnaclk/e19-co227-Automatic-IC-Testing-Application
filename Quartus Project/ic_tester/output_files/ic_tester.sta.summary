@@ -3,63 +3,83 @@ TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'Input_Reciver:comb_3|generate_ic_number:gin1|ic_no_generated'
-Slack : -3.609
-TNS   : -12.082
-
-Type  : Slow 1200mV 85C Model Setup 'Input_Reciver:comb_3|IR_RECEIVE:u1|data_ready2'
-Slack : -2.990
-TNS   : -92.279
-
-Type  : Slow 1200mV 85C Model Setup 'clk'
-Slack : -1.639
-TNS   : -49.039
+Slack : -4.634
+TNS   : -25.684
 
 Type  : Slow 1200mV 85C Model Setup 'testing_logic:tl1|logical_function_check:lfc1|pass1'
-Slack : -1.011
-TNS   : -1.011
+Slack : -4.046
+TNS   : -10.539
+
+Type  : Slow 1200mV 85C Model Setup 'Input_Reciver:comb_3|IR_RECEIVE:u1|data_ready2'
+Slack : -3.085
+TNS   : -92.149
+
+Type  : Slow 1200mV 85C Model Setup 'testing_logic:tl1|logical_function_check:lfc1|fail1'
+Slack : -2.955
+TNS   : -8.575
+
+Type  : Slow 1200mV 85C Model Setup 'clk'
+Slack : -1.644
+TNS   : -53.780
 
 Type  : Slow 1200mV 85C Model Setup 'comb_3|u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 13.004
+Slack : 13.917
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Hold 'testing_logic:tl1|logical_function_check:lfc1|pass1'
-Slack : -5.546
-TNS   : -9.868
-
 Type  : Slow 1200mV 85C Model Hold 'Input_Reciver:comb_3|generate_ic_number:gin1|ic_no_generated'
-Slack : -2.459
-TNS   : -7.195
+Slack : -1.802
+TNS   : -7.206
+
+Type  : Slow 1200mV 85C Model Hold 'testing_logic:tl1|logical_function_check:lfc1|pass1'
+Slack : -1.729
+TNS   : -4.634
+
+Type  : Slow 1200mV 85C Model Hold 'testing_logic:tl1|logical_function_check:lfc1|fail1'
+Slack : -1.708
+TNS   : -4.908
 
 Type  : Slow 1200mV 85C Model Hold 'Input_Reciver:comb_3|IR_RECEIVE:u1|data_ready2'
-Slack : -1.318
-TNS   : -8.833
+Slack : -0.947
+TNS   : -6.294
 
 Type  : Slow 1200mV 85C Model Hold 'clk'
-Slack : 0.284
+Slack : 0.082
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'comb_3|u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.401
+Slack : 0.404
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'testing_logic:tl1|logical_function_check:lfc1|pass1'
-Slack : 0.273
+Slack : -0.360
+TNS   : -0.360
+
+Type  : Slow 1200mV 85C Model Recovery 'testing_logic:tl1|logical_function_check:lfc1|fail1'
+Slack : 0.322
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Removal 'testing_logic:tl1|logical_function_check:lfc1|pass1'
-Slack : -2.411
-TNS   : -6.836
+Slack : -1.429
+TNS   : -3.828
+
+Type  : Slow 1200mV 85C Model Removal 'testing_logic:tl1|logical_function_check:lfc1|fail1'
+Slack : -1.201
+TNS   : -3.566
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Input_Reciver:comb_3|IR_RECEIVE:u1|data_ready2'
 Slack : -1.285
 TNS   : -46.260
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'testing_logic:tl1|logical_function_check:lfc1|pass1'
-Slack : -0.483
-TNS   : -7.267
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'testing_logic:tl1|logical_function_check:lfc1|fail1'
+Slack : 0.420
+TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Input_Reciver:comb_3|generate_ic_number:gin1|ic_no_generated'
-Slack : 0.446
+Slack : 0.424
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'testing_logic:tl1|logical_function_check:lfc1|pass1'
+Slack : 0.432
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'comb_3|u0|altpll_component|auto_generated|pll1|clk[0]'
@@ -67,139 +87,179 @@ Slack : 9.709
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk'
-Slack : 9.746
+Slack : 9.753
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Setup 'Input_Reciver:comb_3|generate_ic_number:gin1|ic_no_generated'
-Slack : -3.228
-TNS   : -10.752
-
-Type  : Slow 1200mV 0C Model Setup 'Input_Reciver:comb_3|IR_RECEIVE:u1|data_ready2'
-Slack : -2.687
-TNS   : -81.567
-
-Type  : Slow 1200mV 0C Model Setup 'clk'
-Slack : -1.436
-TNS   : -41.288
+Slack : -4.318
+TNS   : -23.698
 
 Type  : Slow 1200mV 0C Model Setup 'testing_logic:tl1|logical_function_check:lfc1|pass1'
-Slack : -1.037
-TNS   : -1.037
+Slack : -3.720
+TNS   : -9.597
+
+Type  : Slow 1200mV 0C Model Setup 'Input_Reciver:comb_3|IR_RECEIVE:u1|data_ready2'
+Slack : -2.713
+TNS   : -80.236
+
+Type  : Slow 1200mV 0C Model Setup 'testing_logic:tl1|logical_function_check:lfc1|fail1'
+Slack : -2.653
+TNS   : -7.735
+
+Type  : Slow 1200mV 0C Model Setup 'clk'
+Slack : -1.373
+TNS   : -44.545
 
 Type  : Slow 1200mV 0C Model Setup 'comb_3|u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 13.681
+Slack : 14.376
 TNS   : 0.000
 
+Type  : Slow 1200mV 0C Model Hold 'testing_logic:tl1|logical_function_check:lfc1|fail1'
+Slack : -1.621
+TNS   : -4.671
+
 Type  : Slow 1200mV 0C Model Hold 'testing_logic:tl1|logical_function_check:lfc1|pass1'
-Slack : -4.958
-TNS   : -8.811
+Slack : -1.547
+TNS   : -4.266
 
 Type  : Slow 1200mV 0C Model Hold 'Input_Reciver:comb_3|generate_ic_number:gin1|ic_no_generated'
-Slack : -2.170
-TNS   : -6.301
+Slack : -1.515
+TNS   : -6.014
 
 Type  : Slow 1200mV 0C Model Hold 'Input_Reciver:comb_3|IR_RECEIVE:u1|data_ready2'
-Slack : -1.022
-TNS   : -4.644
+Slack : -0.683
+TNS   : -3.752
 
 Type  : Slow 1200mV 0C Model Hold 'clk'
-Slack : 0.258
+Slack : 0.067
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'comb_3|u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.353
+Slack : 0.356
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'testing_logic:tl1|logical_function_check:lfc1|pass1'
-Slack : 0.068
+Slack : -0.414
+TNS   : -0.414
+
+Type  : Slow 1200mV 0C Model Recovery 'testing_logic:tl1|logical_function_check:lfc1|fail1'
+Slack : 0.265
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Removal 'testing_logic:tl1|logical_function_check:lfc1|pass1'
-Slack : -2.159
-TNS   : -6.126
+Slack : -1.338
+TNS   : -3.591
+
+Type  : Slow 1200mV 0C Model Removal 'testing_logic:tl1|logical_function_check:lfc1|fail1'
+Slack : -1.154
+TNS   : -3.425
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Input_Reciver:comb_3|IR_RECEIVE:u1|data_ready2'
 Slack : -1.285
 TNS   : -46.260
 
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'testing_logic:tl1|logical_function_check:lfc1|fail1'
+Slack : 0.355
+TNS   : 0.000
+
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'testing_logic:tl1|logical_function_check:lfc1|pass1'
-Slack : -0.378
-TNS   : -5.771
+Slack : 0.397
+TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Input_Reciver:comb_3|generate_ic_number:gin1|ic_no_generated'
-Slack : 0.465
+Slack : 0.452
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'comb_3|u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 9.709
+Slack : 9.710
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk'
-Slack : 9.740
+Slack : 9.738
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Setup 'Input_Reciver:comb_3|generate_ic_number:gin1|ic_no_generated'
-Slack : -1.281
-TNS   : -4.087
-
-Type  : Fast 1200mV 0C Model Setup 'Input_Reciver:comb_3|IR_RECEIVE:u1|data_ready2'
-Slack : -0.942
-TNS   : -27.229
-
-Type  : Fast 1200mV 0C Model Setup 'clk'
-Slack : -0.596
-TNS   : -13.931
+Slack : -1.911
+TNS   : -10.694
 
 Type  : Fast 1200mV 0C Model Setup 'testing_logic:tl1|logical_function_check:lfc1|pass1'
-Slack : -0.111
-TNS   : -0.111
+Slack : -1.838
+TNS   : -4.640
+
+Type  : Fast 1200mV 0C Model Setup 'testing_logic:tl1|logical_function_check:lfc1|fail1'
+Slack : -1.272
+TNS   : -3.647
+
+Type  : Fast 1200mV 0C Model Setup 'Input_Reciver:comb_3|IR_RECEIVE:u1|data_ready2'
+Slack : -1.020
+TNS   : -27.483
+
+Type  : Fast 1200mV 0C Model Setup 'clk'
+Slack : -0.670
+TNS   : -16.283
 
 Type  : Fast 1200mV 0C Model Setup 'comb_3|u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 16.547
+Slack : 16.818
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Hold 'testing_logic:tl1|logical_function_check:lfc1|pass1'
-Slack : -2.991
-TNS   : -5.072
-
 Type  : Fast 1200mV 0C Model Hold 'Input_Reciver:comb_3|generate_ic_number:gin1|ic_no_generated'
-Slack : -1.478
-TNS   : -4.381
+Slack : -1.199
+TNS   : -5.334
+
+Type  : Fast 1200mV 0C Model Hold 'testing_logic:tl1|logical_function_check:lfc1|pass1'
+Slack : -0.979
+TNS   : -2.652
+
+Type  : Fast 1200mV 0C Model Hold 'testing_logic:tl1|logical_function_check:lfc1|fail1'
+Slack : -0.922
+TNS   : -2.716
 
 Type  : Fast 1200mV 0C Model Hold 'Input_Reciver:comb_3|IR_RECEIVE:u1|data_ready2'
-Slack : -0.665
-TNS   : -5.053
+Slack : -0.505
+TNS   : -3.312
 
 Type  : Fast 1200mV 0C Model Hold 'clk'
-Slack : -0.002
-TNS   : -0.010
+Slack : -0.116
+TNS   : -0.351
 
 Type  : Fast 1200mV 0C Model Hold 'comb_3|u0|altpll_component|auto_generated|pll1|clk[0]'
-Slack : 0.181
+Slack : 0.184
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'testing_logic:tl1|logical_function_check:lfc1|pass1'
-Slack : 0.658
+Slack : 0.127
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'testing_logic:tl1|logical_function_check:lfc1|fail1'
+Slack : 0.526
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'testing_logic:tl1|logical_function_check:lfc1|pass1'
-Slack : -1.182
-TNS   : -3.355
+Slack : -0.572
+TNS   : -1.485
+
+Type  : Fast 1200mV 0C Model Removal 'testing_logic:tl1|logical_function_check:lfc1|fail1'
+Slack : -0.457
+TNS   : -1.339
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Input_Reciver:comb_3|IR_RECEIVE:u1|data_ready2'
 Slack : -1.000
 TNS   : -36.000
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'testing_logic:tl1|logical_function_check:lfc1|pass1'
-Slack : -0.123
-TNS   : -0.825
-
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Input_Reciver:comb_3|generate_ic_number:gin1|ic_no_generated'
-Slack : 0.335
+Slack : 0.325
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'testing_logic:tl1|logical_function_check:lfc1|fail1'
+Slack : 0.374
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'testing_logic:tl1|logical_function_check:lfc1|pass1'
+Slack : 0.425
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk'
-Slack : 9.410
+Slack : 9.411
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'comb_3|u0|altpll_component|auto_generated|pll1|clk[0]'
