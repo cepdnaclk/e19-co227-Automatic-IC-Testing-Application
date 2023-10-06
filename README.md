@@ -60,16 +60,17 @@ The assembly instructions are as follows. You need to connect the corresponding 
 
 ## Setup and Configuration
 
+After assigning the PINs correctly, go to the Quartus Project folder on our GitHub page and open the ic_tester QPF file which is located in the ic_tester folder directory. You may use Quartus II 13.1 (64-bit) Web Edition version or another compatible version of Quartus software to open the project file.
+
+All the required things are completed in the project file. If you are using the Altera DE2-115 board, you just need to program the FPGA via Active Serial programming. If you are using another board, the required modification needs to be done accordingly.
+
 ## Usage
 
-## Testing and Troubleshooting
+For testing purposes, you just need to enter an IC into the zip socket correctly and enter the IC number using an IR remote. Then the program automatically checks the IC for its logical functionalities and shows the output in the LCD display which is on the Altera DE2-115 board.
 
-## Power Requirements
+Note: For now, this model only works for 74 series logical ICs only.
 
 ## Safety Considerations
 
-## Contact Information
-
-## Acknowledgments
-
-## References
+When you plug the IC, plug it in the correct way. Otherwise, it will damage the IC.
+Before uploading the Quaru project to the board, turn on the programming mode.
