@@ -44,7 +44,7 @@ module two_input_checker (
   parameter S11 = 2'b11;
   
   reg [31:0] counter;
-  parameter ONE_SECOND_DELAY = 50000000;
+  parameter ONE_SECOND_DELAY = 12500000;
 
   two_input_and and2 (.A(input_pattern[0]), .B(input_pattern[1]), .Y(W_AND));
   two_input_or or2 (.A(input_pattern[0]), .B(input_pattern[1]), .Y(W_OR));

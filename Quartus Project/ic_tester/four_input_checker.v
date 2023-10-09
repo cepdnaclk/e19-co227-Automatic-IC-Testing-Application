@@ -58,7 +58,7 @@ module four_input_checker (
   parameter S1111 = 4'b1111;
   
   reg [31:0] counter;
-  parameter ONE_SECOND_DELAY = 50000000;
+  parameter ONE_SECOND_DELAY = 12500000;
 
   four_input_and and3 (.A(input_pattern[0]), .B(input_pattern[1]), .C(input_pattern[2]), .D(input_pattern[3]), .Y(W_AND));
   four_input_nand nand3 (.A(input_pattern[0]), .B(input_pattern[1]), .C(input_pattern[2]), .D(input_pattern[3]), .Y(W_NAND));

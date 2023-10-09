@@ -180,7 +180,7 @@ module logical_function_check (
 
 	
   reg [31:0] counter;
-  parameter ONE_SECOND_DELAY = 50000005;
+  parameter ONE_SECOND_DELAY = 12500005;
 	always @(posedge clk) begin
 	  
 	  if (icg == 0) begin
@@ -364,7 +364,7 @@ module logical_function_check (
 			 fail <= FAIL_WIRE8;
 		 end
 		 
-		 counter <= 0;
+		 counter = 0;
 	  end
 	end
 	

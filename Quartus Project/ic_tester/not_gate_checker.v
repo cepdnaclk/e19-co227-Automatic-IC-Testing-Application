@@ -38,7 +38,7 @@ module not_gate_checker (
   parameter S1 = 1'b1;
   
   reg [31:0] counter;
-  parameter ONE_SECOND_DELAY = 50000000;
+  parameter ONE_SECOND_DELAY = 12500000;
 
   not_gate not_gate (.A(input_pattern), .Y(W_NOT));
     

@@ -49,7 +49,7 @@ module three_input_checker (
   parameter S111 = 3'b111;
   
   reg [31:0] counter;
-  parameter ONE_SECOND_DELAY = 50000000;
+  parameter ONE_SECOND_DELAY = 12500000;
 
   three_input_and and3 (.A(input_pattern[0]), .B(input_pattern[1]), .C(input_pattern[2]), .Y(W_AND));
   three_input_or or3 (.A(input_pattern[0]), .B(input_pattern[1]), .C(input_pattern[2]), .Y(W_OR));
