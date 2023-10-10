@@ -97,7 +97,7 @@ The main model consists of a KEYPAD, TESTING modules, LCD, SEVEN SEGMENT, and a 
 
 ![IC Tester Design Structure](./images/full%20module.png)
 
-The design of this tester supports 14-pin DIP basic digital logic ICs from the 74 series TTL and CMOS family. The devices tested in this project are 74LS32, 74LS00, 74LS02, 74LS08, 74LS86 and 74LS386. The testing model used will be based on the functional fault.
+The design of this tester supports 14-pin DIP basic digital logic ICs from the 74 series TTL and CMOS family. The testing model used will be based on the functional fault.
 
 ![IC Tester Logical Testing Unit](./images/testing%20module.png)
 
@@ -117,7 +117,28 @@ All the required things are completed in the project file. If you are using the 
 
 For testing purposes, you just need to enter an IC into the zip socket correctly and enter the IC number using an IR remote. Then the program automatically checks the IC for its logical functionalities and shows the output in the LCD display which is on the Altera DE2-115 board.
 
-Note: For now, this model only works for 74 series logical ICs only.
+Note: For now, this model only works for 74 series logical ICs only. The set of ICs that you can check using this applicaation are listed below.
+
+| IC Number | Function                                        |
+| --------- | ----------------------------------------------- |
+| 7400      | Quad 2-input NAND                               |
+| 7402      | Quad 2-input NOR                                |
+| 7403      | Quad 2-input NAND                               |
+| 7408      | Quad 2-input AND                                |
+| 7409      | Quad 2-input AND                                |
+| 7432      | Quad 2-input OR                                 |
+| 7438      | Quad 2-input NOR                                |
+| 7486      | Quad 2-input EX-OR                              |
+| 7410      | Triple 3-input NAND                             |
+| 7411      | Triple 3-input AND                              |
+| 7412      | Triple 3-input NAND with open collector outputs |
+| 7427      | Triple 3-input NOR                              |
+| 7420      | Dual 4-input NAND                               |
+| 7421      | Dual 4-input AND                                |
+| 7430      | 8-input NAND                                    |
+| 7404      | 7404 hex NOT                                    |
+| 7405      | Hex NOT with open collector outputs             |
+| 7414      | Hex NOT with Schmitt trigger inputs             |
 
 ## Safety Considerations
 
