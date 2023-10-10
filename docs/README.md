@@ -117,7 +117,7 @@ All the required things are completed in the project file. If you are using the 
 
 For testing purposes, you just need to enter an IC into the zip socket correctly and enter the IC number using an IR remote. Then the program automatically checks the IC for its logical functionalities and shows the output in the LCD display which is on the Altera DE2-115 board.
 
-Note: For now, this model only works for 74 series logical ICs only. The set of ICs that you can check using this applicaation are listed below.
+**_ Note: For now, this model only works for 74 series logical ICs only. The set of ICs that you can check using this applicaation are listed below. _**
 
 | IC Number | Function                                        |
 | --------- | ----------------------------------------------- |
@@ -142,8 +142,8 @@ Note: For now, this model only works for 74 series logical ICs only. The set of 
 
 ## Safety Considerations
 
-When you plug the IC, plug it in the correct way. Otherwise, it will damage the IC.
-Before uploading the Quaru project to the board, turn on the programming mode.
+- When you plug the IC, plug it in the correct way. Otherwise, it will damage the IC.
+- Before uploading the Quaru project to the board, turn on the programming mode.
 
 .....
 
